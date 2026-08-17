@@ -322,7 +322,7 @@ SidebarStatus.Size = UDim2.new(1, 0, 0, 18)
 SidebarStatus.Position = UDim2.new(0, 0, 1, -45)
 SidebarStatus.BackgroundTransparency = 1
 SidebarStatus.Text = "●  Connected"
-SidebarStatus.TextColor3 = Color3.fromRGB(46, 204, 113) 
+SidebarStatus.TextColor3 = Color3.fromRGB(46, 204, 113)
 SidebarStatus.Font = Enum.Font.GothamMedium
 SidebarStatus.TextSize = 10
 SidebarStatus.TextXAlignment = Enum.TextXAlignment.Left
@@ -690,97 +690,6 @@ local function createFeatureCard(parent, name, description, stateKey, bindKey)
     return updateVisuals
 end
 
--- NEW CHECKBOX COMPONENT
-local function createCheckbox(parent, name, stateKey, description)
-    local card = Instance.new("Frame")
-    card.Size = UDim2.new(1, -2, 0, 60)
-    card.BackgroundColor3 = Theme.CardBg
-    card.BorderSizePixel = 0
-    card.Parent = parent
-    Instance.new("UICorner", card).CornerRadius = UDim.new(0, 10)
-    local stroke = addStroke(card, 0.55)
-
-    local icon = Instance.new("TextLabel")
-    icon.Size = UDim2.new(0, 34, 0, 34)
-    icon.Position = UDim2.new(0, 12, 0, 13)
-    icon.BackgroundColor3 = Color3.fromRGB(28, 33, 39)
-    icon.Text = "•"
-    icon.TextColor3 = Theme.AccentGreen
-    icon.Font = Enum.Font.GothamBold
-    icon.TextSize = 14
-    icon.Parent = card
-    Instance.new("UICorner", icon).CornerRadius = UDim.new(0, 9)
-
-    local title = Instance.new("TextLabel")
-    title.Size = UDim2.new(1, -150, 0, 20)
-    title.Position = UDim2.new(0, 57, 0, 10)
-    title.BackgroundTransparency = 1
-    title.Text = name
-    title.TextColor3 = Theme.TextMain
-    title.Font = Enum.Font.GothamMedium
-    title.TextSize = 12
-    title.TextXAlignment = Enum.TextXAlignment.Left
-    title.Parent = card
-
-    local desc = Instance.new("TextLabel")
-    desc.Size = UDim2.new(1, -165, 0, 24)
-    desc.Position = UDim2.new(0, 57, 0, 29)
-    desc.BackgroundTransparency = 1
-    desc.Text = description
-    desc.TextColor3 = Theme.TextMuted
-    desc.Font = Enum.Font.Gotham
-    desc.TextSize = 9
-    desc.TextWrapped = true
-    desc.TextXAlignment = Enum.TextXAlignment.Left
-    desc.Parent = card
-
-    local box = Instance.new("Frame")
-    box.Size = UDim2.new(0, 22, 0, 22)
-    box.Position = UDim2.new(1, -34, 0.5, -11)
-    box.BackgroundColor3 = Theme.SidebarBg
-    box.Parent = card
-    Instance.new("UICorner", box).CornerRadius = UDim.new(0, 6)
-    local boxStroke = addStroke(box, 0.4)
-    
-    local checkMark = Instance.new("TextLabel")
-    checkMark.Size = UDim2.new(1, 0, 1, 0)
-    checkMark.BackgroundTransparency = 1
-    checkMark.Text = "✓"
-    checkMark.TextColor3 = Theme.TextMain
-    checkMark.Font = Enum.Font.GothamBold
-    checkMark.TextSize = 14
-    checkMark.TextTransparency = 1
-    checkMark.Parent = box
-
-    local function updateVisuals()
-        local enabled = State[stateKey]
-        tween(box, FastTween, {BackgroundColor3 = enabled and Theme.AccentGreenDark or Theme.SidebarBg})
-        tween(boxStroke, FastTween, {Color = enabled and Theme.AccentGreen or Theme.Border})
-        tween(checkMark, FastTween, {TextTransparency = enabled and 0 or 1})
-        tween(stroke, FastTween, {Color = enabled and Theme.AccentGreen or Theme.Border, Transparency = enabled and 0.5 or 0.55})
-    end
-
-    local clickTarget = Instance.new("TextButton")
-    clickTarget.Size = UDim2.new(1, 0, 1, 0)
-    clickTarget.BackgroundTransparency = 1
-    clickTarget.Text = ""
-    clickTarget.AutoButtonColor = false
-    clickTarget.ZIndex = 5
-    clickTarget.Parent = card
-    
-    clickTarget.MouseEnter:Connect(function() tween(card, FastTween, {BackgroundColor3 = Theme.CardHover}) end)
-    clickTarget.MouseLeave:Connect(function() tween(card, FastTween, {BackgroundColor3 = Theme.CardBg}) end)
-    clickTarget.MouseButton1Click:Connect(function()
-        State[stateKey] = not State[stateKey]
-        updateVisuals()
-        tween(card, PressTween, {Size = UDim2.new(1, -5, 0, 57)})
-        task.delay(0.08, function() tween(card, PressTween, {Size = UDim2.new(1, -2, 0, 60)}) end)
-    end)
-
-    updateVisuals()
-    return updateVisuals
-end
-
 local function createToggle(parent, name, stateKey, description)
     return createFeatureCard(parent, name, description or "Toggle this feature on or off.", stateKey)
 end
@@ -1066,6 +975,108 @@ local function createDropdown(parent, name, initialOptions, callback)
     buildOptions(initialOptions)
     
     return container, buildOptions, title
+end
+
+local function createCheckboxGroup(parent, titleText, checkboxes)
+    local container = Instance.new("Frame")
+    -- Calculate height based on number of checkboxes
+    container.Size = UDim2.new(1, -2, 0, 45 + (#checkboxes * 35))
+    container.BackgroundColor3 = Theme.CardBg
+    container.Parent = parent
+    Instance.new("UICorner", container).CornerRadius = UDim.new(0, 10)
+    addStroke(container, 0.55)
+
+    -- Group Title
+    local title = Instance.new("TextLabel")
+    title.Size = UDim2.new(1, -24, 0, 40)
+    title.Position = UDim2.new(0, 12, 0, 0)
+    title.BackgroundTransparency = 1
+    title.Text = titleText
+    title.TextColor3 = Theme.TextMain
+    title.Font = Enum.Font.GothamBold
+    title.TextSize = 12
+    title.TextXAlignment = Enum.TextXAlignment.Left
+    title.Parent = container
+
+    -- Divider Line
+    local line = Instance.new("Frame")
+    line.Size = UDim2.new(1, -24, 0, 1)
+    line.Position = UDim2.new(0, 12, 0, 35)
+    line.BackgroundColor3 = Theme.Border
+    line.BorderSizePixel = 0
+    line.Parent = container
+
+    local yOffset = 45
+    for _, cb in ipairs(checkboxes) do
+        local cbContainer = Instance.new("Frame")
+        cbContainer.Size = UDim2.new(1, -24, 0, 30)
+        cbContainer.Position = UDim2.new(0, 12, 0, yOffset)
+        cbContainer.BackgroundTransparency = 1
+        cbContainer.Parent = container
+
+        -- Checkbox Square
+        local box = Instance.new("Frame")
+        box.Size = UDim2.new(0, 18, 0, 18)
+        box.Position = UDim2.new(0, 0, 0.5, -9)
+        box.BackgroundColor3 = Theme.SidebarBg
+        box.Parent = cbContainer
+        Instance.new("UICorner", box).CornerRadius = UDim.new(0, 4)
+        local boxStroke = addStroke(box, 0.4)
+
+        -- Checkmark Icon
+        local check = Instance.new("TextLabel")
+        check.Size = UDim2.new(1, 0, 1, 0)
+        check.BackgroundTransparency = 1
+        check.Text = "✓"
+        check.TextColor3 = Theme.MainBg
+        check.Font = Enum.Font.GothamBold
+        check.TextSize = 12
+        check.TextTransparency = 1
+        check.Parent = box
+
+        -- Checkbox Label
+        local label = Instance.new("TextLabel")
+        label.Size = UDim2.new(1, -28, 1, 0)
+        label.Position = UDim2.new(0, 26, 0, 0)
+        label.BackgroundTransparency = 1
+        label.Text = cb.Name
+        label.TextColor3 = Theme.TextDim
+        label.Font = Enum.Font.GothamMedium
+        label.TextSize = 11
+        label.TextXAlignment = Enum.TextXAlignment.Left
+        label.Parent = cbContainer
+
+        local clickBtn = Instance.new("TextButton")
+        clickBtn.Size = UDim2.new(1, 0, 1, 0)
+        clickBtn.BackgroundTransparency = 1
+        clickBtn.Text = ""
+        clickBtn.Parent = cbContainer
+
+        local function update()
+            local enabled = State[cb.StateKey]
+            tween(box, FastTween, {BackgroundColor3 = enabled and Theme.AccentGreen or Theme.SidebarBg})
+            tween(check, FastTween, {TextTransparency = enabled and 0 or 1})
+            tween(label, FastTween, {TextColor3 = enabled and Theme.TextMain or Theme.TextDim})
+        end
+
+        -- Make the update function available to the UI table so logic blocks can update visual checkboxes
+        UI["Update" .. cb.StateKey] = update
+
+        clickBtn.MouseEnter:Connect(function() 
+            tween(boxStroke, FastTween, {Color = Theme.AccentGreen, Transparency = 0})
+        end)
+        clickBtn.MouseLeave:Connect(function() 
+            tween(boxStroke, FastTween, {Color = Theme.Border, Transparency = 0.4})
+        end)
+        clickBtn.MouseButton1Click:Connect(function()
+            State[cb.StateKey] = not State[cb.StateKey]
+            update()
+        end)
+
+        update()
+        yOffset = yOffset + 35
+    end
+    return container
 end
 
 -- [[ BUILD TABS & CONTENT ]]
@@ -1376,10 +1387,11 @@ createButton(TabMisc, "Redeem All Codes", function()
 end, "🎁")
 
 createSection(TabMisc, "Auto Claim")
--- Now using the custom createCheckbox function!
-UI.UpdateAutoPlaytime = createCheckbox(TabMisc, "Auto Claim Playtime Rewards", "AutoPlaytime", "Claims playtime rewards 1-10 continuously.")
-UI.UpdateAutoAlltime = createCheckbox(TabMisc, "Auto Claim All-Time Rewards", "AutoAlltime", "Claims all-time rewards 1-8 continuously.")
-UI.UpdateAutoBattlepass = createCheckbox(TabMisc, "Auto Claim Battlepass", "AutoBattlepass", "Claims BP rewards 1-30 (Free & Premium).")
+createCheckboxGroup(TabMisc, "Auto Claim", {
+    {Name = "Playtime", StateKey = "AutoPlaytime"},
+    {Name = "Alltime", StateKey = "AutoAlltime"},
+    {Name = "Battlepass", StateKey = "AutoBattlepass"}
+})
 
 
 -- Settings
@@ -1603,6 +1615,7 @@ task.spawn(function()
         
         -- [[ PLAYTIME LOGIC ]]
         if State.AutoPlaytime then
+            -- Replace 'true' with your game's actual LocalPlayer data check for a true scan
             local hasAvailableRewards = true 
             
             if hasAvailableRewards then
@@ -1618,6 +1631,7 @@ task.spawn(function()
         
         -- [[ ALL-TIME LOGIC ]]
         if State.AutoAlltime then
+            -- Replace 'true' with your game's actual LocalPlayer data check for a true scan
             local hasAvailableRewards = true 
             
             if hasAvailableRewards then
@@ -1637,6 +1651,7 @@ task.spawn(function()
 
         -- [[ BATTLEPASS LOGIC ]]
         if State.AutoBattlepass then
+            -- Replace 'true' with your game's actual LocalPlayer data check for a true scan
             local hasAvailableRewards = true 
             
             if hasAvailableRewards then
