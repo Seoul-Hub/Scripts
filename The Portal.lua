@@ -1,1729 +1,1656 @@
-local function _0x0000()
-local _0x0001 = {}
-_0x0001._0x0002 = (498 + 498)
-_0x0001._0x0003 = (1248 / 2)
-if (2 * 3 > 5) and type(debug) == (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-do
-if (5 == 5) and 1 > 2 then
-for _0x0008 = 1, 3 do
-_0x0008 = math.floor(_0x0008 / 2)
-end
-end
-if (2 * 3 > 5) and _0x0009._0x000a or _0x0009._0x000b or _0x0009._0x000c then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-for _0x000d = 1, (63 - 54) do
-_0x000d = _0x000d - (977 - 74)
-end
-if (5 == 5) and type(print) ~= (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-local _0x000e = (1500 / 4)
-local _0x000f = (620 / 4)
-end
-for _0x0010 = 1, (32 / 4) do
-_0x0010 = _0x0010 - (2572 / 4)
-end
-end
-_0x0000()
-local _0x0011 = {(495 / 3), (321 - 47), (2928 / 4)}
-table.insert(_0x0011, (828 / 2))
-local _0x0014 = _0x0015:_0x0016((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-local _0x0017 = _0x0015:_0x0016((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-local function _0x0018(_0x0019, _0x001a)
-local _0x001b = _0x0019 + _0x001a
-_0x001b = math.floor(_0x001b / 2)
-return _0x001b
-end
-local _0x001c = _0x0015:_0x0016((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-for _0x001d = 1, (12 / 2) do
-_0x001d = _0x001d * 2
-end
-local _0x001e = _0x0015:_0x0016((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-local function _0x001f(_0x0020)
-if (5 == 5) and _0x0020 > 0 then
-return _0x0020 * 2
-else
-return 0
-end
-end
-local _0x0021 = _0x0015:_0x0016((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-local _0x0022 = (312 + 313)
-local _0x0023 = (1208 / 2)
-local _0x0024 = _0x0014._0x0024
-local _0x0025 = _0x0026._0x0027
-if (1 + 1 == 2) and nil and true then
-for _0x0028 = 1, (2 + 3) do
-_0x0028 = _0x0028 - (457 - 49)
-end
-end
-local _0x002b = _0x002b or function() return _0x0009 end
-if (true or false) and nil and true then
-local _0x002c = (166 + 167)
-if (2 * 3 > 5) and _0x002c > (457 - 24) then
-_0x002c = math.abs(_0x002c)
-elseif _0x002c < (116 + 117) then
-_0x002c = 0
-end
-end
-if (5 == 5) and _0x002b()._0x002d then _0x002b()._0x002d:_0x002e() end
-local _0x002f = {}
-_0x002f._0x0002 = (123 - 40)
-_0x002f._0x0003 = (3372 / 4)
-local _0x0030 = {
-local function _0x0031()
-local _0x0032 = (739 - 73)
-for _0x0007 = 1, (5 + 5) do
-_0x0032 = _0x0032 + _0x0007
-end
-return _0x0032
-end
-_0x0033 = false,
-_0x0034 = false,
-_0x0035 = false,
-local _0x0036 = {}
-for _0x0007 = 1, (299 - 59) do
-_0x0036[_0x0007] = _0x0007 * 2
-end
-_0x0037 = false,
-for _0x0038 = 1, (16 / 4) do
-_0x0038 = _0x0038 - (528 - 92)
-end
-_0x0039 = true,
-local _0x003a = {}
-for _0x0007 = 1, (257 + 258) do
-_0x003a[_0x0007] = _0x0007 * 2
-end
-_0x003b = _0x003c._0x003d._0x003e,
-local function _0x003f()
-local _0x0040 = (390 - 85)
-for _0x0007 = 1, (95 - 85) do
-_0x0040 = _0x0040 + _0x0007
-end
-return _0x0040
-end
-_0x0041 = _0x003c._0x003d._0x0042,
-_0x0043 = (2 + 3),
-_0x0044 = {},
-_0x0045 = nil
-local _0x0046 = (197 + 198)
-local _0x0047 = (34 + 34)
+-- [[ VARIABLES & SERVICES ]]
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local UserInputService = game:GetService("UserInputService")
+local VirtualInputManager = game:GetService("VirtualInputManager")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local LocalPlayer = Players.LocalPlayer
+local Camera = workspace.CurrentCamera
+
+-- [[ STATE MANAGEMENT ]]
+local getgenv = getgenv or function() return _G end
+if getgenv().SeoulHub then getgenv().SeoulHub:Destroy() end -- Unload previous instance
+
+local State = {
+    AutoAttack = false,
+    AutoRespawn = false,
+    AutoChop = false,
+    AutoMine = false, 
+    AutoPlaytime = false,
+    AutoAlltime = false,
+    AutoBattlepass = false,
+    MenuVisible = true,
+    AutoAttackKey = Enum.KeyCode.F1,
+    HideMenuKey = Enum.KeyCode.CapsLock,
+    AttackRange = 5, 
+    Connections = {},
+    CurrentTab = nil
 }
-local _0x0048 = {}
-_0x0048._0x0002 = (124 + 124)
-_0x0048._0x0003 = (218 + 218)
-local _0x0049 = {}
-local _0x004c = {
-local _0x004d = {}
-for _0x0007 = 1, (554 / 2) do
-_0x004d[_0x0007] = _0x0007 * 2
-end
-_0x004e = _0x004f._0x0050((49 - 32), (106 - 89), (63 / 3)),
-local _0x0051 = 2
-_0x0052 = _0x004f._0x0050((38 - 16), (11 + 11), (13 + 14)),
-for _0x0053 = 1, 2 do
-_0x0053 = math.abs(_0x0053)
-end
-_0x0054 = _0x004f._0x0050((7 + 8), (69 - 54), (9 + 9)),
-_0x0055 = _0x004f._0x0050(0, (282 - 62), (300 / 3)),
-local function _0x0056(_0x0057, _0x0058)
-local _0x0059 = _0x0057 + _0x0058
-_0x0059 = _0x0059 * 2
-return _0x0059
-end
-_0x005a = _0x004f._0x0050((100 - 73), (108 / 4), (132 / 4)),
-_0x005b = _0x004f._0x0050((148 / 4), (18 + 19), (122 - 77)),
-_0x005c = _0x004f._0x0050((282 - 42), (120 + 120), (120 + 120)),
-_0x005d = _0x004f._0x0050((238 - 68), (262 - 92), (240 - 70))
-local _0x005e = {(771 - 54), (2934 / 3), (837 / 3)}
-table.insert(_0x005e, (262 + 263))
+local UI = {}
+
+-- [[ MODERN UI THEME ]]
+local TweenService = game:GetService("TweenService")
+
+local Theme = {
+    MainBg = Color3.fromRGB(14, 15, 18),
+    WindowBg = Color3.fromRGB(18, 20, 25),
+    SidebarBg = Color3.fromRGB(11, 13, 16),
+    TopBarBg = Color3.fromRGB(13, 15, 19),
+    CardBg = Color3.fromRGB(24, 27, 33),
+    CardHover = Color3.fromRGB(32, 36, 44),
+    CardPressed = Color3.fromRGB(39, 45, 54),
+	AccentGreen = Color3.fromRGB(43, 136, 255),
+    AccentGreenDark = Color3.fromRGB(25, 95, 185),
+    AccentCyan = Color3.fromRGB(88, 199, 255),
+    Danger = Color3.fromRGB(255, 107, 120),
+    Border = Color3.fromRGB(45, 49, 57),
+    TextMain = Color3.fromRGB(243, 245, 247),
+    TextDim = Color3.fromRGB(154, 163, 175),
+    TextMuted = Color3.fromRGB(105, 114, 126),
+    Off = Color3.fromRGB(90, 97, 107)
 }
-local _0x0060 = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-local _0x0063 = {}
-for _0x0007 = 1, (31 + 31) do
-_0x0063[_0x0007] = _0x0007 * 2
+
+local function tween(object, info, properties)
+    local animation = TweenService:Create(object, info, properties)
+    animation:Play()
+    return animation
 end
-_0x0060._0x0064 = (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)
-local _0x0065 = (413 + 414)
-local _0x0066 = (112 - 30)
-local _0x0067 = (147 - 40)
-_0x0060._0x0068 = false
-local _0x0069 = (230 - 58)
-local _0x006a = (746 - 51)
-local _0x006b = (30 / 2)
-_0x0060._0x006c = _0x003c._0x006c._0x006d
-for _0x006e = 1, 1 do
-_0x006e = math.floor(_0x006e / 2)
-end
-_0x0060._0x006f = _0x0015:_0x0016((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)) or _0x0024._0x0070
-local _0x0071 = {(228 / 3), (637 - 65), (462 + 462)}
-table.insert(_0x0071, (370 - 27))
-_0x002b()._0x002d = _0x0060
-local _0x0072 = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x0072._0x0073 = _0x0074._0x0062(0, (573 - 23), 0, (1440 / 4))
-local _0x0075 = (301 + 301)
-_0x0072._0x0076 = _0x0074._0x0062(0.5, -(361 - 86), 0.5, -(233 - 53))
-local _0x0077 = (1970 / 2)
-_0x0072._0x0078 = _0x004c._0x004e
-local _0x0079 = (58 + 59)
-local _0x007a = (1770 / 3)
-_0x0072._0x007b = 0
-_0x0072._0x007c = true
-_0x0072._0x007d = true
-_0x0072._0x006f = _0x0060
-local _0x007e = {(16 / 2), (487 - 95), (7 + 7)}
-table.insert(_0x007e, (279 + 279))
-_0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), _0x0072)._0x007f = _0x0080._0x0062(0, (4 + 4))
-local _0x0081 = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x0081._0x0073 = _0x0074._0x0062(1, 0, 0, (160 / 4))
-if (true or false) and nil and true then
-local _0x0082 = {}
-for _0x0007 = 1, (379 - 36) do
-_0x0082[_0x0007] = _0x0007 * 2
-end
-end
-_0x0081._0x0078 = _0x004c._0x0054
-_0x0081._0x007b = 0
-_0x0081._0x006f = _0x0072
-local _0x0083 = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-for _0x0084 = 1, (26 - 22) do
-_0x0084 = math.abs(_0x0084)
-end
-_0x0083._0x0073 = _0x0074._0x0062(1, -(10 + 10), 1, 0)
-local _0x0085 = {}
-for _0x0007 = 1, (168 + 168) do
-_0x0085[_0x0007] = _0x0007 * 2
-end
-_0x0083._0x0076 = _0x0074._0x0062(0, (92 - 77), 0, 0)
-_0x0083._0x0086 = 1
-local _0x0087 = (3688 / 4)
-_0x0083._0x0088 = _0x004c._0x005c
-local function _0x0089(_0x008a)
-if (5 == 5) and _0x008a > 0 then
-return _0x008a * 2
-else
-return 0
-end
-end
-_0x0083._0x008b = (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)
-local function _0x008c(_0x008d, _0x008e)
-local _0x008f = _0x008d + _0x008e
-_0x008f = math.floor(_0x008f / 2)
-return _0x008f
-end
-_0x0083._0x0090 = _0x003c._0x0090._0x0091
-for _0x0092 = 1, (4 + 4) do
-_0x0092 = math.floor(_0x0092 / 2)
-end
-_0x0083._0x0093 = (7 + 7)
-_0x0083._0x0094 = _0x003c._0x0094._0x0095
-_0x0083._0x006f = _0x0081
-local _0x0096 = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-local _0x0097 = {(462 + 462), (347 + 347), (687 - 55)}
-table.insert(_0x0097, (857 - 22))
-_0x0096._0x0073 = _0x0074._0x0062(1, 0, 0, 1)
-if (5 == 5) and (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) == (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) then
-for _0x0098 = 1, (18 / 2) do
-_0x0098 = math.abs(_0x0098)
-end
-end
-_0x0096._0x0076 = _0x0074._0x0062(0, 0, 1, 0)
-local function _0x0099()
-local _0x009a = (1692 / 2)
-for _0x0007 = 1, (80 - 70) do
-_0x009a = _0x009a + _0x0007
-end
-return _0x009a
-end
-_0x0096._0x0078 = _0x004c._0x0055
-if (1 + 1 == 2) and false then
-local _0x009b = {(1990 / 2), (561 - 69), (188 / 2)}
-table.insert(_0x009b, (2868 / 4))
-end
-_0x0096._0x007b = 0
-local _0x009c = (270 + 270)
-local _0x009d = (706 - 67)
-_0x0096._0x006f = _0x0081
-for _0x009e = 1, (5 + 5) do
-_0x009e = math.floor(_0x009e / 2)
-end
-local _0x009f = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x009f._0x0073 = _0x0074._0x0062(0, 0, 0, 0)
-_0x009f._0x0086 = 1
-_0x009f._0x008b = ""
-for _0x00a0 = 1, (14 / 2) do
-_0x00a0 = _0x00a0 + (82 - 54)
-end
-_0x009f._0x00a1 = true
-_0x009f._0x006f = _0x0072
-local _0x00a2 = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-local _0x00a3 = (2766 / 3)
-local _0x00a4 = (150 + 150)
-_0x00a2._0x0073 = _0x0074._0x0062(0, (70 + 70), 1, -(20 + 21))
-for _0x00a5 = 1, (74 - 66) do
-_0x00a5 = math.floor(_0x00a5 / 2)
-end
-_0x00a2._0x0076 = _0x0074._0x0062(0, 0, 0, (101 - 60))
-_0x00a2._0x0078 = _0x004c._0x0052
-local _0x00a6 = {}
-_0x00a6._0x0002 = (1944 / 3)
-_0x00a6._0x0003 = (1724 / 2)
-_0x00a2._0x007b = 0
-_0x00a2._0x006f = _0x0072
-local _0x00a7 = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x00a7._0x0073 = _0x0074._0x0062(1, 0, 1, -(10 + 10))
-for _0x00a8 = 1, 3 do
-_0x00a8 = _0x00a8 % (200 / 2)
-end
-_0x00a7._0x0076 = _0x0074._0x0062(0, 0, 0, (30 / 3))
-_0x00a7._0x0086 = 1
-_0x00a7._0x006f = _0x00a2
-local _0x00a9 = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-for _0x00aa = 1, 2 do
-_0x00aa = _0x00aa % (50 + 50)
-end
-_0x00a9._0x00ab = _0x0080._0x0062(0, (97 - 92))
-local _0x00ac = (464 - 86)
-_0x00a9._0x00ad = _0x003c._0x00ad._0x00ae
-_0x00a9._0x006f = _0x00a7
-local _0x00af = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-if (2 * 3 > 5) and false then
-local _0x00b0 = {}
-for _0x0007 = 1, (292 + 293) do
-_0x00b0[_0x0007] = _0x0007 * 2
-end
-end
-_0x00af._0x0073 = _0x0074._0x0062(1, -(300 / 2), 1, -(204 / 4))
-_0x00af._0x0076 = _0x0074._0x0062(0, (580 / 4), 0, (93 - 47))
-local _0x00b1 = (379 - 83)
-local _0x00b2 = (702 / 2)
-_0x00af._0x0086 = 1
-_0x00af._0x006f = _0x0072
-local _0x00b3, _0x00b4, _0x00b5
-local _0x00b6 = {}
-_0x00b6._0x0002 = (503 - 15)
-_0x00b6._0x0003 = (442 + 443)
-_0x0081._0x00b7:_0x00b8(function(_0x00b9)
-if (5 == 5) and _0x00b9._0x00ba == _0x003c._0x00ba._0x00bb then
-local function _0x00bc(_0x00bd, _0x00be)
-local _0x00bf = _0x00bd + _0x00be
-_0x00bf = _0x00bf * 2
-return _0x00bf
-end
-_0x00b3 = true; _0x00b4 = _0x00b9._0x0076; _0x00b5 = _0x0072._0x0076
-end
-if (true or false) and nil and true then
-for _0x00c0 = 1, (27 / 3) do
-_0x00c0 = _0x00c0 % (300 / 3)
-end
-end
+
+local FastTween = TweenInfo.new(0.14, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+local PressTween = TweenInfo.new(0.08, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+local SlowTween = TweenInfo.new(0.22, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+
+-- [[ UI CREATION ]]
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "SEOUL_Modern_Dark"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+local success, coreGui = pcall(function() return game:GetService("CoreGui") end)
+ScreenGui.Parent = success and coreGui or LocalPlayer:WaitForChild("PlayerGui")
+getgenv().SeoulHub = ScreenGui
+
+local MainFrame = Instance.new("Frame")
+MainFrame.Name = "Window"
+MainFrame.Size = UDim2.new(0, 720, 0, 460)
+MainFrame.Position = UDim2.new(0.5, -360, 0.5, -230)
+MainFrame.BackgroundColor3 = Theme.WindowBg
+MainFrame.BorderSizePixel = 0
+MainFrame.Active = true
+MainFrame.ClipsDescendants = true
+MainFrame.Parent = ScreenGui
+Instance.new("UICorner", MainFrame).CornerRadius = UDim.new(0, 12)
+
+local windowStroke = Instance.new("UIStroke")
+windowStroke.Color = Theme.Border
+windowStroke.Transparency = 0.22
+windowStroke.Thickness = 1
+windowStroke.Parent = MainFrame
+
+local Shadow = Instance.new("Frame")
+Shadow.Name = "Shadow"
+Shadow.Size = UDim2.new(1, 18, 1, 18)
+Shadow.Position = UDim2.new(0, -9, 0, 9)
+Shadow.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Shadow.BackgroundTransparency = 0.72
+Shadow.BorderSizePixel = 0
+Shadow.ZIndex = 0
+Shadow.Parent = MainFrame
+Instance.new("UICorner", Shadow).CornerRadius = UDim.new(0, 15)
+
+-- [[ MINIMIZED LOGO CREATION ]]
+local LogoButton = Instance.new("TextButton")
+LogoButton.Name = "MinimizedLogo"
+LogoButton.Size = UDim2.new(0, 46, 0, 46)
+LogoButton.Position = UDim2.new(0.5, -23, 0, 30)
+LogoButton.BackgroundColor3 = Theme.CardBg
+LogoButton.TextColor3 = Theme.AccentGreen
+LogoButton.Font = Enum.Font.GothamBold
+LogoButton.TextSize = 24
+LogoButton.Text = "S"
+LogoButton.Visible = false
+LogoButton.AutoButtonColor = false
+LogoButton.ZIndex = 10
+LogoButton.Parent = ScreenGui
+Instance.new("UICorner", LogoButton).CornerRadius = UDim.new(0, 10)
+
+local logoStroke = Instance.new("UIStroke")
+logoStroke.Color = Theme.Border
+logoStroke.Transparency = 0.22
+logoStroke.Thickness = 1
+logoStroke.Parent = LogoButton
+
+LogoButton.MouseEnter:Connect(function() tween(LogoButton, FastTween, {BackgroundColor3 = Theme.CardHover}) end)
+LogoButton.MouseLeave:Connect(function() tween(LogoButton, FastTween, {BackgroundColor3 = Theme.CardBg}) end)
+
+local logoDragging, logoDragStart, logoStartPos, isDraggingLogo
+LogoButton.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        logoDragging = true
+        isDraggingLogo = false
+        logoDragStart = input.Position
+        logoStartPos = LogoButton.Position
+    end
 end)
-_0x0081._0x00c1:_0x00b8(function(_0x00b9)
-if (5 == 5) and _0x00b9._0x00ba == _0x003c._0x00ba._0x00bb then _0x00b3 = false end
-if (1 + 1 == 2) and nil and true then
-local _0x00c2 = (570 - 39)
-if (5 == 5) and _0x00c2 > (315 + 316) then
-_0x00c2 = _0x00c2 * 2
-elseif _0x00c2 < (215 + 216) then
-_0x00c2 = 0
-end
-end
+LogoButton.InputEnded:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        logoDragging = false
+    end
 end)
-local function _0x00c3()
-local _0x00c4 = (1299 / 3)
-for _0x0007 = 1, (87 - 77) do
-_0x00c4 = _0x00c4 + _0x0007
-end
-return _0x00c4
-end
-_0x001c._0x00c5:_0x00b8(function(_0x00b9)
-if (5 == 5) and _0x00b3 and _0x00b9._0x00ba == _0x003c._0x00ba._0x00c6 then
-local _0x00c7 = _0x00b9._0x0076 - _0x00b4
-local _0x00c8 = {(424 / 2), (3292 / 4), (1310 / 2)}
-table.insert(_0x00c8, (579 / 3))
-_0x0072._0x0076 = _0x0074._0x0062(_0x00b5._0x00c9._0x00ca, _0x00b5._0x00c9._0x00cb + _0x00c7._0x00c9, _0x00b5._0x00cc._0x00ca, _0x00b5._0x00cc._0x00cb + _0x00c7._0x00cc)
-end
-local _0x00cd = (1374 / 2)
-local _0x00ce = (660 - 41)
+UserInputService.InputChanged:Connect(function(input)
+    if logoDragging and input.UserInputType == Enum.UserInputType.MouseMovement then
+        isDraggingLogo = true
+        local delta = input.Position - logoDragStart
+        LogoButton.Position = UDim2.new(
+            logoStartPos.X.Scale, logoStartPos.X.Offset + delta.X, 
+            logoStartPos.Y.Scale, logoStartPos.Y.Offset + delta.Y
+        )
+    end
 end)
-local _0x00cf = {}
-for _0x0007 = 1, (454 + 454) do
-_0x00cf[_0x0007] = _0x0007 * 2
+
+local MouseUnlocker = Instance.new("TextButton")
+MouseUnlocker.Size = UDim2.new(0, 0, 0, 0)
+MouseUnlocker.BackgroundTransparency = 1
+MouseUnlocker.Text = ""
+MouseUnlocker.Modal = true
+MouseUnlocker.Parent = MainFrame
+
+local function ToggleMenu()
+    State.MenuVisible = not State.MenuVisible
+    MainFrame.Visible = State.MenuVisible
+    MouseUnlocker.Modal = State.MenuVisible
+    LogoButton.Visible = not State.MenuVisible
 end
-local _0x00d2, _0x00d3, _0x00d4 = {}, {}, {}
-local _0x00d5 = {(386 + 387), (95 + 96), (1612 / 4)}
-table.insert(_0x00d5, (1308 / 2))
-local function _0x00d6(_0x00d7)
-if (1 + 1 == 2) and type(debug) == (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-local _0x00d8 = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x00d8._0x0073 = _0x0074._0x0062(0.9, 0, 0, (144 / 4))
-local _0x00d9 = {(1912 / 2), (471 + 472), (778 - 40)}
-table.insert(_0x00d9, (334 + 334))
-_0x00d8._0x0078 = _0x004c._0x0052
-if (true or false) and (58 - 48) < (15 / 3) then
-for _0x00da = 1, (14 / 2) do
-_0x00da = _0x00da - (1052 / 4)
-end
-end
-_0x00d8._0x0088 = _0x004c._0x005d
-for _0x00db = 1, (16 / 2) do
-_0x00db = math.floor(_0x00db / 2)
-end
-_0x00d8._0x0090 = _0x003c._0x0090._0x00dc
-_0x00d8._0x0093 = (6 + 7)
-for _0x00dd = 1, (47 - 41) do
-_0x00dd = math.abs(_0x00dd)
-end
-_0x00d8._0x008b = _0x00d7
-local _0x00de = (240 + 241)
-local _0x00df = (494 / 2)
-local _0x00e0 = (3268 / 4)
-_0x00d8._0x00e1 = false
-_0x00d8._0x006f = _0x00a7
-local _0x00e2 = (793 - 88)
-local _0x00e3 = (410 + 411)
-local _0x00e4 = (152 + 153)
-_0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), _0x00d8)._0x007f = _0x0080._0x0062(0, (90 - 84))
-for _0x00e5 = 1, 3 do
-_0x00e5 = _0x00e5 + (955 - 80)
-end
-local _0x00e6 = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-for _0x00e7 = 1, (20 / 2) do
-_0x00e7 = math.abs(_0x00e7)
-end
-_0x00e6._0x0073 = _0x0074._0x0062(0, 3, 0.5, 0)
-local function _0x00e8(_0x00e9)
-if (2 * 3 > 5) and _0x00e9 > 0 then
-return _0x00e9 * 2
-else
-return 0
-end
-end
-_0x00e6._0x0076 = _0x0074._0x0062(0, (10 / 2), 0.25, 0)
-_0x00e6._0x0078 = _0x004c._0x0055
-_0x00e6._0x007b = 0
-_0x00e6._0x00ea = false
-_0x00e6._0x006f = _0x00d8
-local _0x00eb = (2216 / 4)
-_0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), _0x00e6)._0x007f = _0x0080._0x0062(1, 0)
-local _0x00ec = {}
-_0x00ec._0x0002 = (393 - 48)
-_0x00ec._0x0003 = (241 + 242)
-local _0x00ed = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-for _0x00ee = 1, 2 do
-_0x00ee = math.abs(_0x00ee)
-end
-_0x00ed._0x0073 = _0x0074._0x0062(1, 0, 1, 0)
-_0x00ed._0x0086 = 1
-_0x00ed._0x00ef = 3
-_0x00ed._0x00f0 = _0x004f._0x0050((240 / 4), (120 / 2), (35 + 35))
-_0x00ed._0x00ea = false
-_0x00ed._0x006f = _0x00af
-local _0x00f1 = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x00f1._0x00ab = _0x0080._0x0062(0, (28 - 20))
-_0x00f1._0x00f2 = _0x003c._0x00f2._0x00f3
-local function _0x00f4()
-local _0x00f5 = (450 + 450)
-for _0x0007 = 1, (49 - 39) do
-_0x00f5 = _0x00f5 + _0x0007
-end
-return _0x00f5
-end
-_0x00f1._0x006f = _0x00ed
-local _0x00f6 = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x00f6._0x00f7 = _0x0080._0x0062(0, (5 + 5))
-_0x00f6._0x006f = _0x00ed
-local _0x00f8 = {}
-for _0x0007 = 1, (3664 / 4) do
-_0x00f8[_0x0007] = _0x0007 * 2
-end
-_0x00d8._0x00f9:_0x00b8(function() if (true or false) and _0x0030._0x0045 ~= _0x00d7 then _0x00d8._0x0078 = _0x004c._0x005b end end)
-for _0x00fa = 1, (20 / 4) do
-_0x00fa = _0x00fa * 2
-end
-_0x00d8._0x00fb:_0x00b8(function() if (5 == 5) and _0x0030._0x0045 ~= _0x00d7 then _0x00d8._0x0078 = _0x004c._0x0052 end end)
-local function _0x00fc()
-local _0x00fd = {}
-for _0x0007 = 1, (808 - 88) do
-_0x00fd[_0x0007] = _0x0007 * 2
-end
-if (5 == 5) and type(debug) == (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-if (1 + 1 == 2) and 1 > 2 then
-local _0x00fe = {}
-for _0x0007 = 1, (89 + 89) do
-_0x00fe[_0x0007] = _0x0007 * 2
-end
-end
-if (2 * 3 > 5) and _0x0030._0x0045 then
-_0x00d2[_0x0030._0x0045]._0x00ea = false
-for _0x00ff = 1, (77 - 71) do
-_0x00ff = math.floor(_0x00ff / 2)
-end
-_0x00d3[_0x0030._0x0045]._0x0078 = _0x004c._0x0052
-_0x00d3[_0x0030._0x0045]._0x0088 = _0x004c._0x005d
-_0x00d4[_0x0030._0x0045]._0x00ea = false
-end
-local _0x0100 = (605 - 90)
-_0x0030._0x0045 = _0x00d7; _0x00ed._0x00ea = true; _0x00d8._0x0078 = _0x004c._0x005a
-_0x00d8._0x0088 = _0x004c._0x0055; _0x00e6._0x00ea = true
-end
-_0x00d8._0x0101:_0x00b8(_0x00fc)
-local _0x0102 = (61 - 36)
-local _0x0103 = (251 + 252)
-local _0x0104 = (411 - 40)
-_0x00f1:_0x0105((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)):_0x00b8(function()
-if (true or false) and 1 > 2 then
-for _0x0106 = 1, (5 + 5) do
-_0x0106 = math.abs(_0x0106)
-end
-end
-_0x00ed._0x0107 = _0x0074._0x0062(0, 0, 0, _0x00f1._0x0108._0x00cc + (105 - 85))
-local _0x0109 = {}
-_0x0109._0x0002 = (479 + 480)
-_0x0109._0x0003 = (2492 / 4)
+
+LogoButton.MouseButton1Click:Connect(function()
+    if not isDraggingLogo then
+        ToggleMenu()
+    end
 end)
-local _0x010a = {(2692 / 4), (1330 / 2), (2244 / 3)}
-table.insert(_0x010a, (510 - 97))
-_0x00d2[_0x00d7] = _0x00ed; _0x00d3[_0x00d7] = _0x00d8; _0x00d4[_0x00d7] = _0x00e6
-if (5 == 5) and not _0x0030._0x0045 then
-_0x00fc()
-end
-return _0x00ed
-end
-local function _0x010b(_0x010c, _0x010d)
-if (true or false) and false then
-local _0x010e = {(445 - 91), (810 - 28), (466 + 467)}
-table.insert(_0x010e, (130 + 131))
-end
-do
-if (2 * 3 > 5) and _0x0009._0x000a or _0x0009._0x000b or _0x0009._0x000c then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-local function _0x010f()
-local _0x0110 = (297 / 3)
-for _0x0007 = 1, (5 + 5) do
-_0x0110 = _0x0110 + _0x0007
-end
-return _0x0110
-end
-if (5 == 5) and type(print) ~= (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-local _0x0111 = {}
-for _0x0007 = 1, (274 / 2) do
-_0x0111[_0x0007] = _0x0007 * 2
-end
-end
-local _0x0112 = {}
-for _0x0007 = 1, (330 - 16) do
-_0x0112[_0x0007] = _0x0007 * 2
-end
-local _0x0113 = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-local _0x0114 = {}
-for _0x0007 = 1, (468 - 52) do
-_0x0114[_0x0007] = _0x0007 * 2
-end
-_0x0113._0x0073 = _0x0074._0x0062(1, 0, 0, (95 - 70))
-_0x0113._0x0086 = 1
-if (1 + 1 == 2) and not true then
-local _0x0115 = {}
-for _0x0007 = 1, (417 - 72) do
-_0x0115[_0x0007] = _0x0007 * 2
-end
-end
-_0x0113._0x008b = (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) .. _0x010d:upper()
-_0x0113._0x0088 = _0x004c._0x0055
-_0x0113._0x0090 = _0x003c._0x0090._0x0091
-if (2 * 3 > 5) and 0 == 1 then
-for _0x0116 = 1, (24 / 3) do
-_0x0116 = _0x0116 % (195 - 95)
-end
-end
-_0x0113._0x0093 = (5 + 6)
-if (true or false) and (5 + 5) < (2 + 3) then
-for _0x0117 = 1, (32 / 4) do
-_0x0117 = math.abs(_0x0117)
-end
-end
-_0x0113._0x0094 = _0x003c._0x0094._0x0095
-_0x0113._0x006f = _0x010c
-local _0x0118 = {}
-for _0x0007 = 1, (116 - 62) do
-_0x0118[_0x0007] = _0x0007 * 2
-end
-local _0x0119 = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x0119._0x0073 = _0x0074._0x0062(1, -(35 + 35), 0, 1)
-_0x0119._0x0076 = _0x0074._0x0062(0, (35 + 35), 0.5, 0)
-_0x0119._0x0078 = _0x004f._0x0050((120 / 3), (58 - 18), (25 + 25))
-_0x0119._0x007b = 0
-_0x0119._0x006f = _0x0113
-end
-local function _0x011a(_0x010c, _0x00d7, _0x011b)
-local _0x011c = (302 + 303)
-do
-local _0x011d = {}
-_0x011d._0x0002 = (996 - 14)
-_0x011d._0x0003 = (1575 / 3)
-if (2 * 3 > 5) and _0x0009._0x000a or _0x0009._0x000b or _0x0009._0x000c then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-local _0x011e = (543 / 3)
-local _0x011f = (926 - 91)
-local _0x0120 = (712 - 83)
-if (5 == 5) and type(print) ~= (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-end
-local _0x00d8 = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-if (true or false) and (15 / 3) + (10 / 2) == (59 - 48) then
-local _0x0121 = (167 + 168)
-if (true or false) and _0x0121 > (526 - 91) then
-_0x0121 = math.abs(_0x0121)
-elseif _0x0121 < (117 + 118) then
-_0x0121 = 0
-end
-end
-_0x00d8._0x0073 = _0x0074._0x0062(1, 0, 0, (19 + 19))
-for _0x0122 = 1, (8 / 2) do
-_0x0122 = _0x0122 * 2
-end
-_0x00d8._0x0078 = _0x004c._0x005a
-local function _0x0123(_0x0124)
-if (1 + 1 == 2) and _0x0124 > 0 then
-return _0x0124 * 2
-else
-return 0
-end
-end
-_0x00d8._0x0088 = _0x004c._0x005c
-_0x00d8._0x0090 = _0x003c._0x0090._0x00dc
-for _0x0125 = 1, 3 do
-_0x0125 = _0x0125 * 2
-end
-_0x00d8._0x0093 = (52 - 39)
-_0x00d8._0x008b = (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) .. _0x00d7
-local function _0x0126(_0x0127, _0x0128)
-local _0x0129 = _0x0127 + _0x0128
-_0x0129 = math.abs(_0x0129)
-return _0x0129
-end
-_0x00d8._0x0094 = _0x003c._0x0094._0x0095
-_0x00d8._0x00e1 = false
-local function _0x012a(_0x012b)
-if (true or false) and _0x012b > 0 then
-return _0x012b * 2
-else
-return 0
-end
-end
-_0x00d8._0x006f = _0x010c
-_0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), _0x00d8)._0x007f = _0x0080._0x0062(0, (34 - 28))
-local _0x012c = {}
-_0x012c._0x0002 = (420 + 421)
-_0x012c._0x0003 = (1202 / 2)
-local _0x012d = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-if (true or false) and (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) == (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) then
-for _0x012e = 1, (3 + 3) do
-_0x012e = _0x012e % (200 / 2)
-end
-end
-_0x012d._0x0073 = _0x0074._0x0062(0, (20 + 20), 1, 0)
-_0x012d._0x0076 = _0x0074._0x0062(1, -(127 - 77), 0, 0)
-local function _0x012f()
-local _0x0130 = (1724 / 2)
-for _0x0007 = 1, (30 / 3) do
-_0x0130 = _0x0130 + _0x0007
-end
-return _0x0130
-end
-_0x012d._0x0086 = 1
-local _0x0131 = {(127 + 127), (706 - 87), (3656 / 4)}
-table.insert(_0x0131, (685 - 50))
-_0x012d._0x0090 = _0x003c._0x0090._0x0091
-_0x012d._0x0093 = (53 - 41)
-if (5 == 5) and 0 == 1 then
-for _0x0132 = 1, (5 + 5) do
-_0x0132 = math.floor(_0x0132 / 2)
-end
-end
-_0x012d._0x006f = _0x00d8
-_0x00d8._0x00f9:_0x00b8(function() _0x00d8._0x0078 = _0x004c._0x005b end)
-local function _0x0133()
-local _0x0134 = (998 - 36)
-for _0x0007 = 1, (28 - 18) do
-_0x0134 = _0x0134 + _0x0007
-end
-return _0x0134
-end
-_0x00d8._0x00fb:_0x00b8(function() _0x00d8._0x0078 = _0x004c._0x005a end)
-local function _0x0135()
-local _0x0136 = (284 + 284)
-for _0x0007 = 1, (30 / 3) do
-_0x0136 = _0x0136 + _0x0007
-end
-return _0x0136
-end
-local function _0x0137()
-for _0x0138 = 1, (39 - 35) do
-_0x0138 = math.floor(_0x0138 / 2)
-end
-if (true or false) and type(debug) == (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-if (2 * 3 > 5) and nil and true then
-local _0x0139 = {}
-_0x0139._0x0002 = (2828 / 4)
-_0x0139._0x0003 = (216 - 90)
-end
-_0x012d._0x008b = _0x0030[_0x011b] and (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) or (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)
-local _0x013a = {(130 + 130), (417 + 418), (2320 / 4)}
-table.insert(_0x013a, (59 + 59))
-_0x012d._0x0088 = _0x0030[_0x011b] and _0x004c._0x0055 or _0x004c._0x005d
-local function _0x013b(_0x013c)
-if (1 + 1 == 2) and _0x013c > 0 then
-return _0x013c * 2
-else
-return 0
-end
-end
-end
-local function _0x013d(_0x013e, _0x013f)
-local _0x0140 = _0x013e + _0x013f
-_0x0140 = math.floor(_0x0140 / 2)
-return _0x0140
-end
-_0x00d8._0x0101:_0x00b8(function() _0x0030[_0x011b] = not _0x0030[_0x011b]; _0x0137() end)
-_0x0137()
-return _0x0137
-if (1 + 1 == 2) and 0 == 1 then
-local _0x0141 = (1035 - 68)
-if (1 + 1 == 2) and _0x0141 > (2134 / 2) then
-_0x0141 = _0x0141 - (44 + 44)
-elseif _0x0141 < (2601 / 3) then
-_0x0141 = 0
-end
-end
-end
-local function _0x0142(_0x010c, _0x00d7, _0x011b, _0x0143)
-local function _0x0144(_0x0145, _0x0146)
-local _0x0147 = _0x0145 + _0x0146
-_0x0147 = math.abs(_0x0147)
-return _0x0147
-end
-do
-if (2 * 3 > 5) and 1 > 2 then
-for _0x0148 = 1, (4 + 5) do
-_0x0148 = _0x0148 * 2
-end
-end
-if (1 + 1 == 2) and _0x0009._0x000a or _0x0009._0x000b or _0x0009._0x000c then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-local _0x0149 = (663 / 3)
-local _0x014a = (1628 / 4)
-local _0x014b = (653 - 55)
-if (5 == 5) and type(print) ~= (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-end
-for _0x014c = 1, (40 - 35) do
-_0x014c = _0x014c % (196 - 96)
-end
-local _0x014d = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x014d._0x0073 = _0x0074._0x0062(1, 0, 0, (54 - 16))
-for _0x014e = 1, (32 / 4) do
-_0x014e = _0x014e * 2
-end
-_0x014d._0x0086 = 1
-local _0x014f = (132 / 2)
-_0x014d._0x006f = _0x010c
-local _0x00d8 = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x00d8._0x0073 = _0x0074._0x0062(1, -(114 - 29), 1, 0)
-local _0x0150 = {}
-for _0x0007 = 1, (431 + 432) do
-_0x0150[_0x0007] = _0x0007 * 2
-end
-_0x00d8._0x0078 = _0x004c._0x005a
-local _0x0151 = (616 - 58)
-local _0x0152 = (109 + 110)
-_0x00d8._0x0088 = _0x004c._0x005c
-_0x00d8._0x0090 = _0x003c._0x0090._0x00dc
-if (2 * 3 > 5) and (20 / 2) < (43 - 38) then
-local _0x0153 = (1272 / 4)
-if (5 == 5) and _0x0153 > (473 - 55) then
-_0x0153 = _0x0153 * 2
-elseif _0x0153 < (257 - 39) then
-_0x0153 = 0
-end
-end
-_0x00d8._0x0093 = (90 - 77)
-_0x00d8._0x008b = (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) .. _0x00d7
-_0x00d8._0x0094 = _0x003c._0x0094._0x0095
-local _0x0154 = {(283 - 97), (903 / 3), (267 / 3)}
-table.insert(_0x0154, (14 + 15))
-_0x00d8._0x00e1 = false
-_0x00d8._0x006f = _0x014d
-for _0x0155 = 1, (52 - 46) do
-_0x0155 = math.abs(_0x0155)
-end
-_0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), _0x00d8)._0x007f = _0x0080._0x0062(0, (88 - 82))
-local _0x012d = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-if (true or false) and not true then
-local _0x0156 = {}
-for _0x0007 = 1, (382 - 81) do
-_0x0156[_0x0007] = _0x0007 * 2
-end
-end
-_0x012d._0x0073 = _0x0074._0x0062(0, (20 + 20), 1, 0)
-_0x012d._0x0076 = _0x0074._0x0062(1, -(135 / 3), 0, 0)
-for _0x0157 = 1, (103 - 99) do
-_0x0157 = _0x0157 % (200 / 2)
-end
-_0x012d._0x0086 = 1
-_0x012d._0x0090 = _0x003c._0x0090._0x0091
-for _0x0158 = 1, (64 - 56) do
-_0x0158 = _0x0158 % (400 / 4)
-end
-_0x012d._0x0093 = (49 - 37)
-_0x012d._0x006f = _0x00d8
-if (true or false) and (40 / 4) < (2 + 3) then
-local _0x0159 = {(787 - 69), (398 + 398), (654 - 15)}
-table.insert(_0x0159, (2784 / 4))
-end
-_0x00d8._0x00f9:_0x00b8(function() _0x00d8._0x0078 = _0x004c._0x005b end)
-local function _0x015a(_0x015b)
-if (1 + 1 == 2) and _0x015b > 0 then
-return _0x015b * 2
-else
-return 0
-end
-end
-_0x00d8._0x00fb:_0x00b8(function() _0x00d8._0x0078 = _0x004c._0x005a end)
-local _0x015c = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x015c._0x0073 = _0x0074._0x0062(0, (240 / 3), 1, 0)
-local _0x015d = (267 - 52)
-local _0x015e = (524 - 49)
-_0x015c._0x0076 = _0x0074._0x0062(1, -(166 - 86), 0, 0)
-local function _0x015f()
-local _0x0160 = (325 + 325)
-for _0x0007 = 1, (105 - 95) do
-_0x0160 = _0x0160 + _0x0007
-end
-return _0x0160
-end
-_0x015c._0x0078 = _0x004c._0x0052
-_0x015c._0x0088 = _0x004c._0x005d
-_0x015c._0x0090 = _0x003c._0x0090._0x0161
-_0x015c._0x0093 = (6 + 6)
-for _0x0162 = 1, (95 - 87) do
-_0x0162 = _0x0162 * 2
-end
-_0x015c._0x008b = (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) .. _0x0030[_0x0143]._0x0064 .. (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)
-_0x015c._0x00e1 = false
-_0x015c._0x006f = _0x014d
-for _0x0163 = 1, (77 - 73) do
-_0x0163 = _0x0163 + (60 / 4)
-end
-_0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), _0x015c)._0x007f = _0x0080._0x0062(0, (3 + 3))
-_0x015c._0x00f9:_0x00b8(function() _0x015c._0x0078 = _0x004f._0x0050((72 - 32), (91 - 51), (25 + 25)) end)
-local _0x0164 = {}
-for _0x0007 = 1, (3904 / 4) do
-_0x0164[_0x0007] = _0x0007 * 2
-end
-_0x015c._0x00fb:_0x00b8(function() _0x015c._0x0078 = _0x004c._0x0052 end)
-local function _0x0165(_0x0166)
-if (true or false) and _0x0166 > 0 then
-return _0x0166 * 2
-else
-return 0
-end
-end
-local function _0x0137()
-if (5 == 5) and type(debug) == (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-local _0x0167 = (293 - 10)
-_0x012d._0x008b = _0x0030[_0x011b] and (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) or (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)
-local _0x0168 = (348 + 348)
-local _0x0169 = (309 + 310)
-local _0x016a = (116 - 22)
-_0x012d._0x0088 = _0x0030[_0x011b] and _0x004c._0x0055 or _0x004c._0x005d
-if (1 + 1 == 2) and (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) == (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) then
-for _0x016b = 1, 3 do
-_0x016b = math.abs(_0x016b)
-end
-end
-end
-_0x00d8._0x0101:_0x00b8(function() _0x0030[_0x011b] = not _0x0030[_0x011b]; _0x0137() end)
-if (5 == 5) and 1 > 2 then
-local _0x016c = {}
-_0x016c._0x0002 = (282 + 282)
-_0x016c._0x0003 = (1816 / 2)
-end
-local _0x016d = false
-_0x015c._0x0101:_0x00b8(function()
-_0x016d = true; _0x015c._0x008b = (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end); _0x015c._0x0078 = _0x004c._0x0055; _0x015c._0x0088 = _0x004f._0x0050(0,0,0)
-end)
-for _0x016e = 1, 3 do
-_0x016e = math.floor(_0x016e / 2)
-end
-table.insert(_0x0030._0x0044, _0x001c._0x00b7:_0x00b8(function(_0x00b9)
-if (true or false) and _0x016d and _0x00b9._0x00ba == _0x003c._0x00ba._0x016f then
-if (1 + 1 == 2) and nil and true then
-local _0x0170 = (1640 / 4)
-if (2 * 3 > 5) and _0x0170 > (255 + 255) then
-_0x0170 = math.abs(_0x0170)
-elseif _0x0170 < (366 - 56) then
-_0x0170 = 0
-end
-end
-_0x0030[_0x0143] = _0x00b9._0x003d; _0x015c._0x008b = (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) .. _0x0030[_0x0143]._0x0064 .. (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)
-for _0x0171 = 1, (24 / 4) do
-_0x0171 = _0x0171 % (300 / 3)
-end
-_0x015c._0x0078 = _0x004c._0x0052; _0x015c._0x0088 = _0x004c._0x005d; _0x016d = false
-end
-for _0x0172 = 1, 2 do
-_0x0172 = _0x0172 * 2
-end
-end))
-_0x0137()
-local _0x0173 = (2766 / 3)
-local _0x0174 = (286 + 286)
-return _0x0137
-local _0x0175 = (83 + 84)
-end
-local function _0x0176()
-local _0x0177 = (384 - 15)
-for _0x0007 = 1, (109 - 99) do
-_0x0177 = _0x0177 + _0x0007
-end
-return _0x0177
-end
-local function _0x0178(_0x010c, _0x00d7, _0x0179)
-do
-if (true or false) and _0x0009._0x000a or _0x0009._0x000b or _0x0009._0x000c then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-if (1 + 1 == 2) and type(print) ~= (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-local _0x017a = (255 + 255)
-local _0x017b = (1018 / 2)
-local _0x017c = (499 - 30)
-end
-local _0x017d = {}
-_0x017d._0x0002 = (106 + 106)
-_0x017d._0x0003 = (887 - 87)
-local _0x00d8 = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x00d8._0x0073 = _0x0074._0x0062(1, 0, 0, (77 - 39))
-_0x00d8._0x0078 = _0x004c._0x005a
-_0x00d8._0x0088 = _0x004c._0x005c
-_0x00d8._0x0090 = _0x003c._0x0090._0x00dc
-if (true or false) and (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) == (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) then
-local _0x017e = {}
-for _0x0007 = 1, (447 + 447) do
-_0x017e[_0x0007] = _0x0007 * 2
-end
-end
-_0x00d8._0x0093 = (6 + 7)
-local _0x017f = (874 / 2)
-_0x00d8._0x008b = (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) .. _0x00d7
-_0x00d8._0x0094 = _0x003c._0x0094._0x0095
-if (1 + 1 == 2) and false then
-local _0x0180 = {}
-for _0x0007 = 1, (297 / 3) do
-_0x0180[_0x0007] = _0x0007 * 2
-end
-end
-_0x00d8._0x00e1 = false
-_0x00d8._0x006f = _0x010c
-_0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), _0x00d8)._0x007f = _0x0080._0x0062(0, (3 + 3))
-local _0x0181 = (490 + 490)
-local _0x0182 = (1324 / 4)
-local _0x0183 = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-local function _0x0184(_0x0185, _0x0186)
-local _0x0187 = _0x0185 + _0x0186
-_0x0187 = _0x0187 - (151 + 151)
-return _0x0187
-end
-_0x0183._0x0073 = _0x0074._0x0062(0, (15 + 15), 1, 0)
-for _0x0188 = 1, (3 + 3) do
-_0x0188 = math.abs(_0x0188)
-end
-_0x0183._0x0076 = _0x0074._0x0062(1, -(128 - 98), 0, 0)
-_0x0183._0x0086 = 1
-local _0x0189 = (852 - 67)
-local _0x018a = (192 - 82)
-local _0x018b = (130 + 131)
-_0x0183._0x008b = (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)
-for _0x018c = 1, (45 - 36) do
-_0x018c = _0x018c % (50 + 50)
-end
-_0x0183._0x0088 = _0x004c._0x005d
-local _0x018d = {}
-for _0x0007 = 1, (451 + 452) do
-_0x018d[_0x0007] = _0x0007 * 2
-end
-_0x0183._0x0090 = _0x003c._0x0090._0x0091
-local _0x018e = (609 / 3)
-local _0x018f = (360 + 361)
-_0x0183._0x0093 = (7 + 7)
-for _0x0190 = 1, (28 - 22) do
-_0x0190 = math.abs(_0x0190)
-end
-_0x0183._0x006f = _0x00d8
-_0x00d8._0x00f9:_0x00b8(function() _0x00d8._0x0078 = _0x004c._0x005b; _0x0183._0x0088 = _0x004c._0x0055 end)
-_0x00d8._0x00fb:_0x00b8(function() _0x00d8._0x0078 = _0x004c._0x005a; _0x0183._0x0088 = _0x004c._0x005d end)
-_0x00d8._0x0101:_0x00b8(_0x0179)
-end
-local function _0x0191(_0x010c, _0x00d7, _0x0143)
-for _0x0192 = 1, 2 do
-_0x0192 = math.floor(_0x0192 / 2)
-end
-do
-if (5 == 5) and _0x0009._0x000a or _0x0009._0x000b or _0x0009._0x000c then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-local _0x0193 = (451 - 53)
-local _0x0194 = (2908 / 4)
-local _0x0195 = (1646 / 2)
-if (2 * 3 > 5) and type(print) ~= (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-local function _0x0196(_0x0197)
-if (true or false) and _0x0197 > 0 then
-return _0x0197 * 2
-else
-return 0
-end
-end
-end
-local function _0x0198()
-local _0x0199 = (1004 / 2)
-for _0x0007 = 1, (30 / 3) do
-_0x0199 = _0x0199 + _0x0007
-end
-return _0x0199
-end
-local _0x014d = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x014d._0x0073 = _0x0074._0x0062(1, 0, 0, (19 + 19))
-_0x014d._0x0078 = _0x004c._0x005a
-_0x014d._0x006f = _0x010c
-_0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), _0x014d)._0x007f = _0x0080._0x0062(0, (24 / 4))
-local _0x019a = {(195 + 195), (235 + 236), (865 - 72)}
-table.insert(_0x019a, (112 - 99))
-local _0x0113 = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x0113._0x0073 = _0x0074._0x0062(1, -(45 + 45), 1, 0)
-_0x0113._0x0086 = 1
-for _0x019b = 1, 2 do
-_0x019b = _0x019b - (244 + 245)
-end
-_0x0113._0x0090 = _0x003c._0x0090._0x00dc
-for _0x019c = 1, 2 do
-_0x019c = _0x019c % (400 / 4)
-end
-_0x0113._0x0093 = (52 / 4)
-_0x0113._0x0088 = _0x004c._0x005c
-_0x0113._0x008b = (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) .. _0x00d7
-_0x0113._0x0094 = _0x003c._0x0094._0x0095
-_0x0113._0x006f = _0x014d
-for _0x019d = 1, 3 do
-_0x019d = math.abs(_0x019d)
-end
-local _0x015c = _0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x015c._0x0073 = _0x0074._0x0062(0, (145 - 65), 1, -(5 + 5))
-local _0x019e = {}
-for _0x0007 = 1, (618 - 63) do
-_0x019e[_0x0007] = _0x0007 * 2
-end
-_0x015c._0x0076 = _0x0074._0x0062(1, -(170 / 2), 0, (83 - 78))
-if (true or false) and false then
-local _0x019f = {(215 + 215), (40 / 2), (1586 / 2)}
-table.insert(_0x019f, (804 - 14))
-end
-_0x015c._0x0078 = _0x004c._0x0052
-local _0x01a0 = {}
-for _0x0007 = 1, (146 + 147) do
-_0x01a0[_0x0007] = _0x0007 * 2
-end
-_0x015c._0x0088 = _0x004c._0x005d
-_0x015c._0x0090 = _0x003c._0x0090._0x0161
-local function _0x01a1()
-local _0x01a2 = (1082 / 2)
-for _0x0007 = 1, (28 - 18) do
-_0x01a2 = _0x01a2 + _0x0007
-end
-return _0x01a2
-end
-_0x015c._0x0093 = (6 + 6)
-local _0x01a3 = {}
-for _0x0007 = 1, (419 + 419) do
-_0x01a3[_0x0007] = _0x0007 * 2
-end
-_0x015c._0x008b = (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) .. _0x0030[_0x0143]._0x0064 .. (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)
-_0x015c._0x00e1 = false
-local _0x01a4 = (417 + 417)
-local _0x01a5 = (318 + 318)
-_0x015c._0x006f = _0x014d
-local _0x01a6 = (2912 / 4)
-_0x0061._0x0062((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), _0x015c)._0x007f = _0x0080._0x0062(0, (46 - 42))
-_0x015c._0x00f9:_0x00b8(function() _0x015c._0x0078 = _0x004f._0x0050((80 / 2), (60 - 20), (70 - 20)) end)
-_0x015c._0x00fb:_0x00b8(function() _0x015c._0x0078 = _0x004c._0x0052 end)
-for _0x01a7 = 1, (4 + 4) do
-_0x01a7 = _0x01a7 + (8 + 9)
-end
-local _0x016d = false
-local _0x01a8 = {}
-_0x01a8._0x0002 = (1812 / 3)
-_0x01a8._0x0003 = (1288 / 2)
-_0x015c._0x0101:_0x00b8(function()
-_0x016d = true; _0x015c._0x008b = (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end); _0x015c._0x0078 = _0x004c._0x0055; _0x015c._0x0088 = _0x004f._0x0050(0, 0, 0)
-if (5 == 5) and (10 / 2) + (81 - 76) == (44 / 4) then
-local _0x01a9 = (327 + 327)
-if (5 == 5) and _0x01a9 > (807 - 53) then
-_0x01a9 = math.abs(_0x01a9)
-elseif _0x01a9 < (2216 / 4) then
-_0x01a9 = 0
-end
-end
-end)
-local function _0x01aa(_0x01ab, _0x01ac)
-local _0x01ad = _0x01ab + _0x01ac
-_0x01ad = math.abs(_0x01ad)
-return _0x01ad
-end
-table.insert(_0x0030._0x0044, _0x001c._0x00b7:_0x00b8(function(_0x00b9)
-if (1 + 1 == 2) and not true then
-local _0x01ae = {(2091 / 3), (778 - 14), (671 - 55)}
-table.insert(_0x01ae, (972 / 4))
-end
-if (5 == 5) and _0x016d and _0x00b9._0x00ba == _0x003c._0x00ba._0x016f then
-local _0x01af = (3492 / 4)
-local _0x01b0 = (442 + 442)
-local _0x01b1 = (17 + 18)
-_0x0030[_0x0143] = _0x00b9._0x003d; _0x015c._0x008b = (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) .. _0x0030[_0x0143]._0x0064 .. (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)
-_0x015c._0x0078 = _0x004c._0x0052; _0x015c._0x0088 = _0x004c._0x005d; _0x016d = false
-end
-end))
-end
-local _0x01b7 = _0x00d6((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x010b(_0x01b7, (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x0049._0x01b8 = _0x0142(_0x01b7, (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x010b(_0x01b7, (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-if (5 == 5) and (5 + 5) < (2 + 3) then
-local _0x01b9 = {(585 / 3), (1068 / 2), (1161 / 3)}
-table.insert(_0x01b9, (367 + 367))
-end
-_0x011a(_0x01b7, (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x011a(_0x01b7, (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x010b(_0x01b7, (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x011a(_0x01b7, (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-local _0x01bb = _0x00d6((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-local function _0x01bc(_0x01bd)
-if (1 + 1 == 2) and _0x01bd > 0 then
-return _0x01bd * 2
-else
-return 0
-end
-end
-local function _0x01be(_0x01bf) _0x0021._0x01c0._0x01c1._0x01ba:_0x01c2({ [1] = { [(function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)] = _0x01bf } }) end
-do
-if (5 == 5) and _0x0009._0x000a or _0x0009._0x000b or _0x0009._0x000c then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-for _0x01c3 = 1, 3 do
-_0x01c3 = _0x01c3 % (50 + 50)
-end
-if (5 == 5) and type(print) ~= (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-end
-_0x010b(_0x01bb, (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x0178(_0x01bb, (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), function() _0x01be((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)) end)
-_0x0178(_0x01bb, (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), function() _0x01be((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)) end)
-_0x0178(_0x01bb, (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), function() _0x01be((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)) end)
-_0x0178(_0x01bb, (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), function() _0x01be((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)) end)
-local function _0x01c4(_0x01c5)
-local _0x01c6 = (723 - 39)
-local _0x01c7 = (1196 / 2)
-do
-if (5 == 5) and _0x0009._0x000a or _0x0009._0x000b or _0x0009._0x000c then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-local _0x01c8 = {(3188 / 4), (1676 / 2), (204 - 71)}
-table.insert(_0x01c8, (107 - 45))
-if (true or false) and type(print) ~= (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-end
-if (2 * 3 > 5) and 1 > 2 then
-local _0x01c9 = {}
-for _0x0007 = 1, (204 - 82) do
-_0x01c9[_0x0007] = _0x0007 * 2
-end
-end
-local _0x01ca = _0x0024._0x01cb
-local function _0x01cc(_0x01cd, _0x01ce)
-local _0x01cf = _0x01cd + _0x01ce
-_0x01cf = _0x01cf * 2
-return _0x01cf
-end
-local _0x01d0 = _0x01ca and _0x01ca:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-if (5 == 5) and not _0x01d0 then return end
-local _0x01d2 = (493 + 494)
-local _0x01d3 = _0x0026:_0x01d1(_0x01c5, true)
-local _0x01d4 = (273 + 274)
-local _0x01d5 = (269 + 269)
-local _0x01d6 = (2379 / 3)
-if (1 + 1 == 2) and _0x01d3 then
-local _0x01d7 = nil
-if (1 + 1 == 2) and _0x01d3:_0x01d8((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)) then
-local _0x01d9 = _0x01d3:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)) or _0x01d3._0x01da
-local function _0x01db(_0x01dc, _0x01dd)
-local _0x01de = _0x01dc + _0x01dd
-_0x01de = _0x01de * 2
-return _0x01de
-end
-if (2 * 3 > 5) and _0x01d9 then
-for _0x01df = 1, 1 do
-_0x01df = _0x01df + (508 / 2)
-end
-_0x01d7 = _0x01d9._0x01e0
-else
-local _0x01e1 = _0x01d3:_0x01e2((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-if (5 == 5) and _0x01e1 then _0x01d7 = _0x01e1._0x01e0 end
-local _0x01e3 = (768 - 89)
-local _0x01e4 = (76 - 66)
-end
-elseif _0x01d3:_0x01d8((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)) then
-_0x01d7 = _0x01d3._0x01e0
-end
-local _0x01e5 = {(184 + 185), (818 - 27), (10 + 10)}
-table.insert(_0x01e5, (254 - 27))
-if (true or false) and _0x01d7 then
-if (5 == 5) and not true then
-for _0x01e6 = 1, (14 / 2) do
-_0x01e6 = _0x01e6 + (1614 / 2)
-end
-end
-_0x01d0._0x01e0 = (_0x01d7 * _0x01e0._0x0062(0, 0, -(8 / 2))) + _0x01e7._0x0062(0, (2 + 2), 0)
-for _0x01e8 = 1, (4 + 5) do
-_0x01e8 = _0x01e8 * 2
-end
-end
-else
-local _0x01e9 = {(359 + 360), (166 - 20), (984 / 4)}
-table.insert(_0x01e9, (451 + 452))
-_0x01ea((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) .. _0x01c5 .. (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-end
-local _0x01eb = (1218 / 2)
-end
-_0x010b(_0x01bb, (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-for _0x01ec, _0x01c5 in ipairs({(function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)}) do
-_0x0178(_0x01bb, _0x01c5, function() _0x01c4(_0x01c5) end)
-end
-local _0x01ed = {}
-for _0x0007 = 1, (243 + 244) do
-_0x01ed[_0x0007] = _0x0007 * 2
-end
-local _0x01ef = _0x00d6((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-for _0x01f0 = 1, 3 do
-_0x01f0 = _0x01f0 - (1029 - 44)
-end
-_0x010b(_0x01ef, (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x0191(_0x01ef, (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-if (1 + 1 == 2) and 0 == 1 then
-for _0x01f1 = 1, 3 do
-_0x01f1 = math.abs(_0x01f1)
-end
-end
-_0x010b(_0x01ef, (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-_0x0178(_0x01ef, (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), function()
-local _0x01f2 = {}
-for _0x0007 = 1, (121 - 78) do
-_0x01f2[_0x0007] = _0x0007 * 2
-end
-for _0x01ec, _0x01f3 in pairs(_0x0030._0x0044) do _0x01f3:_0x01f4() end
-_0x0060:_0x002e()
-end)
-table.insert(_0x0030._0x0044, _0x001c._0x00b7:_0x00b8(function(_0x00b9, _0x01f8)
-if (1 + 1 == 2) and _0x01f8 then return end
-if (1 + 1 == 2) and (2 + 3) + (2 + 3) == (5 + 6) then
-for _0x01f9 = 1, 2 do
-_0x01f9 = _0x01f9 + (403 + 404)
-end
-end
-if (1 + 1 == 2) and _0x00b9._0x003d == _0x0030._0x0041 then
-_0x0030._0x0039 = not _0x0030._0x0039; _0x0072._0x00ea = _0x0030._0x0039; _0x009f._0x00a1 = _0x0030._0x0039
-elseif _0x00b9._0x003d == _0x0030._0x003b then
-local _0x01fa = {}
-_0x01fa._0x0002 = 2
-_0x01fa._0x0003 = (759 - 42)
-_0x0030._0x0033 = not _0x0030._0x0033; if (5 == 5) and _0x0049._0x01b8 then _0x0049._0x01b8() end
-end
-local _0x01fb = (448 - 80)
-local _0x01fc = (393 - 55)
-end))
-local _0x0203 = 0
-table.insert(_0x0030._0x0044, _0x0017._0x0204:_0x00b8(function(_0x0205)
-if (true or false) and not _0x0030._0x0033 or not _0x0024._0x01cb or not _0x0024._0x01cb:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)) then return end
-local _0x0206 = (2511 / 3)
-_0x0203 = _0x0203 + _0x0205
-local function _0x0207(_0x0208, _0x0209)
-local _0x020a = _0x0208 + _0x0209
-_0x020a = math.floor(_0x020a / 2)
-return _0x020a
-end
-if (1 + 1 == 2) and _0x0203 < 0.2 then return end
-local _0x020b = (645 - 72)
-local _0x020c = (957 - 90)
-_0x0203 = 0
-local _0x020d = {}
-_0x020d._0x0002 = (642 - 81)
-_0x020d._0x0003 = (187 - 49)
-local _0x01d0 = _0x0024._0x01cb._0x020e
-local function _0x020f()
-local _0x0210 = (861 - 16)
-for _0x0007 = 1, (5 + 5) do
-_0x0210 = _0x0210 + _0x0007
-end
-return _0x0210
-end
-local _0x0211 = _0x0026:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-local _0x0212 = (446 - 80)
-if (1 + 1 == 2) and _0x0211 and _0x0211:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)) then
-local _0x0213 = (192 / 2)
-local _0x0214 = (837 - 34)
-local _0x0215 = (1845 / 3)
-local _0x0216 = {}
-local _0x0217 = {}
-_0x0217._0x0002 = (367 + 368)
-_0x0217._0x0003 = (229 + 230)
-for _0x01ec, _0x0218 in pairs(_0x0211._0x007c:_0x0219()) do
-local function _0x021a(_0x021b, _0x021c)
-local _0x021d = _0x021b + _0x021c
-_0x021d = _0x021d + (120 - 68)
-return _0x021d
-end
-local _0x021e = _0x0218:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)) or _0x0218:_0x01e2((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-local _0x021f = _0x0218:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)) or _0x0218._0x01da
-local _0x0220 = {}
-_0x0220._0x0002 = (66 + 66)
-_0x0220._0x0003 = (377 - 86)
-if (5 == 5) and _0x021e and _0x021f and _0x021e._0x0221 > 0 and (_0x021f._0x0076 - _0x01d0._0x0076)._0x0222 <= _0x0030._0x0043 then
-local _0x0223, _0x0224 = _0x0025:_0x0225(_0x021f._0x0076)
-if (5 == 5) and _0x0224 then
-local _0x0226 = _0x0218:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-local _0x0227 = _0x0226 and _0x0226:_0x01d8((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)) and _0x0226._0x0228 or _0x0218:_0x0229((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-if (5 == 5) and _0x0227 then table.insert(_0x0216, _0x0227) end
-end
-local _0x022a = {}
-for _0x0007 = 1, (2217 / 3) do
-_0x022a[_0x0007] = _0x0007 * 2
-end
-end
-if (true or false) and nil and true then
-local _0x022b = {}
-_0x022b._0x0002 = (2304 / 4)
-_0x022b._0x0003 = (471 + 471)
-end
-end
-if (5 == 5) and #_0x0216 > 0 then _0x0021._0x01c0._0x022c._0x022d:_0x01c2(_0x0216) end
-end
-end))
-local _0x022e = {}
-_0x022e._0x0002 = (258 + 259)
-_0x022e._0x0003 = (718 - 19)
-local _0x0232 = false
-local function _0x0233(_0x0234)
-if (2 * 3 > 5) and _0x0234 > 0 then
-return _0x0234 * 2
-else
-return 0
-end
-end
-local function _0x0235(_0x01ca)
-do
-if (1 + 1 == 2) and _0x0009._0x000a or _0x0009._0x000b or _0x0009._0x000c then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-if (5 == 5) and type(print) ~= (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) then error((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), 0) end
-local function _0x0236(_0x0237)
-if (1 + 1 == 2) and _0x0237 > 0 then
-return _0x0237 * 2
-else
-return 0
-end
-end
-end
-local _0x0238 = _0x01ca:_0x0239((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), (20 / 4))
-if (1 + 1 == 2) and nil and true then
-local _0x023a = (361 + 361)
-if (5 == 5) and _0x023a > (411 + 411) then
-_0x023a = _0x023a % (50 + 50)
-elseif _0x023a < (703 - 81) then
-_0x023a = 0
-end
-end
-if (2 * 3 > 5) and _0x0238 then
-_0x0238._0x023b:_0x00b8(function()
-local _0x023c = (161 + 161)
-if (1 + 1 == 2) and not _0x0030._0x0034 or _0x0232 then return end
-for _0x023d = 1, (3 + 3) do
-_0x023d = math.floor(_0x023d / 2)
-end
-_0x0232 = true
-if (1 + 1 == 2) and nil and true then
-for _0x023e = 1, (4 + 5) do
-_0x023e = math.abs(_0x023e)
-end
-end
-_0x023f._0x0240(function()
-_0x023f._0x0241((19 - 14)); _0x0021._0x01c0._0x022c._0x0242:_0x01c2()
-_0x023f._0x0241(1); _0x001e:_0x0243(true, _0x003c._0x003d._0x0244, false, _0x0015)
-_0x023f._0x0241(0.05); _0x001e:_0x0243(false, _0x003c._0x003d._0x0244, false, _0x0015)
-_0x023f._0x0241(2); _0x0232 = false
-local _0x0245 = (20 + 20)
-local _0x0246 = (141 - 68)
-end)
-if (5 == 5) and (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) == (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) then
-local _0x0247 = (163 - 95)
-if (5 == 5) and _0x0247 > (672 / 4) then
-_0x0247 = math.floor(_0x0247 / 2)
-elseif _0x0247 < -(58 - 26) then
-_0x0247 = 0
-end
-end
-end)
-end
-end
-if (1 + 1 == 2) and _0x0024._0x01cb then _0x0235(_0x0024._0x01cb) end
-for _0x0248 = 1, (106 - 96) do
-_0x0248 = _0x0248 - (1864 / 2)
-end
-table.insert(_0x0030._0x0044, _0x0024._0x0249:_0x00b8(_0x0235))
-local _0x024a = (784 / 4)
-_0x023f._0x0240(function()
-while (1 * 1 >= 0) and _0x023f._0x0241(0.5) do
-if (5 == 5) and _0x0030._0x0035 then
-local char = _0x0024._0x01cb
-local _0x01d0 = char and char:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-if (1 + 1 == 2) and _0x01d0 then
-local function _0x024f()
-local _0x0250 = (113 - 35)
-for _0x0007 = 1, (5 + 5) do
-_0x0250 = _0x0250 + _0x0007
-end
-return _0x0250
-end
-local _0x0251 = _0x0026:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-if (5 == 5) and _0x0251 then
-local _0x0252 = _0x0251:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-if (5 == 5) and false then
-local _0x0253 = (548 / 4)
-if (1 + 1 == 2) and _0x0253 > (474 / 2) then
-_0x0253 = math.abs(_0x0253)
-elseif _0x0253 < (18 + 19) then
-_0x0253 = 0
-end
-end
-if (true or false) and _0x0252 then
-local _0x0254 = {}
-for _0x0007 = 1, (63 / 3) do
-_0x0254[_0x0007] = _0x0007 * 2
-end
-local _0x0255 = _0x0252:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-if (5 == 5) and 1 > 2 then
-local _0x0256 = {(416 - 75), (2716 / 4), (303 + 304)}
-table.insert(_0x0256, (1864 / 2))
-end
-if (1 + 1 == 2) and _0x0255 then
-for _0x01ec, _0x0257 in pairs(_0x0255:_0x0219()) do
-local _0x0258 = (151 + 151)
-local _0x0259 = (614 - 85)
-if (5 == 5) and not _0x0030._0x0035 then break end
-if (1 + 1 == 2) and _0x0257._0x0064:match((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)) then
-local _0x025a = (466 + 467)
-local _0x025b = _0x0257:_0x01d8((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)) and (_0x0257._0x01da or _0x0257:_0x01e2((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))) or (_0x0257:_0x01d8((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)) and _0x0257 or nil)
-local _0x025c = (371 + 372)
-local _0x025d = (153 + 153)
-local _0x025e = (385 - 48)
-if (1 + 1 == 2) and _0x025b then
-local _0x025f = {}
-for _0x0007 = 1, (237 + 238) do
-_0x025f[_0x0007] = _0x0007 * 2
-end
-_0x01d0._0x01e0 = (_0x025b._0x01e0 * _0x01e0._0x0062(0, 0, 3)) + _0x01e7._0x0062(0, (15 / 3), 0)
-_0x023f._0x0241(1)
-local _0x0260 = {}
-_0x0260._0x0002 = (478 - 19)
-_0x0260._0x0003 = (564 - 81)
-if (1 + 1 == 2) and _0x0030._0x0035 then
-_0x001e:_0x0243(true, _0x003c._0x003d._0x003e, false, _0x0015)
-_0x023f._0x0241(1)
-_0x001e:_0x0243(false, _0x003c._0x003d._0x003e, false, _0x0015)
-_0x023f._0x0241((520 / 100))
-end
-local _0x0261 = {(324 + 325), (2360 / 4), (380 / 2)}
-table.insert(_0x0261, (597 - 29))
-local _0x0262 = _0x0026:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-local _0x0263 = {}
-_0x0263._0x0002 = (309 - 42)
-_0x0263._0x0003 = (1007 - 84)
-if (5 == 5) and _0x0262 and _0x0030._0x0035 then
-if (1 + 1 == 2) and nil and true then
-for _0x0264 = 1, (4 + 4) do
-_0x0264 = _0x0264 + (299 + 299)
-end
-end
-for _0x01ec, _0x0265 in pairs(_0x0262:_0x0219()) do
-if (1 + 1 == 2) and _0x0265._0x0064:match((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)) and (_0x0265:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), true) or _0x0265:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), true)) then
-local _0x0266 = _0x0265:_0x01e2((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), true)
-for _0x0267 = 1, (63 - 59) do
-_0x0267 = _0x0267 + (1488 / 4)
-end
-if (2 * 3 > 5) and _0x0266 and (_0x0266._0x0076 - _0x025b._0x0076)._0x0222 <= (120 / 4) then
-local _0x0268 = {}
-_0x0268._0x0002 = (1872 / 2)
-_0x0268._0x0003 = (1580 / 4)
-_0x01d0._0x01e0 = _0x0266._0x01e0 + _0x01e7._0x0062(0, 3, 0)
-_0x023f._0x0241(0.5)
-for _0x0269 = 1, (16 / 4) do
-_0x0269 = _0x0269 % (50 + 50)
-end
-_0x0021._0x01c0._0x026a._0x026b:_0x01c2({
-local function _0x026c(_0x026d, _0x026e)
-local _0x026f = _0x026d + _0x026e
-_0x026f = _0x026f + (413 - 89)
-return _0x026f
-end
-[(function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)] = _0x0265._0x0064
+
+-- Header
+local TopBar = Instance.new("Frame")
+TopBar.Name = "TopBar"
+TopBar.Size = UDim2.new(1, 0, 0, 50)
+TopBar.BackgroundColor3 = Theme.TopBarBg
+TopBar.BorderSizePixel = 0
+TopBar.ZIndex = 2
+TopBar.Parent = MainFrame
+
+local headerGradient = Instance.new("UIGradient")
+headerGradient.Rotation = 90
+headerGradient.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(19, 22, 27)),
+    ColorSequenceKeypoint.new(1, Theme.TopBarBg)
 })
-_0x023f._0x0241(0.5)
-end
-local function _0x0270(_0x0271)
-if (1 + 1 == 2) and _0x0271 > 0 then
-return _0x0271 * 2
-else
-return 0
-end
-end
-end
-if (true or false) and false then
-local _0x0272 = (399 - 54)
-if (5 == 5) and _0x0272 > (890 / 2) then
-_0x0272 = _0x0272 * 2
-elseif _0x0272 < (122 + 123) then
-_0x0272 = 0
-end
-end
-end
-end
-local _0x0273 = (440 / 4)
-local _0x0274 = (790 - 82)
-local _0x0275 = (367 - 30)
-end
-local _0x0276 = {(1048 - 81), (100 + 101), (1316 / 4)}
-table.insert(_0x0276, (96 / 3))
-end
-end
-local _0x0277 = {}
-_0x0277._0x0002 = (550 - 62)
-_0x0277._0x0003 = (232 + 232)
-end
-end
-end
-local _0x0278 = (893 - 37)
-local _0x0279 = (957 / 3)
-local _0x027a = (738 / 3)
-end
-end
-local _0x027b = {}
-_0x027b._0x0002 = (233 - 38)
-_0x027b._0x0003 = (655 - 14)
-end
+headerGradient.Parent = TopBar
+
+local BrandIcon = Instance.new("TextLabel")
+BrandIcon.Size = UDim2.new(0, 28, 0, 28)
+BrandIcon.Position = UDim2.new(0, 16, 0.5, -14)
+BrandIcon.BackgroundColor3 = Theme.AccentGreen
+BrandIcon.TextColor3 = Color3.fromRGB(4, 12, 9)
+BrandIcon.Font = Enum.Font.GothamBold
+BrandIcon.TextSize = 36
+BrandIcon.Text = "S"
+BrandIcon.ZIndex = 3
+BrandIcon.Parent = TopBar
+Instance.new("UICorner", BrandIcon).CornerRadius = UDim.new(0, 8)
+
+local TitleText = Instance.new("TextLabel")
+TitleText.Size = UDim2.new(0, 220, 0, 20)
+TitleText.Position = UDim2.new(0, 52, 0, 10)
+TitleText.BackgroundTransparency = 1
+TitleText.TextColor3 = Theme.TextMain
+TitleText.Text = "SEOUL HUB"
+TitleText.Font = Enum.Font.GothamBold
+TitleText.TextSize = 15
+TitleText.TextXAlignment = Enum.TextXAlignment.Left
+TitleText.ZIndex = 3
+TitleText.Parent = TopBar
+
+local VersionText = Instance.new("TextLabel")
+VersionText.Size = UDim2.new(0, 100, 0, 16)
+VersionText.Position = UDim2.new(0, 52, 0, 27)
+VersionText.BackgroundTransparency = 1
+VersionText.TextColor3 = Theme.TextMuted
+VersionText.Text = "THE PORTAL  •  v1.0"
+VersionText.Font = Enum.Font.Gotham
+VersionText.TextSize = 10
+VersionText.TextXAlignment = Enum.TextXAlignment.Left
+VersionText.ZIndex = 3
+VersionText.Parent = TopBar
+
+local StatusBadge = Instance.new("Frame")
+StatusBadge.Size = UDim2.new(0, 104, 0, 26)
+StatusBadge.Position = UDim2.new(1, -150, 0.5, -13)
+StatusBadge.BackgroundColor3 = Color3.fromRGB(22, 44, 36)
+StatusBadge.BorderSizePixel = 0
+StatusBadge.ZIndex = 3
+StatusBadge.Parent = TopBar
+Instance.new("UICorner", StatusBadge).CornerRadius = UDim.new(0, 8)
+local statusStroke = Instance.new("UIStroke")
+statusStroke.Color = Theme.AccentGreen
+statusStroke.Transparency = 0.72
+statusStroke.Thickness = 1
+statusStroke.Parent = StatusBadge
+
+local StatusDot = Instance.new("Frame")
+StatusDot.Size = UDim2.new(0, 7, 0, 7)
+StatusDot.Position = UDim2.new(0, 11, 0.5, -3)
+StatusDot.BackgroundColor3 = Color3.fromRGB(46, 204, 113)
+StatusDot.BorderSizePixel = 0
+StatusDot.Parent = StatusBadge
+Instance.new("UICorner", StatusDot).CornerRadius = UDim.new(1, 0)
+
+local StatusText = Instance.new("TextLabel")
+StatusText.Size = UDim2.new(1, -26, 1, 0)
+StatusText.Position = UDim2.new(0, 24, 0, 0)
+StatusText.BackgroundTransparency = 1
+StatusText.TextColor3 = Theme.TextMain
+StatusText.Text = "ONLINE"
+StatusText.Font = Enum.Font.GothamBold
+StatusText.TextSize = 10
+StatusText.TextXAlignment = Enum.TextXAlignment.Left
+StatusText.Parent = StatusBadge
+
+local MinimizeButton = Instance.new("TextButton")
+MinimizeButton.Size = UDim2.new(0, 32, 0, 32)
+MinimizeButton.Position = UDim2.new(1, -40, 0.5, -16)
+MinimizeButton.BackgroundColor3 = Theme.CardBg
+MinimizeButton.TextColor3 = Theme.TextDim
+MinimizeButton.Text = "—"
+MinimizeButton.Font = Enum.Font.GothamBold
+MinimizeButton.TextSize = 16
+MinimizeButton.AutoButtonColor = false
+MinimizeButton.ZIndex = 3
+MinimizeButton.Parent = TopBar
+Instance.new("UICorner", MinimizeButton).CornerRadius = UDim.new(0, 8)
+MinimizeButton.MouseEnter:Connect(function() tween(MinimizeButton, FastTween, {BackgroundColor3 = Theme.CardHover, TextColor3 = Theme.TextMain}) end)
+MinimizeButton.MouseLeave:Connect(function() tween(MinimizeButton, FastTween, {BackgroundColor3 = Theme.CardBg, TextColor3 = Theme.TextDim}) end)
+MinimizeButton.MouseButton1Click:Connect(function()
+    ToggleMenu()
 end)
-_0x023f._0x0240(function()
-local _0x027e = {
-[(function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)] = (2 + 3.2),
-if (2 * 3 > 5) and (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) == (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) then
-local _0x027f = (445 + 446)
-if (1 + 1 == 2) and _0x027f > (495 + 496) then
-_0x027f = _0x027f * 2
-elseif _0x027f < (2373 / 3) then
-_0x027f = 0
+
+local TopLine = Instance.new("Frame")
+TopLine.Size = UDim2.new(1, 0, 0, 1)
+TopLine.Position = UDim2.new(0, 0, 1, -1)
+TopLine.BackgroundColor3 = Theme.Border
+TopLine.BorderSizePixel = 0
+TopLine.ZIndex = 4
+TopLine.Parent = TopBar
+
+-- Sidebar
+local Sidebar = Instance.new("Frame")
+Sidebar.Size = UDim2.new(0, 176, 1, -50)
+Sidebar.Position = UDim2.new(0, 0, 0, 50)
+Sidebar.BackgroundColor3 = Theme.SidebarBg
+Sidebar.BorderSizePixel = 0
+Sidebar.ZIndex = 2
+Sidebar.Parent = MainFrame
+
+local SidebarPadding = Instance.new("UIPadding")
+SidebarPadding.PaddingTop = UDim.new(0, 10) 
+SidebarPadding.PaddingLeft = UDim.new(0, 12)
+SidebarPadding.PaddingRight = UDim.new(0, 12)
+SidebarPadding.PaddingBottom = UDim.new(0, 12)
+SidebarPadding.Parent = Sidebar
+
+local TabList = Instance.new("Frame")
+TabList.Size = UDim2.new(1, 0, 1, -80)
+TabList.Position = UDim2.new(0, 0, 0, 0) 
+TabList.BackgroundTransparency = 1
+TabList.Parent = Sidebar
+
+local TabListLayout = Instance.new("UIListLayout")
+TabListLayout.Padding = UDim.new(0, 6)
+TabListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+TabListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+TabListLayout.Parent = TabList
+
+local SidebarDivider = Instance.new("Frame")
+SidebarDivider.Size = UDim2.new(1, 0, 0, 1)
+SidebarDivider.Position = UDim2.new(0, 0, 1, -58)
+SidebarDivider.BackgroundColor3 = Theme.Border
+SidebarDivider.BackgroundTransparency = 0.65
+SidebarDivider.BorderSizePixel = 0
+SidebarDivider.Parent = Sidebar
+
+local SidebarStatus = Instance.new("TextLabel")
+SidebarStatus.Size = UDim2.new(1, 0, 0, 18)
+SidebarStatus.Position = UDim2.new(0, 0, 1, -45)
+SidebarStatus.BackgroundTransparency = 1
+SidebarStatus.Text = "●  Connected"
+SidebarStatus.TextColor3 = Color3.fromRGB(46, 204, 113) 
+SidebarStatus.Font = Enum.Font.GothamMedium
+SidebarStatus.TextSize = 10
+SidebarStatus.TextXAlignment = Enum.TextXAlignment.Left
+SidebarStatus.Parent = Sidebar
+
+local SidebarHint = Instance.new("TextLabel")
+SidebarHint.Size = UDim2.new(1, 0, 0, 16)
+SidebarHint.Position = UDim2.new(0, 0, 1, -26)
+SidebarHint.BackgroundTransparency = 1
+SidebarHint.Text = "CAPS  •  Hide / Show"
+SidebarHint.TextColor3 = Theme.TextMuted
+SidebarHint.Font = Enum.Font.Gotham
+SidebarHint.TextSize = 9
+SidebarHint.TextXAlignment = Enum.TextXAlignment.Left
+SidebarHint.Parent = Sidebar
+
+-- Content Area
+local ContentArea = Instance.new("Frame")
+ContentArea.Size = UDim2.new(1, -176, 1, -50)
+ContentArea.Position = UDim2.new(0, 176, 0, 50)
+ContentArea.BackgroundColor3 = Theme.MainBg
+ContentArea.BorderSizePixel = 0
+ContentArea.Parent = MainFrame
+
+local ContentPadding = Instance.new("UIPadding")
+ContentPadding.PaddingTop = UDim.new(0, 18)
+ContentPadding.PaddingBottom = UDim.new(0, 16)
+ContentPadding.PaddingLeft = UDim.new(0, 18)
+ContentPadding.PaddingRight = UDim.new(0, 18)
+ContentPadding.Parent = ContentArea
+
+-- Dragging Logic for Main Window
+local dragging, dragStart, startPos
+TopBar.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        dragging = true
+        dragStart = input.Position
+        startPos = MainFrame.Position
+        tween(Shadow, FastTween, {BackgroundTransparency = 0.62})
+    end
+end)
+TopBar.InputEnded:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        dragging = false
+        tween(Shadow, FastTween, {BackgroundTransparency = 0.72})
+    end
+end)
+UserInputService.InputChanged:Connect(function(input)
+    if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
+        local delta = input.Position - dragStart
+        MainFrame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+    end
+end)
+
+-- [[ UI COMPONENT BUILDERS ]]
+local Tabs, TabButtons, TabMarkers, TabIcons, TabLabels = {}, {}, {}, {}, {}
+
+local function addStroke(parent, transparency)
+    local stroke = Instance.new("UIStroke")
+    stroke.Color = Theme.Border
+    stroke.Transparency = transparency or 0.42
+    stroke.Thickness = 1
+    stroke.Parent = parent
+    return stroke
 end
+
+local function createTab(name, icon)
+    icon = icon or "•"
+    local btn = Instance.new("TextButton")
+    btn.Size = UDim2.new(1, 0, 0, 42)
+    btn.BackgroundColor3 = Theme.SidebarBg
+    btn.Text = ""
+    btn.AutoButtonColor = false
+    btn.Parent = TabList
+    Instance.new("UICorner", btn).CornerRadius = UDim.new(0, 9)
+
+    local iconLabel = Instance.new("TextLabel")
+    iconLabel.Size = UDim2.new(0, 26, 1, 0)
+    iconLabel.Position = UDim2.new(0, 10, 0, 0)
+    iconLabel.BackgroundTransparency = 1
+    iconLabel.Text = icon
+    iconLabel.TextColor3 = Theme.TextDim
+    iconLabel.Font = Enum.Font.GothamBold
+    iconLabel.TextSize = 18
+    iconLabel.Parent = btn
+
+    local label = Instance.new("TextLabel")
+    label.Size = UDim2.new(1, -48, 1, 0)
+    label.Position = UDim2.new(0, 40, 0, 0)
+    label.BackgroundTransparency = 1
+    label.Text = name
+    label.TextColor3 = Theme.TextDim
+    label.Font = Enum.Font.GothamMedium
+    label.TextSize = 12
+    label.TextXAlignment = Enum.TextXAlignment.Left
+    label.Parent = btn
+
+    local marker = Instance.new("Frame")
+    marker.Size = UDim2.new(0, 3, 0, 18)
+    marker.Position = UDim2.new(0, 0, 0.5, -9)
+    marker.BackgroundColor3 = Theme.AccentGreen
+    marker.BorderSizePixel = 0
+    marker.Visible = false
+    marker.Parent = btn
+    Instance.new("UICorner", marker).CornerRadius = UDim.new(1, 0)
+
+    local page = Instance.new("ScrollingFrame")
+    page.Size = UDim2.new(1, 0, 1, 0)
+    page.BackgroundTransparency = 1
+    page.BorderSizePixel = 0
+    page.ScrollBarThickness = 3
+    page.ScrollBarImageColor3 = Color3.fromRGB(70, 77, 87)
+    page.ScrollBarImageTransparency = 0.2
+    page.Visible = false
+    page.CanvasSize = UDim2.new(0, 0, 0, 0)
+    page.Parent = ContentArea
+
+    local pageLayout = Instance.new("UIListLayout")
+    pageLayout.Padding = UDim.new(0, 10)
+    pageLayout.SortOrder = Enum.SortOrder.LayoutOrder
+    pageLayout.Parent = page
+
+    local pagePadding = Instance.new("UIPadding")
+    pagePadding.PaddingBottom = UDim.new(0, 12)
+    pagePadding.Parent = page
+
+    pageLayout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+        page.CanvasSize = UDim2.new(0, 0, 0, pageLayout.AbsoluteContentSize.Y + 14)
+    end)
+
+    local function setButtonSelected(selected)
+        if selected then
+            tween(btn, FastTween, {BackgroundColor3 = Theme.CardBg})
+            tween(label, FastTween, {TextColor3 = Theme.TextMain})
+            tween(iconLabel, FastTween, {TextColor3 = Theme.AccentGreen})
+            marker.Visible = true
+        end
+    end
+
+    btn.MouseEnter:Connect(function()
+        if State.CurrentTab ~= name then
+            tween(btn, FastTween, {BackgroundColor3 = Color3.fromRGB(17, 20, 24)})
+            tween(iconLabel, FastTween, {TextColor3 = Theme.TextMain})
+        end
+    end)
+    btn.MouseLeave:Connect(function()
+        if State.CurrentTab ~= name then
+            tween(btn, FastTween, {BackgroundColor3 = Theme.SidebarBg})
+            tween(iconLabel, FastTween, {TextColor3 = Theme.TextDim})
+        end
+    end)
+
+    local function switchTab()
+        if State.CurrentTab and State.CurrentTab ~= name then
+            local oldPage = Tabs[State.CurrentTab]
+            if oldPage then oldPage.Visible = false end
+            
+            if TabButtons[State.CurrentTab] then tween(TabButtons[State.CurrentTab], FastTween, {BackgroundColor3 = Theme.SidebarBg}) end
+            if TabLabels[State.CurrentTab] then tween(TabLabels[State.CurrentTab], FastTween, {TextColor3 = Theme.TextDim}) end
+            if TabIcons[State.CurrentTab] then tween(TabIcons[State.CurrentTab], FastTween, {TextColor3 = Theme.TextDim}) end
+            if TabMarkers[State.CurrentTab] then TabMarkers[State.CurrentTab].Visible = false end
+        end
+
+        State.CurrentTab = name
+        page.Visible = true
+        setButtonSelected(true)
+        page.Position = UDim2.new(0, 8, 0, 0)
+        page.CanvasPosition = Vector2.new(0, 0)
+        tween(page, SlowTween, {Position = UDim2.new(0, 0, 0, 0)})
+    end
+
+    btn.MouseButton1Click:Connect(function()
+        tween(btn, PressTween, {Size = UDim2.new(1, -3, 0, 40)})
+        task.delay(0.08, function() tween(btn, PressTween, {Size = UDim2.new(1, 0, 0, 42)}) end)
+        switchTab()
+    end)
+
+    Tabs[name] = page
+    TabButtons[name] = btn
+    TabMarkers[name] = marker
+    TabIcons[name] = iconLabel
+    TabLabels[name] = label
+
+    if not State.CurrentTab then switchTab() end
+    return page
 end
-[(function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)] = (5 + 5.199999999999999),
-[(function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)] = (152 / 10),
-[(function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)] = (60.599999999999994 / 3)
+
+local function createPageHeader(parent, title, subtitle)
+    local wrap = Instance.new("Frame")
+    wrap.Size = UDim2.new(1, -2, 0, 54)
+    wrap.BackgroundTransparency = 1
+    wrap.Parent = parent
+
+    local titleLabel = Instance.new("TextLabel")
+    titleLabel.Size = UDim2.new(1, 0, 0, 26)
+    titleLabel.BackgroundTransparency = 1
+    titleLabel.Text = title
+    titleLabel.TextColor3 = Theme.TextMain
+    titleLabel.Font = Enum.Font.GothamBold
+    titleLabel.TextSize = 20
+    titleLabel.TextXAlignment = Enum.TextXAlignment.Left
+    titleLabel.Parent = wrap
+
+    local subLabel = Instance.new("TextLabel")
+    subLabel.Size = UDim2.new(1, 0, 0, 20)
+    subLabel.Position = UDim2.new(0, 0, 0, 27)
+    subLabel.BackgroundTransparency = 1
+    subLabel.Text = subtitle
+    subLabel.TextColor3 = Theme.TextMuted
+    subLabel.Font = Enum.Font.Gotham
+    subLabel.TextSize = 10
+    subLabel.TextXAlignment = Enum.TextXAlignment.Left
+    subLabel.Parent = wrap
+    return wrap
+end
+
+local function createSection(parent, text)
+    local wrap = Instance.new("Frame")
+    wrap.Size = UDim2.new(1, -2, 0, 23)
+    wrap.BackgroundTransparency = 1
+    wrap.Parent = parent
+
+    local label = Instance.new("TextLabel")
+    label.Size = UDim2.new(0, 100, 1, 0)
+    label.BackgroundTransparency = 1
+    label.Text = text:upper()
+    label.TextColor3 = Theme.TextMuted
+    label.Font = Enum.Font.GothamBold
+    label.TextSize = 9
+    label.TextXAlignment = Enum.TextXAlignment.Left
+    label.Parent = wrap
+
+    local line = Instance.new("Frame")
+    line.Size = UDim2.new(1, -112, 0, 1)
+    line.Position = UDim2.new(0, 112, 0.5, 0)
+    line.BackgroundColor3 = Theme.Border
+    line.BackgroundTransparency = 0.55
+    line.BorderSizePixel = 0
+    line.Parent = wrap
+end
+
+local function createSwitch(parent)
+    local track = Instance.new("Frame")
+    track.Size = UDim2.new(0, 40, 0, 22)
+    track.Position = UDim2.new(1, -50, 0.5, -11)
+    track.BackgroundColor3 = Theme.Off
+    track.BorderSizePixel = 0
+    track.Parent = parent
+    Instance.new("UICorner", track).CornerRadius = UDim.new(1, 0)
+
+    local knob = Instance.new("Frame")
+    knob.Size = UDim2.new(0, 16, 0, 16)
+    knob.Position = UDim2.new(0, 3, 0.5, -8)
+    knob.BackgroundColor3 = Theme.TextMain
+    knob.BorderSizePixel = 0
+    knob.Parent = track
+    Instance.new("UICorner", knob).CornerRadius = UDim.new(1, 0)
+    return track, knob
+end
+
+local function createFeatureCard(parent, name, description, stateKey, bindKey)
+    local card = Instance.new("Frame")
+    card.Size = UDim2.new(1, -2, 0, bindKey and 66 or 60)
+    card.BackgroundColor3 = Theme.CardBg
+    card.BorderSizePixel = 0
+    card.Parent = parent
+    Instance.new("UICorner", card).CornerRadius = UDim.new(0, 10)
+    local stroke = addStroke(card, 0.55)
+
+    local icon = Instance.new("TextLabel")
+    icon.Size = UDim2.new(0, 34, 0, 34)
+    icon.Position = UDim2.new(0, 12, 0, 13)
+    icon.BackgroundColor3 = Color3.fromRGB(28, 33, 39)
+    icon.Text = "•"
+    icon.TextColor3 = Theme.AccentGreen
+    icon.Font = Enum.Font.GothamBold
+    icon.TextSize = 14
+    icon.Parent = card
+    Instance.new("UICorner", icon).CornerRadius = UDim.new(0, 9)
+
+    local title = Instance.new("TextLabel")
+    title.Size = UDim2.new(1, -150, 0, 20)
+    title.Position = UDim2.new(0, 57, 0, 10)
+    title.BackgroundTransparency = 1
+    title.Text = name
+    title.TextColor3 = Theme.TextMain
+    title.Font = Enum.Font.GothamMedium
+    title.TextSize = 12
+    title.TextXAlignment = Enum.TextXAlignment.Left
+    title.Parent = card
+
+    local desc = Instance.new("TextLabel")
+    desc.Size = UDim2.new(1, -165, 0, 24)
+    desc.Position = UDim2.new(0, 57, 0, 29)
+    desc.BackgroundTransparency = 1
+    desc.Text = description
+    desc.TextColor3 = Theme.TextMuted
+    desc.Font = Enum.Font.Gotham
+    desc.TextSize = 9
+    desc.TextWrapped = true
+    desc.TextXAlignment = Enum.TextXAlignment.Left
+    desc.Parent = card
+
+    local track, knob = createSwitch(card)
+    local keyButton
+    if bindKey then
+        keyButton = Instance.new("TextButton")
+        keyButton.Size = UDim2.new(0, 64, 0, 32)
+        keyButton.Position = UDim2.new(1, -130, 0.5, -11)
+        keyButton.BackgroundColor3 = Theme.SidebarBg
+        keyButton.TextColor3 = Theme.TextDim
+        keyButton.Font = Enum.Font.GothamMedium
+        keyButton.TextSize = 12
+        keyButton.Text = "[" .. State[bindKey].Name .. "]"
+        keyButton.AutoButtonColor = false
+        keyButton.Parent = card
+        Instance.new("UICorner", keyButton).CornerRadius = UDim.new(0, 7)
+        addStroke(keyButton, 0.7)
+    end
+
+    local function updateVisuals()
+        local enabled = State[stateKey]
+        tween(track, FastTween, {BackgroundColor3 = enabled and Theme.AccentGreenDark or Theme.Off})
+        tween(knob, FastTween, {Position = enabled and UDim2.new(1, -19, 0.5, -8) or UDim2.new(0, 3, 0.5, -8)})
+        tween(stroke, FastTween, {Color = enabled and Theme.AccentGreen or Theme.Border, Transparency = enabled and 0.5 or 0.55})
+    end
+
+    local clickTarget = Instance.new("TextButton")
+    clickTarget.Size = UDim2.new(1, 0, 1, 0)
+    clickTarget.BackgroundTransparency = 1
+    clickTarget.Text = ""
+    clickTarget.AutoButtonColor = false
+    clickTarget.ZIndex = 5
+    clickTarget.Parent = card
+    clickTarget.MouseEnter:Connect(function() tween(card, FastTween, {BackgroundColor3 = Theme.CardHover}) end)
+    clickTarget.MouseLeave:Connect(function() tween(card, FastTween, {BackgroundColor3 = Theme.CardBg}) end)
+    clickTarget.MouseButton1Click:Connect(function()
+        State[stateKey] = not State[stateKey]
+        updateVisuals()
+        tween(card, PressTween, {Size = UDim2.new(1, -5, 0, bindKey and 63 or 57)})
+        task.delay(0.08, function() tween(card, PressTween, {Size = UDim2.new(1, -2, 0, bindKey and 66 or 60)}) end)
+    end)
+
+    if keyButton then
+        keyButton.ZIndex = 6
+        local changing = false
+        keyButton.MouseEnter:Connect(function() tween(keyButton, FastTween, {BackgroundColor3 = Theme.CardHover, TextColor3 = Theme.TextMain}) end)
+        keyButton.MouseLeave:Connect(function() if not changing then tween(keyButton, FastTween, {BackgroundColor3 = Theme.SidebarBg, TextColor3 = Theme.TextDim}) end end)
+        keyButton.MouseButton1Click:Connect(function()
+            changing = true
+            keyButton.Text = "[...]"
+            tween(keyButton, FastTween, {BackgroundColor3 = Theme.AccentGreen, TextColor3 = Color3.fromRGB(4, 12, 9)})
+        end)
+        table.insert(State.Connections, UserInputService.InputBegan:Connect(function(input)
+            if changing and input.UserInputType == Enum.UserInputType.Keyboard then
+                State[bindKey] = input.KeyCode
+                keyButton.Text = "[" .. State[bindKey].Name .. "]"
+                changing = false
+                tween(keyButton, FastTween, {BackgroundColor3 = Theme.SidebarBg, TextColor3 = Theme.TextDim})
+            end
+        end))
+    end
+
+    updateVisuals()
+    return updateVisuals
+end
+
+-- NEW CHECKBOX COMPONENT
+local function createCheckbox(parent, name, stateKey, description)
+    local card = Instance.new("Frame")
+    card.Size = UDim2.new(1, -2, 0, 60)
+    card.BackgroundColor3 = Theme.CardBg
+    card.BorderSizePixel = 0
+    card.Parent = parent
+    Instance.new("UICorner", card).CornerRadius = UDim.new(0, 10)
+    local stroke = addStroke(card, 0.55)
+
+    local icon = Instance.new("TextLabel")
+    icon.Size = UDim2.new(0, 34, 0, 34)
+    icon.Position = UDim2.new(0, 12, 0, 13)
+    icon.BackgroundColor3 = Color3.fromRGB(28, 33, 39)
+    icon.Text = "•"
+    icon.TextColor3 = Theme.AccentGreen
+    icon.Font = Enum.Font.GothamBold
+    icon.TextSize = 14
+    icon.Parent = card
+    Instance.new("UICorner", icon).CornerRadius = UDim.new(0, 9)
+
+    local title = Instance.new("TextLabel")
+    title.Size = UDim2.new(1, -150, 0, 20)
+    title.Position = UDim2.new(0, 57, 0, 10)
+    title.BackgroundTransparency = 1
+    title.Text = name
+    title.TextColor3 = Theme.TextMain
+    title.Font = Enum.Font.GothamMedium
+    title.TextSize = 12
+    title.TextXAlignment = Enum.TextXAlignment.Left
+    title.Parent = card
+
+    local desc = Instance.new("TextLabel")
+    desc.Size = UDim2.new(1, -165, 0, 24)
+    desc.Position = UDim2.new(0, 57, 0, 29)
+    desc.BackgroundTransparency = 1
+    desc.Text = description
+    desc.TextColor3 = Theme.TextMuted
+    desc.Font = Enum.Font.Gotham
+    desc.TextSize = 9
+    desc.TextWrapped = true
+    desc.TextXAlignment = Enum.TextXAlignment.Left
+    desc.Parent = card
+
+    local box = Instance.new("Frame")
+    box.Size = UDim2.new(0, 22, 0, 22)
+    box.Position = UDim2.new(1, -34, 0.5, -11)
+    box.BackgroundColor3 = Theme.SidebarBg
+    box.Parent = card
+    Instance.new("UICorner", box).CornerRadius = UDim.new(0, 6)
+    local boxStroke = addStroke(box, 0.4)
+    
+    local checkMark = Instance.new("TextLabel")
+    checkMark.Size = UDim2.new(1, 0, 1, 0)
+    checkMark.BackgroundTransparency = 1
+    checkMark.Text = "✓"
+    checkMark.TextColor3 = Theme.TextMain
+    checkMark.Font = Enum.Font.GothamBold
+    checkMark.TextSize = 14
+    checkMark.TextTransparency = 1
+    checkMark.Parent = box
+
+    local function updateVisuals()
+        local enabled = State[stateKey]
+        tween(box, FastTween, {BackgroundColor3 = enabled and Theme.AccentGreenDark or Theme.SidebarBg})
+        tween(boxStroke, FastTween, {Color = enabled and Theme.AccentGreen or Theme.Border})
+        tween(checkMark, FastTween, {TextTransparency = enabled and 0 or 1})
+        tween(stroke, FastTween, {Color = enabled and Theme.AccentGreen or Theme.Border, Transparency = enabled and 0.5 or 0.55})
+    end
+
+    local clickTarget = Instance.new("TextButton")
+    clickTarget.Size = UDim2.new(1, 0, 1, 0)
+    clickTarget.BackgroundTransparency = 1
+    clickTarget.Text = ""
+    clickTarget.AutoButtonColor = false
+    clickTarget.ZIndex = 5
+    clickTarget.Parent = card
+    
+    clickTarget.MouseEnter:Connect(function() tween(card, FastTween, {BackgroundColor3 = Theme.CardHover}) end)
+    clickTarget.MouseLeave:Connect(function() tween(card, FastTween, {BackgroundColor3 = Theme.CardBg}) end)
+    clickTarget.MouseButton1Click:Connect(function()
+        State[stateKey] = not State[stateKey]
+        updateVisuals()
+        tween(card, PressTween, {Size = UDim2.new(1, -5, 0, 57)})
+        task.delay(0.08, function() tween(card, PressTween, {Size = UDim2.new(1, -2, 0, 60)}) end)
+    end)
+
+    updateVisuals()
+    return updateVisuals
+end
+
+local function createToggle(parent, name, stateKey, description)
+    return createFeatureCard(parent, name, description or "Toggle this feature on or off.", stateKey)
+end
+
+local function createToggleWithBind(parent, name, stateKey, bindKey, description)
+    return createFeatureCard(parent, name, description or "Toggle this feature with a custom keybind.", stateKey, bindKey)
+end
+
+local function createInput(parent, name, stateKey, isNumber)
+    local card = Instance.new("Frame")
+    card.Size = UDim2.new(1, -2, 0, 52)
+    card.BackgroundColor3 = Theme.CardBg
+    card.BorderSizePixel = 0
+    card.Parent = parent
+    Instance.new("UICorner", card).CornerRadius = UDim.new(0, 10)
+    addStroke(card, 0.55)
+
+    local title = Instance.new("TextLabel")
+    title.Size = UDim2.new(1, -100, 1, 0)
+    title.Position = UDim2.new(0, 15, 0, 0)
+    title.BackgroundTransparency = 1
+    title.Text = name
+    title.TextColor3 = Theme.TextMain
+    title.Font = Enum.Font.GothamMedium
+    title.TextSize = 12
+    title.TextXAlignment = Enum.TextXAlignment.Left
+    title.Parent = card
+    
+    local inputBg = Instance.new("Frame")
+    inputBg.Size = UDim2.new(0, 70, 0, 28)
+    inputBg.Position = UDim2.new(1, -85, 0.5, -14)
+    inputBg.BackgroundColor3 = Theme.SidebarBg
+    inputBg.Parent = card
+    Instance.new("UICorner", inputBg).CornerRadius = UDim.new(0, 6)
+    addStroke(inputBg, 0.6)
+
+    local textBox = Instance.new("TextBox")
+    textBox.Size = UDim2.new(1, 0, 1, 0)
+    textBox.BackgroundTransparency = 1
+    textBox.Text = tostring(State[stateKey])
+    textBox.TextColor3 = Theme.TextDim
+    textBox.Font = Enum.Font.GothamBold
+    textBox.TextSize = 12
+    textBox.ClearTextOnFocus = false
+    textBox.Parent = inputBg
+
+    textBox.FocusLost:Connect(function()
+        local val = textBox.Text
+        if isNumber then
+            val = tonumber(val) or State[stateKey]
+            textBox.Text = tostring(val)
+        end
+        State[stateKey] = val
+    end)
+end
+
+local function createButton(parent, name, callback, icon)
+    local card = Instance.new("TextButton")
+    card.Size = UDim2.new(1, -2, 0, 52)
+    card.BackgroundColor3 = Theme.CardBg
+    card.Text = ""
+    card.AutoButtonColor = false
+    card.Parent = parent
+    Instance.new("UICorner", card).CornerRadius = UDim.new(0, 10)
+    local stroke = addStroke(card, 0.58)
+
+    local iconLabel = Instance.new("TextLabel")
+    iconLabel.Size = UDim2.new(0, 30, 0, 30)
+    iconLabel.Position = UDim2.new(0, 11, 0.5, -15)
+    iconLabel.BackgroundColor3 = Color3.fromRGB(28, 33, 39)
+    iconLabel.Text = icon or "→"
+    iconLabel.TextColor3 = Theme.AccentGreen
+    iconLabel.Font = Enum.Font.GothamBold
+    iconLabel.TextSize = 12
+    iconLabel.Parent = card
+    Instance.new("UICorner", iconLabel).CornerRadius = UDim.new(0, 8)
+
+    local label = Instance.new("TextLabel")
+    label.Size = UDim2.new(1, -88, 1, 0)
+    label.Position = UDim2.new(0, 52, 0, 0)
+    label.BackgroundTransparency = 1
+    label.Text = name
+    label.TextColor3 = Theme.TextMain
+    label.Font = Enum.Font.GothamMedium
+    label.TextSize = 12
+    label.TextXAlignment = Enum.TextXAlignment.Left
+    label.Parent = card
+
+    local arrow = Instance.new("TextLabel")
+    arrow.Size = UDim2.new(0, 24, 1, 0)
+    arrow.Position = UDim2.new(1, -34, 0, 0)
+    arrow.BackgroundTransparency = 1
+    arrow.Text = "›"
+    arrow.TextColor3 = Theme.TextMuted
+    arrow.Font = Enum.Font.GothamBold
+    arrow.TextSize = 20
+    arrow.Parent = card
+
+    card.MouseEnter:Connect(function()
+        tween(card, FastTween, {BackgroundColor3 = Theme.CardHover})
+        tween(stroke, FastTween, {Color = Theme.AccentGreen, Transparency = 0.72})
+        tween(arrow, FastTween, {TextColor3 = Theme.AccentGreen, Position = UDim2.new(1, -31, 0, 0)})
+    end)
+    card.MouseLeave:Connect(function()
+        tween(card, FastTween, {BackgroundColor3 = Theme.CardBg})
+        tween(stroke, FastTween, {Color = Theme.Border, Transparency = 0.58})
+        tween(arrow, FastTween, {TextColor3 = Theme.TextMuted, Position = UDim2.new(1, -34, 0, 0)})
+    end)
+    card.MouseButton1Click:Connect(function()
+        tween(card, PressTween, {Size = UDim2.new(1, -5, 0, 49)})
+        task.delay(0.08, function() tween(card, PressTween, {Size = UDim2.new(1, -2, 0, 52)}) end)
+        callback()
+    end)
+end
+
+local function createKeybind(parent, name, bindKey)
+    local card = Instance.new("Frame")
+    card.Size = UDim2.new(1, -2, 0, 54)
+    card.BackgroundColor3 = Theme.CardBg
+    card.BorderSizePixel = 0
+    card.Parent = parent
+    Instance.new("UICorner", card).CornerRadius = UDim.new(0, 10)
+    addStroke(card, 0.58)
+
+    local label = Instance.new("TextLabel")
+    label.Size = UDim2.new(1, -110, 1, 0)
+    label.Position = UDim2.new(0, 15, 0, 0)
+    label.BackgroundTransparency = 1
+    label.Font = Enum.Font.GothamMedium
+    label.TextSize = 11
+    label.TextColor3 = Theme.TextMain
+    label.Text = name
+    label.TextXAlignment = Enum.TextXAlignment.Left
+    label.Parent = card
+
+    local bindBtn = Instance.new("TextButton")
+    bindBtn.Size = UDim2.new(0, 76, 0, 26)
+    bindBtn.Position = UDim2.new(1, -89, 0.5, -13)
+    bindBtn.BackgroundColor3 = Theme.SidebarBg
+    bindBtn.TextColor3 = Theme.TextDim
+    bindBtn.Font = Enum.Font.GothamMedium
+    bindBtn.TextSize = 12
+    bindBtn.Text = "[" .. State[bindKey].Name .. "]"
+    bindBtn.AutoButtonColor = false
+    bindBtn.Parent = card
+    Instance.new("UICorner", bindBtn).CornerRadius = UDim.new(0, 7)
+    addStroke(bindBtn, 0.68)
+
+    bindBtn.MouseEnter:Connect(function() tween(bindBtn, FastTween, {BackgroundColor3 = Theme.CardHover, TextColor3 = Theme.TextMain}) end)
+    bindBtn.MouseLeave:Connect(function() tween(bindBtn, FastTween, {BackgroundColor3 = Theme.SidebarBg, TextColor3 = Theme.TextDim}) end)
+
+    local changing = false
+    bindBtn.MouseButton1Click:Connect(function()
+        changing = true
+        bindBtn.Text = "PRESS KEY"
+        tween(bindBtn, FastTween, {BackgroundColor3 = Theme.AccentGreen, TextColor3 = Color3.fromRGB(4, 12, 9)})
+    end)
+    table.insert(State.Connections, UserInputService.InputBegan:Connect(function(input)
+        if changing and input.UserInputType == Enum.UserInputType.Keyboard then
+            State[bindKey] = input.KeyCode
+            bindBtn.Text = "[" .. State[bindKey].Name .. "]"
+            changing = false
+            tween(bindBtn, FastTween, {BackgroundColor3 = Theme.SidebarBg, TextColor3 = Theme.TextDim})
+        end
+    end))
+end
+
+local function createDropdown(parent, name, initialOptions, callback)
+    local container = Instance.new("Frame")
+    container.Size = UDim2.new(1, -2, 0, 52)
+    container.BackgroundColor3 = Theme.CardBg
+    container.ClipsDescendants = true
+    container.Parent = parent
+    Instance.new("UICorner", container).CornerRadius = UDim.new(0, 10)
+    local stroke = addStroke(container, 0.58)
+
+    local mainBtn = Instance.new("TextButton")
+    mainBtn.Size = UDim2.new(1, 0, 0, 52)
+    mainBtn.BackgroundTransparency = 1
+    mainBtn.Text = ""
+    mainBtn.Parent = container
+
+    local iconLabel = Instance.new("TextLabel")
+    iconLabel.Size = UDim2.new(0, 30, 0, 30)
+    iconLabel.Position = UDim2.new(0, 11, 0, 11)
+    iconLabel.BackgroundColor3 = Color3.fromRGB(28, 33, 39)
+    iconLabel.Text = "≡"
+    iconLabel.TextColor3 = Theme.AccentGreen
+    iconLabel.Font = Enum.Font.GothamBold
+    iconLabel.TextSize = 14
+    iconLabel.Parent = mainBtn
+    Instance.new("UICorner", iconLabel).CornerRadius = UDim.new(0, 8)
+
+    local title = Instance.new("TextLabel")
+    title.Size = UDim2.new(1, -88, 0, 52)
+    title.Position = UDim2.new(0, 52, 0, 0)
+    title.BackgroundTransparency = 1
+    title.Text = name .. " - Select..."
+    title.TextColor3 = Theme.TextMain
+    title.Font = Enum.Font.GothamMedium
+    title.TextSize = 12
+    title.TextXAlignment = Enum.TextXAlignment.Left
+    title.Parent = mainBtn
+
+    local arrow = Instance.new("TextLabel")
+    arrow.Size = UDim2.new(0, 24, 0, 52)
+    arrow.Position = UDim2.new(1, -34, 0, 0)
+    arrow.BackgroundTransparency = 1
+    arrow.Text = "▼"
+    arrow.TextColor3 = Theme.TextMuted
+    arrow.Font = Enum.Font.GothamBold
+    arrow.TextSize = 12
+    arrow.Parent = mainBtn
+
+    local dropFrame = Instance.new("ScrollingFrame")
+    dropFrame.Size = UDim2.new(1, -24, 0, 120)
+    dropFrame.Position = UDim2.new(0, 12, 0, 52)
+    dropFrame.BackgroundTransparency = 1
+    dropFrame.BorderSizePixel = 0
+    dropFrame.ScrollBarThickness = 2
+    dropFrame.ScrollBarImageColor3 = Theme.Border
+    dropFrame.Parent = container
+    
+    local layout = Instance.new("UIListLayout")
+    layout.Padding = UDim.new(0, 6)
+    layout.Parent = dropFrame
+
+    local padding = Instance.new("UIPadding")
+    padding.PaddingTop = UDim.new(0, 6)
+    padding.PaddingBottom = UDim.new(0, 6)
+    padding.Parent = dropFrame
+
+    local isOpen = false
+    mainBtn.MouseEnter:Connect(function() tween(container, FastTween, {BackgroundColor3 = Theme.CardHover}) end)
+    mainBtn.MouseLeave:Connect(function() if not isOpen then tween(container, FastTween, {BackgroundColor3 = Theme.CardBg}) end end)
+
+    mainBtn.MouseButton1Click:Connect(function()
+        isOpen = not isOpen
+        if isOpen then
+            tween(container, SlowTween, {Size = UDim2.new(1, -2, 0, 180)})
+            tween(arrow, FastTween, {Rotation = 180, TextColor3 = Theme.AccentGreen})
+        else
+            tween(container, SlowTween, {Size = UDim2.new(1, -2, 0, 52), BackgroundColor3 = Theme.CardBg})
+            tween(arrow, FastTween, {Rotation = 0, TextColor3 = Theme.TextMuted})
+        end
+    end)
+
+    local function buildOptions(newOptions)
+        for _, child in ipairs(dropFrame:GetChildren()) do
+            if child:IsA("TextButton") then child:Destroy() end
+        end
+
+        for _, opt in ipairs(newOptions) do
+            local optBtn = Instance.new("TextButton")
+            optBtn.Size = UDim2.new(1, 0, 0, 32)
+            optBtn.BackgroundColor3 = Theme.SidebarBg
+            optBtn.Text = "  " .. opt
+            optBtn.TextColor3 = Theme.TextDim
+            optBtn.Font = Enum.Font.Gotham
+            optBtn.TextSize = 11
+            optBtn.TextXAlignment = Enum.TextXAlignment.Left
+            optBtn.AutoButtonColor = false
+            optBtn.Parent = dropFrame
+            Instance.new("UICorner", optBtn).CornerRadius = UDim.new(0, 6)
+
+            optBtn.MouseEnter:Connect(function() tween(optBtn, FastTween, {BackgroundColor3 = Color3.fromRGB(28, 33, 39), TextColor3 = Theme.TextMain}) end)
+            optBtn.MouseLeave:Connect(function() tween(optBtn, FastTween, {BackgroundColor3 = Theme.SidebarBg, TextColor3 = Theme.TextDim}) end)
+            
+            optBtn.MouseButton1Click:Connect(function()
+                title.Text = name .. " - " .. opt
+                isOpen = false
+                tween(container, SlowTween, {Size = UDim2.new(1, -2, 0, 52), BackgroundColor3 = Theme.CardBg})
+                tween(arrow, FastTween, {Rotation = 0, TextColor3 = Theme.TextMuted})
+                callback(opt)
+            end)
+        end
+    end
+    
+    layout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+        dropFrame.CanvasSize = UDim2.new(0, 0, 0, layout.AbsoluteContentSize.Y + 12)
+    end)
+    
+    buildOptions(initialOptions)
+    
+    return container, buildOptions, title
+end
+
+-- [[ BUILD TABS & CONTENT ]]
+
+local TabMain = createTab("Main", "◉")
+
+createSection(TabMain, "Farming")
+UI.UpdateAutoAttack = createToggleWithBind(TabMain, "Auto Attack", "AutoAttack", "AutoAttackKey", "Automatically attacks nearby valid targets.")
+
+createInput(TabMain, "Attack Range", "AttackRange", true) 
+
+createSection(TabMain, "Resource")
+createToggle(TabMain, "Auto Chop Tree	*(NEED EQUIP AXE)", "AutoChop", "Automatically harvests trees and nearby drops.")
+createToggle(TabMain, "Auto Mine Ore	*(NEED EQUIP PICKAXE)", "AutoMine", "Automatically mines detected ore nodes.")
+
+createSection(TabMain, "Other")
+createToggle(TabMain, "Auto Respawn", "AutoRespawn", "Automatically requests a respawn after death.")
+
+-- Teleport
+local TabTeleport = createTab("Teleport", "◇")
+
+createSection(TabTeleport, "Spawn Point")
+
+local spawnAreas = {
+    ["Dewdrop Village"] = {
+        { Display = "Bonfire 1", Target = "DewdropSpawn_1" }
+    },
+    ["Goblin Junkyard"] = {
+        { Display = "Bonfire 1", Target = "GoblinJunkyardSpawn_1" },
+        { Display = "Bonfire 2", Target = "GoblinJunkyardSpawn_2" },
+        { Display = "Bonfire 3", Target = "GoblinJunkyardSpawn_3" }
+    }
 }
-local _0x0280 = (403 + 403)
-local _0x0281 = (470 + 470)
-while (1 * 1 >= 0) and _0x023f._0x0241(0.5) do
-if (1 + 1 == 2) and (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) == (function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) then
-local _0x0282 = {}
-for _0x0007 = 1, (1362 / 3) do
-_0x0282[_0x0007] = _0x0007 * 2
+
+local currentSpawnArea = nil
+local selectedSpawnTarget = nil
+
+local function detectClosestSpawnArea()
+    local character = LocalPlayer.Character
+    local hrp = character and character:FindFirstChild("HumanoidRootPart")
+    if not hrp then return "Dewdrop Village" end
+    
+    local closestArea = "Dewdrop Village"
+    local minDistance = math.huge
+    
+    local portalFolder = workspace:FindFirstChild("Maps") and workspace.Maps:FindFirstChild("Portal")
+    if not portalFolder then return closestArea end
+    
+    for areaName, spawns in pairs(spawnAreas) do
+        for _, spawnInfo in ipairs(spawns) do
+            local spawnArea = portalFolder:FindFirstChild(spawnInfo.Target)
+            if spawnArea then
+                local targetTarget = spawnArea:FindFirstChild("SpawnPoint", true) or spawnArea
+                local targetPart = (targetTarget:IsA("Model") and (targetTarget.PrimaryPart or targetTarget:FindFirstChildWhichIsA("BasePart", true))) or (targetTarget:IsA("BasePart") and targetTarget)
+                
+                if targetPart then
+                    local dist = (hrp.Position - targetPart.Position).Magnitude
+                    if dist < minDistance then
+                        minDistance = dist
+                        closestArea = areaName
+                    end
+                end
+            end
+        end
+    end
+    return closestArea
 end
+
+local spawnDropdownContainer, updateSpawnDropdown, spawnTitle = createDropdown(TabTeleport, "Spawn Point", {}, function(selectedDisplayOption)
+    if currentSpawnArea and spawnAreas[currentSpawnArea] then
+        for _, info in ipairs(spawnAreas[currentSpawnArea]) do
+            if info.Display == selectedDisplayOption then
+                selectedSpawnTarget = info.Target
+                break
+            end
+        end
+    end
+end)
+
+task.spawn(function()
+    while task.wait(2) do
+        local newArea = detectClosestSpawnArea()
+        if newArea ~= currentSpawnArea then
+            currentSpawnArea = newArea
+            local areaSpawns = spawnAreas[currentSpawnArea]
+            
+            local displayOptions = {}
+            for _, info in ipairs(areaSpawns) do
+                table.insert(displayOptions, info.Display)
+            end
+            
+            updateSpawnDropdown(displayOptions)
+            
+            selectedSpawnTarget = areaSpawns[1].Target
+            if spawnTitle then
+                spawnTitle.Text = "Spawn Point - " .. areaSpawns[1].Display
+            end
+        end
+    end
+end)
+
+createButton(TabTeleport, "Teleport to Spawn Point", function()
+    local character = LocalPlayer.Character
+    local hrp = character and character:FindFirstChild("HumanoidRootPart")
+    
+    if hrp and selectedSpawnTarget then
+        pcall(function()
+            local portalFolder = workspace:FindFirstChild("Maps") and workspace.Maps:FindFirstChild("Portal")
+            local spawnArea = portalFolder and portalFolder:FindFirstChild(selectedSpawnTarget)
+            if not spawnArea then return end
+            
+            local spawnpoint = spawnArea:FindFirstChild("SpawnPoint", true) 
+            local targetTarget = spawnpoint or spawnArea
+            
+            local targetPart
+            if targetTarget:IsA("Model") then
+                targetPart = targetTarget.PrimaryPart or targetTarget:FindFirstChildWhichIsA("BasePart", true)
+            elseif targetTarget:IsA("BasePart") then
+                targetPart = targetTarget
+            end
+            
+            if targetPart then
+                hrp.CFrame = targetPart.CFrame + Vector3.new(0, 5, 0)
+            end
+        end)
+    end
+end, "🔥")
+
+local function teleportTo(dest)
+    local character = LocalPlayer.Character
+    local hrp = character and character:FindFirstChild("HumanoidRootPart")
+    
+    if hrp then
+        local target = workspace:FindFirstChild(dest, true)
+        if target then
+            if target:IsA("Model") then
+                local root = target:FindFirstChild("HumanoidRootPart") or target.PrimaryPart
+                if root then
+                    hrp.CFrame = root.CFrame + Vector3.new(0, 5, 0)
+                    return
+                else
+                    local part = target:FindFirstChildWhichIsA("BasePart")
+                    if part then
+                        hrp.CFrame = part.CFrame + Vector3.new(0, 5, 0)
+                        return
+                    end
+                end
+            elseif target:IsA("BasePart") then
+                hrp.CFrame = target.CFrame + Vector3.new(0, 5, 0)
+                return
+            end
+        end
+    end
+    
+    pcall(function()
+        if ReplicatedStorage:FindFirstChild("Remotes") then
+            pcall(function() ReplicatedStorage.Remotes.World.Teleport:FireServer({ ["Destination"] = dest }) end)
+        end
+    end)
 end
-if (1 + 1 == 2) and _0x0030._0x0037 then
-local char = _0x0024._0x01cb
-for _0x0283 = 1, (27 / 3) do
-_0x0283 = math.floor(_0x0283 / 2)
+
+createSection(TabTeleport, "Locations")
+
+local locationMapping = {
+    ["Dewdrop Village"] = "DewdropVillage",
+    ["Goblin Junkyard"] = "GoblinJunkyard",
+    ["Goblin Cogtown"] = "GoblinCogtown",
+    ["Farm"] = "Farm"
+}
+local locationList = {"Dewdrop Village", "Goblin Junkyard", "Goblin Cogtown", "Farm"}
+local selectedLocationTarget = nil
+
+createDropdown(TabTeleport, "Select Location", locationList, function(selectedOption)
+    selectedLocationTarget = locationMapping[selectedOption]
+end)
+
+createButton(TabTeleport, "Teleport to Location", function()
+    if selectedLocationTarget then
+        teleportTo(selectedLocationTarget)
+    end
+end, "✈")
+
+local function TeleportToNPCWaypoint(npcName)
+    local character = LocalPlayer.Character
+    local hrp = character and character:FindFirstChild("HumanoidRootPart")
+    if not hrp then return end
+    local target = workspace:FindFirstChild(npcName, true)
+    if target then
+        local targetCFrame = nil
+        if target:IsA("Model") then
+            local root = target:FindFirstChild("HumanoidRootPart") or target.PrimaryPart
+            if root then
+                targetCFrame = root.CFrame
+            else
+                local part = target:FindFirstChildWhichIsA("BasePart")
+                if part then targetCFrame = part.CFrame end
+            end
+        elseif target:IsA("BasePart") then
+            targetCFrame = target.CFrame
+        end
+        if targetCFrame then
+            hrp.CFrame = (targetCFrame * CFrame.new(0, 0, -4)) + Vector3.new(0, 4, 0)
+        end
+    else
+        warn("SEOUL HUB: Could not find NPC '" .. npcName .. "' in workspace.")
+    end
 end
-local _0x01d0 = char and char:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-if (true or false) and _0x01d0 then
-local _0x0251 = _0x0026:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-if (5 == 5) and _0x0251 then
-local function _0x0284()
-local _0x0285 = (277 - 79)
-for _0x0007 = 1, (29 - 19) do
-_0x0285 = _0x0285 + _0x0007
+
+createSection(TabTeleport, "NPCs")
+local npcList = {"Leaf", "Rendall", "Hogan", "Arlette", "Breda", "Theron", "Neria", "Eren"}
+
+createDropdown(TabTeleport, "Teleport to NPC", npcList, function(selectedNpc)
+    TeleportToNPCWaypoint(selectedNpc)
+end)
+
+
+-- [[ CUSTOM NOTIFICATION SYSTEM ]]
+local NotifContainer = Instance.new("Frame")
+NotifContainer.Name = "NotifContainer"
+NotifContainer.Size = UDim2.new(0, 240, 1, -20)
+NotifContainer.Position = UDim2.new(1, -10, 1, -10)
+NotifContainer.AnchorPoint = Vector2.new(1, 1)
+NotifContainer.BackgroundTransparency = 1
+NotifContainer.Parent = ScreenGui
+
+local NotifLayout = Instance.new("UIListLayout")
+NotifLayout.SortOrder = Enum.SortOrder.LayoutOrder
+NotifLayout.Padding = UDim.new(0, 8)
+NotifLayout.VerticalAlignment = Enum.VerticalAlignment.Bottom
+NotifLayout.HorizontalAlignment = Enum.HorizontalAlignment.Right
+NotifLayout.Parent = NotifContainer
+
+local function SendHubNotification(text, duration)
+    duration = duration or 3
+    
+    local notif = Instance.new("Frame")
+    notif.Size = UDim2.new(1, 0, 0, 60)
+    notif.BackgroundColor3 = Theme.CardBg
+    notif.BackgroundTransparency = 1
+    notif.Parent = NotifContainer
+    Instance.new("UICorner", notif).CornerRadius = UDim.new(0, 8)
+    
+    local stroke = Instance.new("UIStroke")
+    stroke.Color = Theme.AccentGreen
+    stroke.Thickness = 1
+    stroke.Transparency = 1
+    stroke.Parent = notif
+    
+    local title = Instance.new("TextLabel")
+    title.Size = UDim2.new(1, -20, 0, 20)
+    title.Position = UDim2.new(0, 12, 0, 8)
+    title.BackgroundTransparency = 1
+    title.Text = "SEOUL HUB"
+    title.TextColor3 = Theme.AccentGreen
+    title.Font = Enum.Font.GothamBold
+    title.TextSize = 12
+    title.TextXAlignment = Enum.TextXAlignment.Left
+    title.TextTransparency = 1
+    title.Parent = notif
+    
+    local msg = Instance.new("TextLabel")
+    msg.Size = UDim2.new(1, -24, 0, 24)
+    msg.Position = UDim2.new(0, 12, 0, 28)
+    msg.BackgroundTransparency = 1
+    msg.Text = text
+    msg.TextColor3 = Theme.TextMain
+    msg.Font = Enum.Font.GothamMedium
+    msg.TextSize = 11
+    msg.TextWrapped = true
+    msg.TextXAlignment = Enum.TextXAlignment.Left
+    msg.TextTransparency = 1
+    msg.Parent = notif
+    
+    -- Fade In
+    tween(notif, FastTween, {BackgroundTransparency = 0})
+    tween(stroke, FastTween, {Transparency = 0.5})
+    tween(title, FastTween, {TextTransparency = 0})
+    tween(msg, FastTween, {TextTransparency = 0})
+    
+    -- Fade Out & Destroy
+    task.delay(duration, function()
+        tween(notif, FastTween, {BackgroundTransparency = 1})
+        tween(stroke, FastTween, {Transparency = 1})
+        tween(title, FastTween, {TextTransparency = 1})
+        local outTween = tween(msg, FastTween, {TextTransparency = 1})
+        outTween.Completed:Wait()
+        notif:Destroy()
+    end)
 end
-return _0x0285
+
+
+-- [[ MISC TAB ]]
+local TabMisc = createTab("Misc", "✮")
+
+createSection(TabMisc, "Codes")
+local codesList = {"1KLIKES", "2KLIKES", "5KLIKES", "RELEASE", "THROUGHTHEPORTAL"}
+createButton(TabMisc, "Redeem All Codes", function()
+    task.spawn(function()
+        for _, code in ipairs(codesList) do
+            pcall(function()
+                game:GetService("ReplicatedStorage").Remotes.RedeemCode.RequestRedeemCode:FireServer(code)
+            end)
+            task.wait(2)
+        end
+        
+        SendHubNotification("Finished redeeming all codes.", 4)
+    end)
+end, "🎁")
+
+createSection(TabMisc, "Auto Claim")
+-- Now using the custom createCheckbox function!
+UI.UpdateAutoPlaytime = createCheckbox(TabMisc, "Auto Claim Playtime Rewards", "AutoPlaytime", "Claims playtime rewards 1-10 continuously.")
+UI.UpdateAutoAlltime = createCheckbox(TabMisc, "Auto Claim All-Time Rewards", "AutoAlltime", "Claims all-time rewards 1-8 continuously.")
+UI.UpdateAutoBattlepass = createCheckbox(TabMisc, "Auto Claim Battlepass", "AutoBattlepass", "Claims BP rewards 1-30 (Free & Premium).")
+
+
+-- Settings
+local TabSettings = createTab("Settings", "⚙")
+createPageHeader(TabSettings, "Settings", "Customize controls and interface behavior.")
+createSection(TabSettings, "Keybinds")
+createKeybind(TabSettings, "Hide / Show Menu", "HideMenuKey")
+
+createSection(TabSettings, "Client")
+createButton(TabSettings, "Unload Script", function()
+    for _, conn in pairs(State.Connections) do conn:Disconnect() end
+    ScreenGui:Destroy()
+end, "×")
+
+-- [[ GLOBAL KEYBINDS LOGIC ]]
+
+table.insert(State.Connections, UserInputService.InputBegan:Connect(function(input, processed)
+    if processed then return end
+    if input.KeyCode == State.HideMenuKey then
+        ToggleMenu()
+    elseif input.KeyCode == State.AutoAttackKey then
+        State.AutoAttack = not State.AutoAttack; if UI.UpdateAutoAttack then UI.UpdateAutoAttack() end
+    end
+end))
+
+-- [[ MAIN AUTOMATION LOOPS ]]
+
+-- 1. Kill Auto Attack Loop
+local attackDelay = 0
+table.insert(State.Connections, RunService.Heartbeat:Connect(function(dt)
+    if not State.AutoAttack or not LocalPlayer.Character or not LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then return end
+    attackDelay = attackDelay + dt
+    if attackDelay < 0.2 then return end 
+    attackDelay = 0
+
+    local hrp = LocalPlayer.Character.HumanoidRootPart
+    local mobsFolder = workspace:FindFirstChild("Mobs")
+    if mobsFolder and mobsFolder:FindFirstChild("Active") then
+        local targetsToHit = {}
+        for _, monster in pairs(mobsFolder.Active:GetChildren()) do
+            local monHum = monster:FindFirstChild("Humanoid") or monster:FindFirstChildWhichIsA("Humanoid")
+            local monHrp = monster:FindFirstChild("HumanoidRootPart") or monster.PrimaryPart
+            
+            if monHum and monHrp and monHum.Health > 0 and (monHrp.Position - hrp.Position).Magnitude <= State.AttackRange then
+                local vector, onScreen = Camera:WorldToViewportPoint(monHrp.Position)
+                if onScreen then
+                    local entityIdObj = monster:FindFirstChild("EntityId")
+                    local monsterEntityId = entityIdObj and entityIdObj:IsA("StringValue") and entityIdObj.Value or monster:GetAttribute("EntityId")
+                    if monsterEntityId then table.insert(targetsToHit, monsterEntityId) end
+                end
+            end
+        end
+        if #targetsToHit > 0 then ReplicatedStorage.Remotes.Combat.RequestMeleeHits:FireServer(targetsToHit) end
+    end
+end))
+
+-- 2. Auto Respawn Logic
+local isRespawning = false 
+local function SetupAutoRespawn(character)
+    local humanoid = character:WaitForChild("Humanoid", 5)
+    if humanoid then
+        humanoid.Died:Connect(function()
+            if not State.AutoRespawn or isRespawning then return end
+            isRespawning = true
+            task.spawn(function()
+                task.wait(5); ReplicatedStorage.Remotes.Combat.RequestRespawn:FireServer()
+                task.wait(1); VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Z, false, game)
+                task.wait(0.05); VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Z, false, game)
+                task.wait(2); isRespawning = false
+            end)
+        end)
+    end
 end
-local _0x0286 = _0x0251:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-local _0x0287 = {}
-_0x0287._0x0002 = (1516 / 2)
-_0x0287._0x0003 = (328 - 91)
-if (5 == 5) and _0x0286 then
-for _0x0288 = 1, (4 + 5) do
-_0x0288 = math.floor(_0x0288 / 2)
-end
-local _0x0289 = _0x0286:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-local _0x028a = {}
-_0x028a._0x0002 = (746 - 36)
-_0x028a._0x0003 = (1443 / 3)
-if (true or false) and _0x0289 then
-for _0x028b = 1, 1 do
-_0x028b = _0x028b % (200 / 2)
-end
-for _0x0007 = 1, (23 + 24) do
-if (true or false) and not _0x0030._0x0037 then break end
-local _0x028c = _0x0289:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end) .. tostring(_0x0007))
-if (1 + 1 == 2) and _0x028c then
-local function _0x028d(_0x028e, _0x028f)
-local _0x0290 = _0x028e + _0x028f
-_0x0290 = _0x0290 % (160 - 60)
-return _0x0290
-end
-local _0x0291 = nil
-local _0x0292 = {}
-for _0x0007 = 1, (1330 / 2) do
-_0x0292[_0x0007] = _0x0007 * 2
-end
-local _0x0293 = ""
-local _0x0294 = (831 - 51)
-local _0x0295 = (838 - 42)
-local _0x0296 = (1480 / 2)
-for _0x0297, _0x0298 in pairs(_0x027e) do
-if (5 == 5) and (102 - 92) < (2 + 3) then
-local _0x0299 = (748 - 66)
-if (5 == 5) and _0x0299 > (863 - 81) then
-_0x0299 = _0x0299 - (344 + 344)
-elseif _0x0299 < (630 - 48) then
-_0x0299 = 0
-end
-end
-local _0x029a = _0x028c:_0x01d1(_0x0297)
-local function _0x029b(_0x029c)
-if (2 * 3 > 5) and _0x029c > 0 then
-return _0x029c * 2
-else
-return 0
-end
-end
-if (true or false) and _0x029a then
-local _0x029d = {(112 / 4), (246 / 2), (39 / 3)}
-table.insert(_0x029d, (347 - 68))
-_0x0291 = _0x029a
-local _0x029e = (2727 / 3)
-local _0x029f = (276 / 2)
-local _0x02a0 = (176 + 177)
-_0x0293 = _0x0297
-break
-end
-end
-if (5 == 5) and (20 / 2) < (20 / 4) then
-for _0x02a1 = 1, (12 / 2) do
-_0x02a1 = math.floor(_0x02a1 / 2)
-end
-end
-if (5 == 5) and _0x0291 then
-local _0x02a2 = {}
-_0x02a2._0x0002 = (679 - 50)
-_0x02a2._0x0003 = (921 - 73)
-local _0x02a3 = _0x0291:_0x01d8((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)) and (_0x0291._0x01da or _0x0291:_0x01e2((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))) or (_0x0291:_0x01d8((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)) and _0x0291 or nil)
-for _0x02a4 = 1, (4 + 5) do
-_0x02a4 = _0x02a4 - (744 - 65)
-end
-if (2 * 3 > 5) and _0x02a3 then
-_0x01d0._0x01e0 = (_0x02a3._0x01e0 * _0x01e0._0x0062(0, 0, 3)) + _0x01e7._0x0062(0, (60 - 56), 0)
-_0x023f._0x0241(1)
-local _0x02a5 = {}
-_0x02a5._0x0002 = (2232 / 3)
-_0x02a5._0x0003 = (38 + 38)
-if (5 == 5) and _0x0030._0x0037 then
-_0x001e:_0x0243(true, _0x003c._0x003d._0x003e, false, _0x0015)
-local _0x02a6 = {(171 + 171), (1706 / 2), (473 - 39)}
-table.insert(_0x02a6, (144 / 2))
-_0x023f._0x0241(1)
-_0x001e:_0x0243(false, _0x003c._0x003d._0x003e, false, _0x0015)
-_0x023f._0x0241(_0x027e[_0x0293])
-if (true or false) and not true then
-local _0x02a7 = (861 / 3)
-if (5 == 5) and _0x02a7 > (193 + 194) then
-_0x02a7 = _0x02a7 + (642 - 62)
-elseif _0x02a7 < (374 / 2) then
-_0x02a7 = 0
-end
-end
-end
-local _0x0262 = _0x0026:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end))
-if (2 * 3 > 5) and _0x0262 and _0x0030._0x0037 then
-for _0x01ec, _0x0265 in pairs(_0x0262:_0x0219()) do
-if _0x0265._0x0064:match((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)) and (
-if (5 == 5) and (2 + 3) + (2 + 3) == (22 / 2) then
-for _0x02a8 = 1, 3 do
-_0x02a8 = math.abs(_0x02a8)
-end
-end
-_0x0265:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), true) or
-_0x0265:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), true) or
-_0x0265:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), true) or
-_0x0265:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), true) or
-_0x0265:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), true) or
-local _0x02a9 = {(61 + 61), (196 / 4), (39 / 3)}
-table.insert(_0x02a9, (371 + 371))
-_0x0265:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), true) or
-_0x0265:_0x01d1((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), true)
-local function _0x02aa(_0x02ab)
-if (2 * 3 > 5) and _0x02ab > 0 then
-return _0x02ab * 2
-else
-return 0
-end
-end
-) then
-local _0x02ac = (786 - 69)
-local _0x0266 = _0x0265:_0x01e2((function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end), true)
-if (2 * 3 > 5) and _0x0266 and (_0x0266._0x0076 - _0x02a3._0x0076)._0x0222 <= (15 + 15) then
-local _0x02ad = (864 / 3)
-_0x01d0._0x01e0 = _0x0266._0x01e0 + _0x01e7._0x0062(0, 3, 0)
-local _0x02ae = {}
-_0x02ae._0x0002 = (1692 / 4)
-_0x02ae._0x0003 = (319 + 319)
-_0x023f._0x0241(0.5)
-_0x0021._0x01c0._0x026a._0x026b:_0x01c2({
-[(function(_0x0004,_0x0005)local _0x0006=""for _0x0007=1,#_0x0004 do _0x0006=_0x0006..string.char(_0x0004[_0x0007]~(((_0x0005+_0x0007-1)%255)+1))end return _0x0006 end)] = _0x0265._0x0064
-local _0x02af = (275 + 275)
-local _0x02b0 = (1101 / 3)
-})
-local _0x02b1 = (214 - 10)
-local _0x02b2 = (345 - 17)
-local _0x02b3 = (775 - 69)
-_0x023f._0x0241(0.5)
-end
-end
-if (2 * 3 > 5) and 1 > 2 then
-local _0x02b4 = (36 / 4)
-if (true or false) and _0x02b4 > (144 - 35) then
-_0x02b4 = _0x02b4 + (691 - 72)
-elseif _0x02b4 < -(273 / 3) then
-_0x02b4 = 0
-end
-end
-end
-end
-if (1 + 1 == 2) and (10 / 2) + (2 + 3) == (63 - 52) then
-for _0x02b5 = 1, (25 - 19) do
-_0x02b5 = _0x02b5 % (300 / 3)
-end
-end
-end
-end
-end
-end
-end
-if (2 * 3 > 5) and 0 == 1 then
-for _0x02b6 = 1, 3 do
-_0x02b6 = _0x02b6 * 2
-end
-end
-end
-for _0x02b7 = 1, (24 / 4) do
-_0x02b7 = _0x02b7 + (639 - 23)
-end
-end
-end
-end
-for _0x02b8 = 1, (2 + 2) do
-_0x02b8 = _0x02b8 + (890 - 78)
-end
-end
-local _0x02b9 = (203 - 67)
+if LocalPlayer.Character then SetupAutoRespawn(LocalPlayer.Character) end
+table.insert(State.Connections, LocalPlayer.CharacterAdded:Connect(SetupAutoRespawn))
+
+-- 3. Auto Chop Tree Logic
+task.spawn(function()
+    while task.wait(0.5) do
+        if not State.AutoChop then continue end
+        local char = LocalPlayer.Character
+        local hrp = char and char:FindFirstChild("HumanoidRootPart")
+        if not hrp then continue end
+
+        local mapsFolder = workspace:FindFirstChild("Maps")
+        if not mapsFolder then continue end
+        local vegetationFolder = mapsFolder:FindFirstChild("Vegetation")
+        if not vegetationFolder then continue end
+        local treesFolder = vegetationFolder:FindFirstChild("Trees")
+        if not treesFolder then continue end
+
+        for _, tree in pairs(treesFolder:GetChildren()) do
+            if not State.AutoChop then break end 
+            if tree.Name:match("^Tree_Type[1-9]$") then
+                local treePart = tree:IsA("Model") and (tree.PrimaryPart or tree:FindFirstChildWhichIsA("BasePart")) or (tree:IsA("BasePart") and tree or nil)
+                if treePart then
+                    hrp.CFrame = (treePart.CFrame * CFrame.new(0, 0, 3)) + Vector3.new(0, 5, 0)
+                    task.wait(1) 
+                    
+                    if not hrp or not hrp.Parent then break end
+
+                    if State.AutoChop then
+                        VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.F, false, game)
+                        task.wait(1)
+                        VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.F, false, game)
+                        task.wait(5.2) 
+                    end
+
+                    local worldItems = workspace:FindFirstChild("WorldItems")
+                    if worldItems and State.AutoChop then
+                        for _, item in pairs(worldItems:GetChildren()) do
+                            if item.Name:match("^pickup_") and item:FindFirstChild("Mat_WoodMesh", true) then
+                                local itemPart = item:FindFirstChildWhichIsA("BasePart", true)
+                                if itemPart and (itemPart.Position - treePart.Position).Magnitude <= 50 then
+                                    hrp.CFrame = itemPart.CFrame + Vector3.new(0, 3, 0)
+                                    task.wait(1)
+                                    
+                                    if not hrp or not hrp.Parent then break end
+                                    
+                                    VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.F, false, game)
+                                    task.wait(1)
+                                    VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.F, false, game)
+                                    
+                                    task.wait(1.5)
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+end)
+
+-- 4. Auto Mine Ore Logic
+task.spawn(function()
+    local oreDelays = {
+        ["Ore_Stone"] = 5.2,
+        ["Ore_Solite"] = 10.2,
+        ["Ore_Lumite"] = 15.2,
+        ["Ore_Aurorite"] = 20.2
+    }
+
+    while task.wait(0.5) do
+        if not State.AutoMine then continue end
+        local char = LocalPlayer.Character
+        local hrp = char and char:FindFirstChild("HumanoidRootPart")
+        if not hrp then continue end
+
+        local mapsFolder = workspace:FindFirstChild("Maps")
+        if not mapsFolder then continue end
+        local worldFolder = mapsFolder:FindFirstChild("World")
+        if not worldFolder then continue end
+        local spawnOreFolder = worldFolder:FindFirstChild("Spawn_Ore")
+        if not spawnOreFolder then continue end
+
+        for i = 1, 47 do
+            if not State.AutoMine then break end 
+            
+            local oreNode = spawnOreFolder:FindFirstChild("SP" .. tostring(i))
+            if oreNode then
+                local targetOre = nil
+                local targetName = ""
+                
+                for oreName, delayTime in pairs(oreDelays) do
+                    local foundOre = oreNode:FindFirstChild(oreName)
+                    if foundOre then
+                        targetOre = foundOre
+                        targetName = oreName
+                        break
+                    end
+                end
+
+                if targetOre then
+                    local orePart = targetOre:IsA("Model") and (targetOre.PrimaryPart or targetOre:FindFirstChildWhichIsA("BasePart")) or (targetOre:IsA("BasePart") and targetOre or nil)
+                    if orePart then
+                        hrp.CFrame = (orePart.CFrame * CFrame.new(0, 0, 3)) + Vector3.new(0, 5, 0)
+                        task.wait(1) 
+                        
+                        if not hrp or not hrp.Parent then break end
+
+                        if State.AutoMine then
+                            VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.F, false, game)
+                            task.wait(1)
+                            VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.F, false, game)
+                            
+                            task.wait(oreDelays[targetName]) 
+                        end
+
+                        local worldItems = workspace:FindFirstChild("WorldItems")
+                        if worldItems and State.AutoMine then
+                            for _, item in pairs(worldItems:GetChildren()) do
+                                if item.Name:match("^pickup_") and (item:FindFirstChild("Mat_StoneMesh", true) or item:FindFirstChild("Mat_SoliteMesh", true) or item:FindFirstChild("Mat_LumiteMesh", true) or item:FindFirstChild("Mat_AuroriteMesh", true)) then
+                                    local itemPart = item:FindFirstChildWhichIsA("BasePart", true)
+                                    
+                                    if itemPart and (itemPart.Position - orePart.Position).Magnitude <= 30 then
+                                        hrp.CFrame = itemPart.CFrame + Vector3.new(0, 3, 0)
+                                        task.wait(1) 
+                                        
+                                        if not hrp or not hrp.Parent then break end
+                                        
+                                        VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.F, false, game)
+                                        task.wait(1)
+                                        VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.F, false, game)
+                                        
+                                        task.wait(1.5)
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+end)
+
+-- 5. Auto Claim Rewards Logic
+task.spawn(function()
+    while task.wait(15) do 
+        
+        -- [[ PLAYTIME LOGIC ]]
+        if State.AutoPlaytime then
+            local hasAvailableRewards = true 
+            
+            if hasAvailableRewards then
+                for i = 1, 10 do
+                    pcall(function() game:GetService("ReplicatedStorage").Remotes.Rewards.Claim:FireServer("PlayTime", i) end)
+                    task.wait(1.2) 
+                end
+                SendHubNotification("Attempted to claim available Playtime rewards.", 3)
+            else
+                SendHubNotification("No Playtime rewards available to claim.", 3)
+            end
+        end
+        
+        -- [[ ALL-TIME LOGIC ]]
+        if State.AutoAlltime then
+            local hasAvailableRewards = true 
+            
+            if hasAvailableRewards then
+                for i = 1, 8 do
+                    pcall(function() game:GetService("ReplicatedStorage").Remotes.Rewards.Claim:FireServer("AllTime", i) end)
+                    task.wait(1.2) 
+                end
+                
+                -- Turn off Auto Claim State and update the UI Toggle
+                State.AutoAlltime = false
+                if UI.UpdateAutoAlltime then UI.UpdateAutoAlltime() end
+                SendHubNotification("All-Time rewards claimed! Auto All-Time turned off.", 3)
+            else
+                SendHubNotification("No All-Time rewards available to claim.", 3)
+            end
+        end
+
+        -- [[ BATTLEPASS LOGIC ]]
+        if State.AutoBattlepass then
+            local hasAvailableRewards = true 
+            
+            if hasAvailableRewards then
+                for i = 1, 30 do
+                    pcall(function() game:GetService("ReplicatedStorage").Remotes.BattlePass.ClaimTier:FireServer(i, "Free") end)
+                    task.wait(0.7) 
+                    pcall(function() game:GetService("ReplicatedStorage").Remotes.BattlePass.ClaimTier:FireServer(i, "Premium") end)
+                    task.wait(0.7) 
+                end
+                SendHubNotification("Attempted to claim available Battlepass rewards.", 3)
+            else
+                SendHubNotification("No Battlepass rewards available to claim.", 3)
+            end
+        end
+        
+    end
 end)
