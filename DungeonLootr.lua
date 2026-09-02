@@ -1,3 +1,8 @@
+-- [[ WAIT FOR GAME TO LOAD ]]
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+
 local MarketplaceService = game:GetService("MarketplaceService")
 
 -- [[ GAME VERIFICATION ]]
@@ -78,7 +83,6 @@ local State = {
     AutoSelectChest = false, 
     AutoReplay = false,
     AutoUsePotion = false,
-    AutoExecute = false,
 }
 local UI = {}
 local UIUpdateCallbacks = {}
@@ -1313,7 +1317,6 @@ local function SaveCurrentConfig(targetName)
         AutoSelectChest = State.AutoSelectChest, 
         AutoReplay = State.AutoReplay,
         AutoUsePotion = State.AutoUsePotion,
-        AutoExecute = State.AutoExecute,
     }
     
     if writefile then
@@ -1440,34 +1443,6 @@ createKeybind(TabSettings, "Hide / Show Menu", "HideMenuKey")
 
 createSection(TabSettings, "Client")
 createToggle(TabSettings, "Auto Reconnect", "AutoReconnect", "Automatically rejoins the server if you get disconnected.")
-
-createToggle(TabSettings, "Auto Execute", "AutoExecute", "Toggles script execution in your executor's autoexec folder.", function(toggled)
-    local autoExecPath = "AutoExecute/DungeonLootr-SeoulHub.lua"
-    if toggled then
-        if writefile then
-            local success, err = pcall(function()
-                local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/Seoul-Hub/Scripts/refs/heads/main/DungeonLootr.lua'))()"
-                writefile(autoExecPath, loadstringCode)
-            end)
-            if success then
-                SendHubNotification("Added to autoexec folder!", 3)
-            else
-                SendHubNotification("Failed: " .. tostring(err), 3)
-            end
-        else
-            SendHubNotification("Your executor does not support writefile.", 3)
-        end
-    else
-        if delfile and isfile then
-            local success = pcall(function()
-                if isfile(autoExecPath) then delfile(autoExecPath) end
-            end)
-            if success then
-                SendHubNotification("Removed from autoexec folder!", 3)
-            end
-        end
-    end
-end)
 
 createButton(TabSettings, "Unload Script", "Unloads Seoul Hub from memory and removes GUI.", function()
     for _, conn in pairs(State.Connections) do conn:Disconnect() end
@@ -1611,7 +1586,7 @@ end)
 local orbitAngle = 0
 local OrbitRadius = 6    
 local OrbitHeight = 4.5  
-local OrbitSpeed = 3     
+local OrbitSpeed = 4   
 
 local CurrentTarget = nil
 local ActiveChestTimer = 0
