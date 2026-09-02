@@ -30,6 +30,7 @@ local LocalPlayer = Players.LocalPlayer
 local ROOT_FOLDER = "Seoul Hub"
 local GAME_FOLDER = "Dungeon Lootr"
 local CONFIG_FOLDER = ROOT_FOLDER .. "/" .. GAME_FOLDER
+local AUTOEXEC_PATH = "Auto Execute/DungeonLootr-SeoulHub.lua"
 
 local function EnsureFolders()
     if makefolder and isfolder then
@@ -78,7 +79,18 @@ local State = {
     AutoSelectChest = false, 
     AutoReplay = false,
     AutoUsePotion = false,
+    
+    -- Client Variables
+    AutoReconnect = false,
+    AutoExecute = false,
+    AntiAFK = false
 }
+
+-- Detect if already installed on startup for Auto Execute
+if isfile and isfile(AUTOEXEC_PATH) then
+    State.AutoExecute = true
+end
+
 local UI = {}
 local UIUpdateCallbacks = {}
 
@@ -545,758 +557,434 @@ local function createTab(name)
         State.CurrentTab = name
         page.Visible = true
         setButtonSelected(true)
-        page.Position = UDim2.new(0, 8, 0, 0)
-        page.CanvasPosition = Vector2.new(0, 0)
-        tween(page, SlowTween, {Position = UDim2.new(0, 0, 0, 0)})
+        page.Position = UDim2.new(0, 10, 0, 0)
+        page.GroupTransparency = 1
+        tween(page, SlowTween, {Position = UDim2.new(0, 0, 0, 0), GroupTransparency = 0})
     end
 
-    btn.MouseButton1Click:Connect(function()
-        tween(btn, PressTween, {Size = UDim2.new(1, -3, 0, 32)})
-        task.delay(0.08, function() tween(btn, PressTween, {Size = UDim2.new(1, 0, 0, 34)}) end)
-        switchTab()
-    end)
-
+    btn.MouseButton1Click:Connect(switchTab)
     Tabs[name] = page
     TabButtons[name] = btn
     TabMarkers[name] = marker
     TabLabels[name] = label
-
+    
     if not State.CurrentTab then switchTab() end
     return page
 end
 
-local function createPageHeader(parent, title, subtitle)
-    local wrap = Instance.new("Frame")
-    wrap.Size = UDim2.new(1, -2, 0, 54)
-    wrap.BackgroundTransparency = 1
-    wrap.Parent = parent
+local function createSection(parent, titleText)
+    local section = Instance.new("Frame")
+    section.Size = UDim2.new(1, 0, 0, 24)
+    section.BackgroundTransparency = 1
+    section.Parent = parent
 
-    local titleLabel = Instance.new("TextLabel")
-    titleLabel.Size = UDim2.new(1, 0, 0, 26)
-    titleLabel.BackgroundTransparency = 1
-    titleLabel.Text = title
-    titleLabel.TextColor3 = Theme.TextMain
-    titleLabel.Font = Enum.Font.GothamBold
-    titleLabel.TextSize = 20
-    titleLabel.TextXAlignment = Enum.TextXAlignment.Left
-    titleLabel.Parent = wrap
+    local lbl = Instance.new("TextLabel")
+    lbl.Size = UDim2.new(1, 0, 1, -4)
+    lbl.Position = UDim2.new(0, 4, 0, 4)
+    lbl.BackgroundTransparency = 1
+    lbl.Text = titleText:upper()
+    lbl.TextColor3 = Theme.AccentCyan
+    lbl.Font = Enum.Font.GothamBold
+    lbl.TextSize = 10
+    lbl.TextXAlignment = Enum.TextXAlignment.Left
+    lbl.Parent = section
 
-    local subLabel = Instance.new("TextLabel")
-    subLabel.Size = UDim2.new(1, 0, 0, 20)
-    subLabel.Position = UDim2.new(0, 0, 0, 27)
-    subLabel.BackgroundTransparency = 1
-    subLabel.Text = subtitle
-    subLabel.TextColor3 = Theme.TextMuted
-    subLabel.Font = Enum.Font.Gotham
-    subLabel.TextSize = 10
-    subLabel.TextXAlignment = Enum.TextXAlignment.Left
-    subLabel.Parent = wrap
-    return wrap
+    local div = Instance.new("Frame")
+    div.Size = UDim2.new(1, -6, 0, 1)
+    div.Position = UDim2.new(0, 4, 1, 2)
+    div.BackgroundColor3 = Theme.Border
+    div.BorderSizePixel = 0
+    div.Parent = section
+    
+    local layout = parent:FindFirstChildOfClass("UIListLayout")
+    if layout then layout:ApplyLayout() end
 end
 
-local function createSection(parent, text)
-    local wrap = Instance.new("Frame")
-    wrap.Size = UDim2.new(1, -2, 0, 23)
-    wrap.BackgroundTransparency = 1
-    wrap.Parent = parent
-
-    local label = Instance.new("TextLabel")
-    label.Size = UDim2.new(0, 100, 1, 0)
-    label.BackgroundTransparency = 1
-    label.Text = text:upper()
-    label.TextColor3 = Theme.TextMuted
-    label.Font = Enum.Font.GothamBold
-    label.TextSize = 9
-    label.TextXAlignment = Enum.TextXAlignment.Left
-    label.Parent = wrap
-
-    local line = Instance.new("Frame")
-    line.Size = UDim2.new(1, -112, 0, 1)
-    line.Position = UDim2.new(0, 112, 0.5, 0)
-    line.BackgroundColor3 = Theme.Border
-    line.BackgroundTransparency = 0.55
-    line.BorderSizePixel = 0
-    line.Parent = wrap
-end
-
-local function createSwitch(parent)
-    local track = Instance.new("Frame")
-    track.Size = UDim2.new(0, 40, 0, 22)
-    track.Position = UDim2.new(1, -50, 0.5, -11)
-    track.BackgroundColor3 = Theme.Off
-    track.BorderSizePixel = 0
-    track.Parent = parent
-    Instance.new("UICorner", track).CornerRadius = UDim.new(1, 0)
-
-    local knob = Instance.new("Frame")
-    knob.Size = UDim2.new(0, 16, 0, 16)
-    knob.Position = UDim2.new(0, 3, 0.5, -8)
-    knob.BackgroundColor3 = Theme.TextMain
-    knob.BorderSizePixel = 0
-    knob.Parent = track
-    Instance.new("UICorner", knob).CornerRadius = UDim.new(1, 0)
-    return track, knob
-end
-
-local function createFeatureCard(parent, name, description, stateKey, bindKey)
-    local card = Instance.new("Frame")
-    card.Size = UDim2.new(1, -2, 0, bindKey and 66 or 60)
+local function createToggle(parent, title, stateKey, desc)
+    local card = Instance.new("TextButton")
+    card.Size = UDim2.new(1, 0, 0, desc and 52 or 38)
     card.BackgroundColor3 = Theme.CardBg
-    card.BorderSizePixel = 0
+    card.Text = ""
+    card.AutoButtonColor = false
     card.Parent = parent
-    Instance.new("UICorner", card).CornerRadius = UDim.new(0, 10)
-    local stroke = addStroke(card, 0.55)
+    Instance.new("UICorner", card).CornerRadius = UDim.new(0, 8)
+    addStroke(card)
 
-    local icon = Instance.new("TextLabel")
-    icon.Size = UDim2.new(0, 34, 0, 34)
-    icon.Position = UDim2.new(0, 12, 0, 13)
-    icon.BackgroundColor3 = Color3.fromRGB(28, 33, 39)
-    icon.Text = "•"
-    icon.TextColor3 = Theme.AccentGreen
-    icon.Font = Enum.Font.GothamBold
-    icon.TextSize = 14
-    icon.Parent = card
-    Instance.new("UICorner", icon).CornerRadius = UDim.new(0, 9)
+    local lbl = Instance.new("TextLabel")
+    lbl.Size = UDim2.new(1, -70, 0, 16)
+    lbl.Position = UDim2.new(0, 14, 0, desc and 10 or 11)
+    lbl.BackgroundTransparency = 1
+    lbl.Text = title
+    lbl.TextColor3 = Theme.TextMain
+    lbl.Font = Enum.Font.GothamMedium
+    lbl.TextSize = 13
+    lbl.TextXAlignment = Enum.TextXAlignment.Left
+    lbl.Parent = card
 
-    local title = Instance.new("TextLabel")
-    title.Size = UDim2.new(1, -150, 0, 20)
-    title.Position = UDim2.new(0, 57, 0, 10)
-    title.BackgroundTransparency = 1
-    title.RichText = true
-    title.Text = name
-    title.TextColor3 = Theme.TextMain
-    title.Font = Enum.Font.GothamMedium
-    title.TextSize = 12
-    title.TextXAlignment = Enum.TextXAlignment.Left
-    title.Parent = card
-
-    local desc = Instance.new("TextLabel")
-    desc.Size = UDim2.new(1, -165, 0, 24)
-    desc.Position = UDim2.new(0, 57, 0, 29)
-    desc.BackgroundTransparency = 1
-    desc.Text = description
-    desc.TextColor3 = Theme.TextMuted
-    desc.Font = Enum.Font.Gotham
-    desc.TextSize = 9
-    desc.TextWrapped = true
-    desc.TextXAlignment = Enum.TextXAlignment.Left
-    desc.Parent = card
-
-    local track, knob = createSwitch(card)
-    local keyButton
-    if bindKey then
-        keyButton = Instance.new("TextButton")
-        keyButton.Size = UDim2.new(0, 64, 0, 32)
-        keyButton.Position = UDim2.new(1, -130, 0.5, -11)
-        keyButton.BackgroundColor3 = Theme.SidebarBg
-        keyButton.TextColor3 = Theme.TextDim
-        keyButton.Font = Enum.Font.GothamMedium
-        keyButton.TextSize = 12
-        keyButton.Text = "[" .. (State[bindKey] and State[bindKey].Name or "None") .. "]"
-        keyButton.AutoButtonColor = false
-        keyButton.Parent = card
-        Instance.new("UICorner", keyButton).CornerRadius = UDim.new(0, 7)
-        addStroke(keyButton, 0.7)
+    if desc then
+        local sub = Instance.new("TextLabel")
+        sub.Size = UDim2.new(1, -70, 0, 14)
+        sub.Position = UDim2.new(0, 14, 0, 28)
+        sub.BackgroundTransparency = 1
+        sub.Text = desc
+        sub.TextColor3 = Theme.TextMuted
+        sub.Font = Enum.Font.Gotham
+        sub.TextSize = 10
+        sub.TextXAlignment = Enum.TextXAlignment.Left
+        sub.Parent = card
     end
 
+    local track = Instance.new("Frame")
+    track.Size = UDim2.new(0, 36, 0, 20)
+    track.Position = UDim2.new(1, -48, 0.5, -10)
+    track.BackgroundColor3 = State[stateKey] and Theme.AccentGreen or Theme.Off
+    track.Parent = card
+    Instance.new("UICorner", track).CornerRadius = UDim.new(1, 0)
+    
+    local trackStroke = addStroke(track)
+
+    local thumb = Instance.new("Frame")
+    thumb.Size = UDim2.new(0, 14, 0, 14)
+    thumb.Position = State[stateKey] and UDim2.new(0, 19, 0.5, -7) or UDim2.new(0, 3, 0.5, -7)
+    thumb.BackgroundColor3 = Color3.new(1,1,1)
+    thumb.Parent = track
+    Instance.new("UICorner", thumb).CornerRadius = UDim.new(1, 0)
+
+    card.MouseEnter:Connect(function() tween(card, FastTween, {BackgroundColor3 = Theme.CardHover}) end)
+    card.MouseLeave:Connect(function() tween(card, FastTween, {BackgroundColor3 = Theme.CardBg}) end)
+
     local function updateVisuals()
-        local enabled = State[stateKey]
-        tween(track, FastTween, {BackgroundColor3 = enabled and Theme.AccentGreenDark or Theme.Off})
-        tween(knob, FastTween, {Position = enabled and UDim2.new(1, -19, 0.5, -8) or UDim2.new(0, 3, 0.5, -8)})
-        tween(stroke, FastTween, {Color = enabled and Theme.AccentGreen or Theme.Border, Transparency = enabled and 0.5 or 0.55})
-        if keyButton and State[bindKey] then
-            keyButton.Text = "[" .. State[bindKey].Name .. "]"
-        end
+        local isOn = State[stateKey]
+        tween(track, FastTween, {BackgroundColor3 = isOn and Theme.AccentGreen or Theme.Off})
+        tween(thumb, FastTween, {Position = isOn and UDim2.new(0, 19, 0.5, -7) or UDim2.new(0, 3, 0.5, -7)})
+        trackStroke.Color = isOn and Theme.AccentGreenDark or Theme.Border
     end
 
     table.insert(UIUpdateCallbacks, updateVisuals)
 
-    local clickTarget = Instance.new("TextButton")
-    clickTarget.Size = UDim2.new(1, 0, 1, 0)
-    clickTarget.BackgroundTransparency = 1
-    clickTarget.Text = ""
-    clickTarget.AutoButtonColor = false
-    clickTarget.ZIndex = 5
-    clickTarget.Parent = card
-    clickTarget.MouseEnter:Connect(function() tween(card, FastTween, {BackgroundColor3 = Theme.CardHover}) end)
-    clickTarget.MouseLeave:Connect(function() tween(card, FastTween, {BackgroundColor3 = Theme.CardBg}) end)
-    clickTarget.MouseButton1Click:Connect(function()
+    card.MouseButton1Down:Connect(function() tween(card, PressTween, {BackgroundColor3 = Theme.CardPressed}) end)
+    card.MouseButton1Up:Connect(function()
+        tween(card, FastTween, {BackgroundColor3 = Theme.CardHover})
         State[stateKey] = not State[stateKey]
         updateVisuals()
-        tween(card, PressTween, {Size = UDim2.new(1, -5, 0, bindKey and 63 or 57)})
-        task.delay(0.08, function() tween(card, PressTween, {Size = UDim2.new(1, -2, 0, bindKey and 66 or 60)}) end)
     end)
+end
 
-    if keyButton then
-        keyButton.ZIndex = 6
-        local changing = false
-        keyButton.MouseEnter:Connect(function() tween(keyButton, FastTween, {BackgroundColor3 = Theme.CardHover, TextColor3 = Theme.TextMain}) end)
-        keyButton.MouseLeave:Connect(function() if not changing then tween(keyButton, FastTween, {BackgroundColor3 = Theme.SidebarBg, TextColor3 = Theme.TextDim}) end end)
-        keyButton.MouseButton1Click:Connect(function()
-            changing = true
-            keyButton.Text = "[...]"
-            tween(keyButton, FastTween, {BackgroundColor3 = Theme.AccentGreen, TextColor3 = Color3.fromRGB(4, 12, 9)})
-        end)
-        table.insert(State.Connections, UserInputService.InputBegan:Connect(function(input)
-            if changing and input.UserInputType == Enum.UserInputType.Keyboard then
-                State[bindKey] = input.KeyCode
-                keyButton.Text = "[" .. State[bindKey].Name .. "]"
-                changing = false
-                tween(keyButton, FastTween, {BackgroundColor3 = Theme.SidebarBg, TextColor3 = Theme.TextDim})
-            end
-        end))
+local function createSlider(parent, title, stateKey, min, max, isFloat, desc)
+    local card = Instance.new("Frame")
+    card.Size = UDim2.new(1, 0, 0, desc and 72 or 58)
+    card.BackgroundColor3 = Theme.CardBg
+    card.Parent = parent
+    Instance.new("UICorner", card).CornerRadius = UDim.new(0, 8)
+    addStroke(card)
+
+    local lbl = Instance.new("TextLabel")
+    lbl.Size = UDim2.new(1, -70, 0, 16)
+    lbl.Position = UDim2.new(0, 14, 0, desc and 10 or 11)
+    lbl.BackgroundTransparency = 1
+    lbl.Text = title
+    lbl.TextColor3 = Theme.TextMain
+    lbl.Font = Enum.Font.GothamMedium
+    lbl.TextSize = 13
+    lbl.TextXAlignment = Enum.TextXAlignment.Left
+    lbl.Parent = card
+
+    if desc then
+        local sub = Instance.new("TextLabel")
+        sub.Size = UDim2.new(1, -70, 0, 14)
+        sub.Position = UDim2.new(0, 14, 0, 26)
+        sub.BackgroundTransparency = 1
+        sub.Text = desc
+        sub.TextColor3 = Theme.TextMuted
+        sub.Font = Enum.Font.Gotham
+        sub.TextSize = 10
+        sub.TextXAlignment = Enum.TextXAlignment.Left
+        sub.Parent = card
     end
 
-    updateVisuals()
-    return updateVisuals
-end
+    local valBox = Instance.new("TextBox")
+    valBox.Size = UDim2.new(0, 45, 0, 22)
+    valBox.Position = UDim2.new(1, -59, 0, desc and 10 or 8)
+    valBox.BackgroundColor3 = Theme.MainBg
+    valBox.TextColor3 = Theme.TextMain
+    valBox.Font = Enum.Font.GothamMedium
+    valBox.TextSize = 11
+    valBox.Text = tostring(State[stateKey])
+    valBox.Parent = card
+    Instance.new("UICorner", valBox).CornerRadius = UDim.new(0, 4)
+    addStroke(valBox)
 
-local function createToggle(parent, name, stateKey, description)
-    return createFeatureCard(parent, name, description or "Toggle this feature on or off.", stateKey)
-end
+    local track = Instance.new("TextButton")
+    track.Size = UDim2.new(1, -28, 0, 6)
+    track.Position = UDim2.new(0, 14, 1, -16)
+    track.BackgroundColor3 = Theme.Border
+    track.Text = ""
+    track.AutoButtonColor = false
+    track.Parent = card
+    Instance.new("UICorner", track).CornerRadius = UDim.new(1, 0)
 
-local function createToggleWithBind(parent, name, stateKey, bindKey, description)
-    return createFeatureCard(parent, name, description or "Toggle this feature with a custom keybind.", stateKey, bindKey)
-end
+    local fill = Instance.new("Frame")
+    fill.Size = UDim2.new(0, 0, 1, 0)
+    fill.BackgroundColor3 = Theme.AccentGreen
+    fill.Parent = track
+    Instance.new("UICorner", fill).CornerRadius = UDim.new(1, 0)
 
-local function createInput(parent, name, stateKey, isNumber)
-    local card = Instance.new("Frame")
-    card.Size = UDim2.new(1, -2, 0, 52)
-    card.BackgroundColor3 = Theme.CardBg
-    card.BorderSizePixel = 0
-    card.Parent = parent
-    Instance.new("UICorner", card).CornerRadius = UDim.new(0, 10)
-    addStroke(card, 0.55)
+    local thumb = Instance.new("Frame")
+    thumb.Size = UDim2.new(0, 14, 0, 14)
+    thumb.Position = UDim2.new(1, -7, 0.5, -7)
+    thumb.BackgroundColor3 = Color3.new(1,1,1)
+    thumb.Parent = fill
+    Instance.new("UICorner", thumb).CornerRadius = UDim.new(1, 0)
+    addStroke(thumb, 0)
 
-    local title = Instance.new("TextLabel")
-    title.Size = UDim2.new(1, -100, 1, 0)
-    title.Position = UDim2.new(0, 15, 0, 0)
-    title.BackgroundTransparency = 1
-    title.Text = name
-    title.TextColor3 = Theme.TextMain
-    title.Font = Enum.Font.GothamMedium
-    title.TextSize = 12
-    title.TextXAlignment = Enum.TextXAlignment.Left
-    title.Parent = card
-    
-    local inputBg = Instance.new("Frame")
-    inputBg.Size = UDim2.new(0, 110, 0, 28)
-    inputBg.Position = UDim2.new(1, -125, 0.5, -14)
-    inputBg.BackgroundColor3 = Theme.SidebarBg
-    inputBg.Parent = card
-    Instance.new("UICorner", inputBg).CornerRadius = UDim.new(0, 6)
-    addStroke(inputBg, 0.6)
+    local function updateUI(val)
+        valBox.Text = isFloat and string.format("%.1f", val) or tostring(math.floor(val))
+        local pct = math.clamp((val - min) / (max - min), 0, 1)
+        tween(fill, FastTween, {Size = UDim2.new(pct, 0, 1, 0)})
+    end
+    updateUI(State[stateKey])
 
-    local textBox = Instance.new("TextBox")
-    textBox.Size = UDim2.new(1, 0, 1, 0)
-    textBox.BackgroundTransparency = 1
-    textBox.Text = tostring(State[stateKey] or "")
-    textBox.TextColor3 = Theme.TextDim
-    textBox.Font = Enum.Font.GothamBold
-    textBox.TextSize = 12
-    textBox.ClearTextOnFocus = true
-    textBox.Parent = inputBg
+    table.insert(UIUpdateCallbacks, function() updateUI(State[stateKey]) end)
 
-    textBox.FocusLost:Connect(function()
-        local val = textBox.Text
-        if isNumber then
-            val = tonumber(val) or State[stateKey]
-            textBox.Text = tostring(val)
+    local sliding = false
+    track.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 then sliding = true end
+    end)
+    UserInputService.InputEnded:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 then sliding = false end
+    end)
+
+    UserInputService.InputChanged:Connect(function(input)
+        if sliding and input.UserInputType == Enum.UserInputType.MouseMovement then
+            local mx = math.clamp(input.Position.X - track.AbsolutePosition.X, 0, track.AbsoluteSize.X)
+            local pct = mx / track.AbsoluteSize.X
+            local val = min + (max - min) * pct
+            val = isFloat and math.floor(val * 10)/10 or math.floor(val)
+            State[stateKey] = val
+            updateUI(val)
         end
-        State[stateKey] = val
     end)
-    
-    local function updateInputVisual()
-        textBox.Text = tostring(State[stateKey] or "")
-    end
-    table.insert(UIUpdateCallbacks, updateInputVisual)
 
-    return textBox 
+    valBox.FocusLost:Connect(function()
+        local num = tonumber(valBox.Text)
+        if num then
+            num = math.clamp(num, min, max)
+            State[stateKey] = num
+            updateUI(num)
+        else
+            updateUI(State[stateKey])
+        end
+    end)
 end
 
-local function createButton(parent, name, description, callback)
-    if type(description) == "function" then
-        callback = description
-        description = "Click to execute action."
+local function createKeybind(parent, title, stateKey, desc)
+    local card = Instance.new("TextButton")
+    card.Size = UDim2.new(1, 0, 0, desc and 52 or 38)
+    card.BackgroundColor3 = Theme.CardBg
+    card.Text = ""
+    card.AutoButtonColor = false
+    card.Parent = parent
+    Instance.new("UICorner", card).CornerRadius = UDim.new(0, 8)
+    addStroke(card)
+
+    local lbl = Instance.new("TextLabel")
+    lbl.Size = UDim2.new(1, -120, 0, 16)
+    lbl.Position = UDim2.new(0, 14, 0, desc and 10 or 11)
+    lbl.BackgroundTransparency = 1
+    lbl.Text = title
+    lbl.TextColor3 = Theme.TextMain
+    lbl.Font = Enum.Font.GothamMedium
+    lbl.TextSize = 13
+    lbl.TextXAlignment = Enum.TextXAlignment.Left
+    lbl.Parent = card
+
+    if desc then
+        local sub = Instance.new("TextLabel")
+        sub.Size = UDim2.new(1, -120, 0, 14)
+        sub.Position = UDim2.new(0, 14, 0, 28)
+        sub.BackgroundTransparency = 1
+        sub.Text = desc
+        sub.TextColor3 = Theme.TextMuted
+        sub.Font = Enum.Font.Gotham
+        sub.TextSize = 10
+        sub.TextXAlignment = Enum.TextXAlignment.Left
+        sub.Parent = card
     end
-    description = type(description) == "string" and description or ""
-
-    local card = Instance.new("Frame")
-    card.Size = UDim2.new(1, -2, 0, 60)
-    card.BackgroundColor3 = Theme.CardBg
-    card.BorderSizePixel = 0
-    card.Parent = parent
-    Instance.new("UICorner", card).CornerRadius = UDim.new(0, 10)
-    local stroke = addStroke(card, 0.55)
-
-    local icon = Instance.new("TextLabel")
-    icon.Size = UDim2.new(0, 34, 0, 34)
-    icon.Position = UDim2.new(0, 12, 0, 13)
-    icon.BackgroundColor3 = Color3.fromRGB(28, 33, 39)
-    icon.Text = "▶"
-    icon.TextColor3 = Theme.AccentCyan
-    icon.Font = Enum.Font.GothamBold
-    icon.TextSize = 14
-    icon.Parent = card
-    Instance.new("UICorner", icon).CornerRadius = UDim.new(0, 9)
-
-    local title = Instance.new("TextLabel")
-    title.Size = UDim2.new(1, -60, 0, 20)
-    title.Position = UDim2.new(0, 57, 0, 10)
-    title.BackgroundTransparency = 1
-    title.Text = name
-    title.TextColor3 = Theme.TextMain
-    title.Font = Enum.Font.GothamMedium
-    title.TextSize = 12
-    title.TextXAlignment = Enum.TextXAlignment.Left
-    title.Parent = card
-
-    local desc = Instance.new("TextLabel")
-    desc.Size = UDim2.new(1, -60, 0, 24)
-    desc.Position = UDim2.new(0, 57, 0, 29)
-    desc.BackgroundTransparency = 1
-    desc.Text = description
-    desc.TextColor3 = Theme.TextMuted
-    desc.Font = Enum.Font.Gotham
-    desc.TextSize = 9
-    desc.TextWrapped = true
-    desc.TextXAlignment = Enum.TextXAlignment.Left
-    desc.Parent = card
-
-    local clickTarget = Instance.new("TextButton")
-    clickTarget.Size = UDim2.new(1, 0, 1, 0)
-    clickTarget.BackgroundTransparency = 1
-    clickTarget.Text = ""
-    clickTarget.AutoButtonColor = false
-    clickTarget.ZIndex = 5
-    clickTarget.Parent = card
-    
-    clickTarget.MouseEnter:Connect(function() tween(card, FastTween, {BackgroundColor3 = Theme.CardHover}) end)
-    clickTarget.MouseLeave:Connect(function() tween(card, FastTween, {BackgroundColor3 = Theme.CardBg}) end)
-    clickTarget.MouseButton1Click:Connect(function()
-        tween(card, PressTween, {Size = UDim2.new(1, -5, 0, 57)})
-        task.delay(0.08, function() tween(card, PressTween, {Size = UDim2.new(1, -2, 0, 60)}) end)
-        if callback then callback() end
-    end)
-    return card
-end
-
-local function createKeybind(parent, name, bindKey)
-    local card = Instance.new("Frame")
-    card.Size = UDim2.new(1, -2, 0, 54)
-    card.BackgroundColor3 = Theme.CardBg
-    card.BorderSizePixel = 0
-    card.Parent = parent
-    Instance.new("UICorner", card).CornerRadius = UDim.new(0, 10)
-    addStroke(card, 0.58)
-
-    local label = Instance.new("TextLabel")
-    label.Size = UDim2.new(1, -110, 1, 0)
-    label.Position = UDim2.new(0, 15, 0, 0)
-    label.BackgroundTransparency = 1
-    label.Font = Enum.Font.GothamMedium
-    label.TextSize = 11
-    label.TextColor3 = Theme.TextMain
-    label.Text = name
-    label.TextXAlignment = Enum.TextXAlignment.Left
-    label.Parent = card
 
     local bindBtn = Instance.new("TextButton")
-    bindBtn.Size = UDim2.new(0, 76, 0, 26)
-    bindBtn.Position = UDim2.new(1, -89, 0.5, -13)
-    bindBtn.BackgroundColor3 = Theme.SidebarBg
-    bindBtn.TextColor3 = Theme.TextDim
+    bindBtn.Size = UDim2.new(0, 90, 0, 24)
+    bindBtn.Position = UDim2.new(1, -104, 0.5, -12)
+    bindBtn.BackgroundColor3 = Theme.MainBg
+    bindBtn.TextColor3 = Theme.AccentCyan
     bindBtn.Font = Enum.Font.GothamMedium
-    bindBtn.TextSize = 12
-    bindBtn.Text = "[" .. (State[bindKey] and State[bindKey].Name or "None") .. "]"
-    bindBtn.AutoButtonColor = false
+    bindBtn.TextSize = 11
+    bindBtn.Text = State[stateKey].Name
     bindBtn.Parent = card
-    Instance.new("UICorner", bindBtn).CornerRadius = UDim.new(0, 7)
-    addStroke(bindBtn, 0.68)
+    Instance.new("UICorner", bindBtn).CornerRadius = UDim.new(0, 6)
+    addStroke(bindBtn)
 
-    local function updateKeybindVisual()
-        if State[bindKey] then
-            bindBtn.Text = "[" .. State[bindKey].Name .. "]"
-        end
-    end
-    table.insert(UIUpdateCallbacks, updateKeybindVisual)
+    card.MouseEnter:Connect(function() tween(card, FastTween, {BackgroundColor3 = Theme.CardHover}) end)
+    card.MouseLeave:Connect(function() tween(card, FastTween, {BackgroundColor3 = Theme.CardBg}) end)
 
-    bindBtn.MouseEnter:Connect(function() tween(bindBtn, FastTween, {BackgroundColor3 = Theme.CardHover, TextColor3 = Theme.TextMain}) end)
-    bindBtn.MouseLeave:Connect(function() tween(bindBtn, FastTween, {BackgroundColor3 = Theme.SidebarBg, TextColor3 = Theme.TextDim}) end)
-
-    local changing = false
+    local listening = false
     bindBtn.MouseButton1Click:Connect(function()
-        changing = true
-        bindBtn.Text = "PRESS KEY"
-        tween(bindBtn, FastTween, {BackgroundColor3 = Theme.AccentGreen, TextColor3 = Color3.fromRGB(4, 12, 9)})
+        listening = true
+        bindBtn.Text = "..."
+        bindBtn.TextColor3 = Theme.Danger
     end)
-    table.insert(State.Connections, UserInputService.InputBegan:Connect(function(input)
-        if changing and input.UserInputType == Enum.UserInputType.Keyboard then
-            State[bindKey] = input.KeyCode
-            bindBtn.Text = "[" .. State[bindKey].Name .. "]"
-            changing = false
-            tween(bindBtn, FastTween, {BackgroundColor3 = Theme.SidebarBg, TextColor3 = Theme.TextDim})
+
+    table.insert(UIUpdateCallbacks, function()
+        bindBtn.Text = State[stateKey].Name
+        bindBtn.TextColor3 = Theme.AccentCyan
+    end)
+
+    UserInputService.InputBegan:Connect(function(input)
+        if listening and input.UserInputType == Enum.UserInputType.Keyboard then
+            State[stateKey] = input.KeyCode
+            listening = false
+            bindBtn.Text = State[stateKey].Name
+            bindBtn.TextColor3 = Theme.AccentCyan
         end
-    end))
+    end)
 end
 
-local function createDropdown(parent, name, initialOptions, callback)
-    local container = Instance.new("Frame")
-    container.Size = UDim2.new(1, -2, 0, 52)
-    container.BackgroundColor3 = Theme.CardBg
-    container.ClipsDescendants = true
-    container.Parent = parent
-    Instance.new("UICorner", container).CornerRadius = UDim.new(0, 10)
-    local stroke = addStroke(container, 0.58)
+local function createButton(parent, title, desc, callback)
+    local btn = Instance.new("TextButton")
+    btn.Size = UDim2.new(1, 0, 0, desc and 52 or 38)
+    btn.BackgroundColor3 = Theme.CardBg
+    btn.Text = ""
+    btn.AutoButtonColor = false
+    btn.Parent = parent
+    Instance.new("UICorner", btn).CornerRadius = UDim.new(0, 8)
+    addStroke(btn)
 
-    local mainBtn = Instance.new("TextButton")
-    mainBtn.Size = UDim2.new(1, 0, 0, 52)
-    mainBtn.BackgroundTransparency = 1
-    mainBtn.Text = ""
-    mainBtn.Parent = container
+    local lbl = Instance.new("TextLabel")
+    lbl.Size = UDim2.new(1, -40, 0, 16)
+    lbl.Position = UDim2.new(0, 14, 0, desc and 10 or 11)
+    lbl.BackgroundTransparency = 1
+    lbl.Text = title
+    lbl.TextColor3 = Theme.AccentGreen
+    lbl.Font = Enum.Font.GothamBold
+    lbl.TextSize = 13
+    lbl.TextXAlignment = Enum.TextXAlignment.Left
+    lbl.Parent = btn
 
-    local iconLabel = Instance.new("TextLabel")
-    iconLabel.Size = UDim2.new(0, 30, 0, 30)
-    iconLabel.Position = UDim2.new(0, 11, 0, 11)
-    iconLabel.BackgroundColor3 = Color3.fromRGB(28, 33, 39)
-    iconLabel.Text = "≡"
-    iconLabel.TextColor3 = Theme.AccentGreen
-    iconLabel.Font = Enum.Font.GothamBold
-    iconLabel.TextSize = 14
-    iconLabel.Parent = mainBtn
-    Instance.new("UICorner", iconLabel).CornerRadius = UDim.new(0, 8)
-
-    local title = Instance.new("TextLabel")
-    title.Size = UDim2.new(1, -88, 0, 52)
-    title.Position = UDim2.new(0, 52, 0, 0)
-    title.BackgroundTransparency = 1
-    title.Text = name .. " - Select..."
-    title.TextColor3 = Theme.TextMain
-    title.Font = Enum.Font.GothamMedium
-    title.TextSize = 12
-    title.TextXAlignment = Enum.TextXAlignment.Left
-    title.Parent = mainBtn
+    if desc then
+        local sub = Instance.new("TextLabel")
+        sub.Size = UDim2.new(1, -40, 0, 14)
+        sub.Position = UDim2.new(0, 14, 0, 28)
+        sub.BackgroundTransparency = 1
+        sub.Text = desc
+        sub.TextColor3 = Theme.TextMuted
+        sub.Font = Enum.Font.Gotham
+        sub.TextSize = 10
+        sub.TextXAlignment = Enum.TextXAlignment.Left
+        sub.Parent = btn
+    end
 
     local arrow = Instance.new("TextLabel")
-    arrow.Size = UDim2.new(0, 24, 0, 52)
-    arrow.Position = UDim2.new(1, -34, 0, 0)
+    arrow.Size = UDim2.new(0, 20, 0, 20)
+    arrow.Position = UDim2.new(1, -30, 0.5, -10)
     arrow.BackgroundTransparency = 1
-    arrow.Text = "▼"
-    arrow.TextColor3 = Theme.TextMuted
-    arrow.Font = Enum.Font.GothamBold
-    arrow.TextSize = 12
-    arrow.Parent = mainBtn
+    arrow.Text = "›"
+    arrow.TextColor3 = Theme.TextDim
+    arrow.Font = Enum.Font.GothamMedium
+    arrow.TextSize = 24
+    arrow.Parent = btn
 
-    local dropFrame = Instance.new("ScrollingFrame")
-    dropFrame.Size = UDim2.new(1, -24, 0, 120)
-    dropFrame.Position = UDim2.new(0, 12, 0, 52)
-    dropFrame.BackgroundTransparency = 1
-    dropFrame.BorderSizePixel = 0
-    dropFrame.ScrollBarThickness = 2
-    dropFrame.ScrollBarImageColor3 = Theme.Border
-    dropFrame.Parent = container
-    
-    local layout = Instance.new("UIListLayout")
-    layout.Padding = UDim.new(0, 6)
-    layout.Parent = dropFrame
-
-    local padding = Instance.new("UIPadding")
-    padding.PaddingTop = UDim.new(0, 6)
-    padding.PaddingBottom = UDim.new(0, 6)
-    padding.Parent = dropFrame
-
-    local isOpen = false
-    mainBtn.MouseEnter:Connect(function() tween(container, FastTween, {BackgroundColor3 = Theme.CardHover}) end)
-    mainBtn.MouseLeave:Connect(function() if not isOpen then tween(container, FastTween, {BackgroundColor3 = Theme.CardBg}) end end)
-
-    mainBtn.MouseButton1Click:Connect(function()
-        isOpen = not isOpen
-        if isOpen then
-            tween(container, SlowTween, {Size = UDim2.new(1, -2, 0, 180)})
-            tween(arrow, FastTween, {Rotation = 180, TextColor3 = Theme.AccentGreen})
-        else
-            tween(container, SlowTween, {Size = UDim2.new(1, -2, 0, 52), BackgroundColor3 = Theme.CardBg})
-            tween(arrow, FastTween, {Rotation = 0, TextColor3 = Theme.TextMuted})
-        end
+    btn.MouseEnter:Connect(function() 
+        tween(btn, FastTween, {BackgroundColor3 = Theme.CardHover}) 
+        tween(arrow, FastTween, {Position = UDim2.new(1, -25, 0.5, -10), TextColor3 = Theme.AccentGreen})
+    end)
+    btn.MouseLeave:Connect(function() 
+        tween(btn, FastTween, {BackgroundColor3 = Theme.CardBg}) 
+        tween(arrow, FastTween, {Position = UDim2.new(1, -30, 0.5, -10), TextColor3 = Theme.TextDim})
     end)
 
-    local function buildOptions(newOptions)
-        for _, child in ipairs(dropFrame:GetChildren()) do
-            if child:IsA("TextButton") then child:Destroy() end
-        end
-
-        for _, opt in ipairs(newOptions) do
-            local optBtn = Instance.new("TextButton")
-            optBtn.Size = UDim2.new(1, 0, 0, 32)
-            optBtn.BackgroundColor3 = Theme.SidebarBg
-            optBtn.Text = "  " .. opt
-            optBtn.TextColor3 = Theme.TextDim
-            optBtn.Font = Enum.Font.Gotham
-            optBtn.TextSize = 11
-            optBtn.TextXAlignment = Enum.TextXAlignment.Left
-            optBtn.AutoButtonColor = false
-            optBtn.Parent = dropFrame
-            Instance.new("UICorner", optBtn).CornerRadius = UDim.new(0, 6)
-
-            optBtn.MouseEnter:Connect(function() tween(optBtn, FastTween, {BackgroundColor3 = Color3.fromRGB(28, 33, 39), TextColor3 = Theme.TextMain}) end)
-            optBtn.MouseLeave:Connect(function() tween(optBtn, FastTween, {BackgroundColor3 = Theme.SidebarBg, TextColor3 = Theme.TextDim}) end)
-            
-            optBtn.MouseButton1Click:Connect(function()
-                title.Text = name .. " - " .. opt
-                isOpen = false
-                tween(container, SlowTween, {Size = UDim2.new(1, -2, 0, 52), BackgroundColor3 = Theme.CardBg})
-                tween(arrow, FastTween, {Rotation = 0, TextColor3 = Theme.TextMuted})
-                callback(opt)
-            end)
-        end
-    end
-    
-    layout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
-        dropFrame.CanvasSize = UDim2.new(0, 0, 0, layout.AbsoluteContentSize.Y + 12)
+    btn.MouseButton1Down:Connect(function() tween(btn, PressTween, {BackgroundColor3 = Theme.CardPressed}) end)
+    btn.MouseButton1Up:Connect(function()
+        tween(btn, FastTween, {BackgroundColor3 = Theme.CardHover})
+        pcall(callback)
     end)
-    
-    buildOptions(initialOptions)
-    
-    return container, buildOptions, title
 end
 
--- [[ CUSTOM NOTIFICATION SYSTEM ]]
-local NotifContainer = Instance.new("Frame")
-NotifContainer.Name = "NotifContainer"
-NotifContainer.Size = UDim2.new(0, 240, 1, -20)
-NotifContainer.Position = UDim2.new(1, -10, 1, -10)
-NotifContainer.AnchorPoint = Vector2.new(1, 1)
-NotifContainer.BackgroundTransparency = 1
-NotifContainer.Parent = ScreenGui
+local NotificationUI = Instance.new("ScreenGui")
+NotificationUI.Name = "Seoul_Notifications"
+NotificationUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+NotificationUI.Parent = successGui and coreGui or LocalPlayer:WaitForChild("PlayerGui")
+
+local NotifList = Instance.new("Frame")
+NotifList.Size = UDim2.new(0, 300, 1, -40)
+NotifList.Position = UDim2.new(1, -320, 0, 20)
+NotifList.BackgroundTransparency = 1
+NotifList.Parent = NotificationUI
 
 local NotifLayout = Instance.new("UIListLayout")
-NotifLayout.SortOrder = Enum.SortOrder.LayoutOrder
-NotifLayout.Padding = UDim.new(0, 8)
-NotifLayout.VerticalAlignment = Enum.VerticalAlignment.Bottom
+NotifLayout.Padding = UDim.new(0, 10)
 NotifLayout.HorizontalAlignment = Enum.HorizontalAlignment.Right
-NotifLayout.Parent = NotifContainer
+NotifLayout.VerticalAlignment = Enum.VerticalAlignment.Bottom
+NotifLayout.SortOrder = Enum.SortOrder.LayoutOrder
+NotifLayout.Parent = NotifList
 
-local function SendHubNotification(text, duration)
+local function SendHubNotification(msg, duration)
     duration = duration or 3
+    local f = Instance.new("Frame")
+    f.Size = UDim2.new(0, 280, 0, 50)
+    f.BackgroundColor3 = Theme.CardBg
+    f.BackgroundTransparency = 1
+    f.Parent = NotifList
+    Instance.new("UICorner", f).CornerRadius = UDim.new(0, 8)
     
-    local notif = Instance.new("Frame")
-    notif.Size = UDim2.new(1, 0, 0, 60)
-    notif.BackgroundColor3 = Theme.CardBg
-    notif.BackgroundTransparency = 1
-    notif.Parent = NotifContainer
-    Instance.new("UICorner", notif).CornerRadius = UDim.new(0, 8)
-    
-    local stroke = Instance.new("UIStroke")
-    stroke.Color = Theme.AccentGreen
-    stroke.Thickness = 1
-    stroke.Transparency = 1
-    stroke.Parent = notif
-    
-    local title = Instance.new("TextLabel")
-    title.Size = UDim2.new(1, -20, 0, 20)
-    title.Position = UDim2.new(0, 12, 0, 8)
-    title.BackgroundTransparency = 1
-    title.Text = "SEOUL HUB"
-    title.TextColor3 = Theme.AccentGreen
-    title.Font = Enum.Font.GothamBold
-    title.TextSize = 12
-    title.TextXAlignment = Enum.TextXAlignment.Left
-    title.TextTransparency = 1
-    title.Parent = notif
-    
-    local msg = Instance.new("TextLabel")
-    msg.Size = UDim2.new(1, -24, 0, 24)
-    msg.Position = UDim2.new(0, 12, 0, 28)
-    msg.BackgroundTransparency = 1
-    msg.Text = text
-    msg.TextColor3 = Theme.TextMain
-    msg.Font = Enum.Font.GothamMedium
-    msg.TextSize = 11
-    msg.TextWrapped = true
-    msg.TextXAlignment = Enum.TextXAlignment.Left
-    msg.TextTransparency = 1
-    msg.Parent = notif
-    
-    tween(notif, FastTween, {BackgroundTransparency = 0})
-    tween(stroke, FastTween, {Transparency = 0.5})
-    tween(title, FastTween, {TextTransparency = 0})
-    tween(msg, FastTween, {TextTransparency = 0})
-    
+    local str = Instance.new("UIStroke")
+    str.Color = Theme.Border
+    str.Transparency = 1
+    str.Thickness = 1
+    str.Parent = f
+
+    local band = Instance.new("Frame")
+    band.Size = UDim2.new(0, 4, 1, 0)
+    band.BackgroundColor3 = Theme.AccentGreen
+    band.BackgroundTransparency = 1
+    band.BorderSizePixel = 0
+    band.Parent = f
+    Instance.new("UICorner", band).CornerRadius = UDim.new(0, 8)
+
+    local txt = Instance.new("TextLabel")
+    txt.Size = UDim2.new(1, -20, 1, 0)
+    txt.Position = UDim2.new(0, 14, 0, 0)
+    txt.BackgroundTransparency = 1
+    txt.Text = msg
+    txt.TextColor3 = Theme.TextMain
+    txt.TextTransparency = 1
+    txt.Font = Enum.Font.GothamMedium
+    txt.TextSize = 12
+    txt.TextWrapped = true
+    txt.TextXAlignment = Enum.TextXAlignment.Left
+    txt.Parent = f
+
+    tween(f, SlowTween, {BackgroundTransparency = 0})
+    tween(str, SlowTween, {Transparency = 0.2})
+    tween(band, SlowTween, {BackgroundTransparency = 0})
+    tween(txt, SlowTween, {TextTransparency = 0})
+
     task.delay(duration, function()
-        tween(notif, FastTween, {BackgroundTransparency = 1})
-        tween(stroke, FastTween, {Transparency = 1})
-        tween(title, FastTween, {TextTransparency = 1})
-        local outTween = tween(msg, FastTween, {TextTransparency = 1})
-        outTween.Completed:Wait()
-        notif:Destroy()
+        tween(f, FastTween, {BackgroundTransparency = 1})
+        tween(str, FastTween, {Transparency = 1})
+        tween(band, FastTween, {BackgroundTransparency = 1})
+        local t = tween(txt, FastTween, {TextTransparency = 1})
+        t.Completed:Connect(function() f:Destroy() end)
     end)
 end
 
--- [[ HELPER FUNCTIONS FOR AUTO TAB ]]
-local function TriggerEnterDungeon()
-    pcall(function()
-        local remote = ReplicatedStorage:FindFirstChild("PodPromptRequested", true)
-        if remote then
-            if typeof(firesignal) == "function" then
-                firesignal(remote.OnClientEvent, "Dungeon")
-            else
-                local outgoingRemote = ReplicatedStorage:FindFirstChild("RequestSelectDungeon", true) 
-                    or ReplicatedStorage:FindFirstChild("RequestParty", true)
-                if outgoingRemote then
-                    outgoingRemote:FireServer("Dungeon")
-                end
-            end
-        end
-    end)
-end
+-- [[ CONFIG SYSTEM ]]
+local SaveConfigBox, ConfigDropdown
+local ActiveConfigFrame = nil 
 
-local function GetCurrentDungeonFolder()
-    for _, child in ipairs(workspace:GetChildren()) do
-        if string.find(child.Name, "^Generated_") then
-            return child
-        end
-    end
-    return nil
-end
-
-local function GetClosestEnemy()
-    local folder = GetCurrentDungeonFolder()
-    if not folder or not folder:FindFirstChild("NPCs") then return nil end
+local function SaveCurrentConfig(name)
+    if not writefile then SendHubNotification("Executor does not support writefile.") return end
+    name = name:gsub("[^%w%-_]", "")
+    if name == "" then name = "Default" end
     
-    local char = LocalPlayer.Character
-    local hrp = char and char:FindFirstChild("HumanoidRootPart")
-    
-    local closest = nil
-    local minDistance = math.huge
-
-    for _, npc in ipairs(folder.NPCs:GetChildren()) do
-        local hum = npc:FindFirstChildOfClass("Humanoid") or npc:FindFirstChild("Humanoid")
-        local root = npc:FindFirstChild("HumanoidRootPart") or npc:FindFirstChild("Torso") or npc.PrimaryPart
-        
-        if not root then
-            for _, part in ipairs(npc:GetChildren()) do
-                if part:IsA("BasePart") then
-                    root = part
-                    break
-                end
-            end
-        end
-
-        local isAlive = hum and (hum.Health > 0) or (root ~= nil)
-
-        if isAlive and root then
-            if hrp then
-                local dist = (root.Position - hrp.Position).Magnitude
-                if dist < minDistance then
-                    minDistance = dist
-                    closest = npc
-                end
-            else
-                return npc
-            end
-        end
-    end
-    
-    return closest
-end
-
--- [[ CHEST CACHE / BLACKLIST ]]
-local ChestBlacklist = {}
-
-local function GetValidChest(folder)
-    for _, child in ipairs(folder:GetDescendants()) do
-        if string.match(child.Name, "^DungeonChest_") or string.match(child.Name, "^Chest") then
-            if ChestBlacklist[child] then continue end 
-            
-            local isLocked = false
-            local parent = child.Parent
-            
-            while parent and parent ~= workspace do
-                if string.match(parent.Name, "^Locked_") or string.match(parent.Name, "^Locked") then
-                    isLocked = true
-                    break
-                end
-                parent = parent.Parent
-            end
-            
-            if not isLocked then
-                local chestPart = child:IsA("Model") and child.PrimaryPart or child:FindFirstChildWhichIsA("BasePart") or (child:IsA("BasePart") and child)
-                
-                if chestPart and chestPart.Transparency < 1 then 
-                    return child, chestPart 
-                end
-            end
-        end
-    end
-    return nil, nil
-end
-
--- Auto Tab
-local TabAuto = createTab("Auto")
-
-createSection(TabAuto, "Auto Dungeon")
-createToggle(TabAuto, "Auto Dungeon", "AutoDungeon", "Automatically teleports, circles, and attacks nearby enemies in dungeons.")
-createToggle(TabAuto, "Auto Collect Chest", "AutoCollectChest", "Collects physical chest drops after clearing room enemies.")
-createToggle(TabAuto, "Auto Select Chest", "AutoSelectChest", "Selects reward chests at dungeon completion once all enemies are defeated.")
-createToggle(TabAuto, "Auto Replay Dungeon", "AutoReplay", "Automatically replays after dungeon chest selection is completed.")
-createToggle(TabAuto, "Auto Use Potion", "AutoUsePotion", "Uses a potion automatically when player health drops to 50% or lower.")
-
-createSection(TabAuto, "Combat")
-createToggle(TabAuto, "Auto Attack", "AutoAttack", "Automatically fires the attack action continuously.")
-
-createSection(TabAuto, "Dungeon Navigation")
-createButton(TabAuto, "Enter Dungeon", "Triggers the dungeon pod prompt.", function()
-    TriggerEnterDungeon()
-    SendHubNotification("Requested Dungeon Pod", 3)
-end)
-
-local TabPlayer = createTab("Player")
-
-createSection(TabPlayer, "Movement")
-local speedInputBox = createInput(TabPlayer, "Custom WalkSpeed", "WalkSpeed", true)
-
-createButton(TabPlayer, "Apply Speed", "Applies custom WalkSpeed.", function()
-    local char = LocalPlayer.Character
-    if char then
-        local hum = char:FindFirstChildOfClass("Humanoid")
-        if hum then
-            hum.WalkSpeed = State.WalkSpeed
-            SendHubNotification("WalkSpeed set to " .. tostring(State.WalkSpeed), 3)
-        end
-    end
-end)
-
-createButton(TabPlayer, "Reset Speed", "Resets WalkSpeed back to 16.", function()
-    State.WalkSpeed = 16
-    speedInputBox.Text = "16"
-    local char = LocalPlayer.Character
-    if char then
-        local hum = char:FindFirstChildOfClass("Humanoid")
-        if hum then
-            hum.WalkSpeed = 16
-            SendHubNotification("WalkSpeed reset to standard 16.", 3)
-        end
-    end
-end)
-
-createSection(TabPlayer, "Abilities")
-createToggle(TabPlayer, "Infinite Jump", "InfiniteJump", "Allows you to jump endlessly in mid-air.")
-
--- Settings
-local TabSettings = createTab("Settings")
-createPageHeader(TabSettings, "Settings", "Customize controls and configuration files.")
-
--- [[ CONFIGURATION MANAGEMENT ]]
-createSection(TabSettings, "New Config")
-
-local selectedConfigName = ""
-createInput(TabSettings, "New Config Name", "NewConfigName", false)
-
-local configDropdownContainer, updateConfigDropdown, configTitle
-
-local function SaveCurrentConfig(targetName)
-    EnsureFolders()
-    local filePath = CONFIG_FOLDER .. "/" .. targetName .. ".json"
     local configData = {
         AntiAFK = State.AntiAFK,
         AutoReconnect = State.AutoReconnect,
@@ -1305,426 +993,429 @@ local function SaveCurrentConfig(targetName)
         HideMenuKey = State.HideMenuKey.Name,
 
         AutoAttack = State.AutoAttack,
-        InfiniteJump = State.InfiniteJump,
         AutoDungeon = State.AutoDungeon,
         AutoCollectChest = State.AutoCollectChest, 
         AutoSelectChest = State.AutoSelectChest, 
         AutoReplay = State.AutoReplay,
         AutoUsePotion = State.AutoUsePotion,
+        AutoExecute = State.AutoExecute
     }
+
+    local json = HttpService:JSONEncode(configData)
+    local path = CONFIG_FOLDER .. "/" .. name .. ".json"
     
-    if writefile then
-        local success, err = pcall(function()
-            writefile(filePath, HttpService:JSONEncode(configData))
-        end)
-        return success, err
+    local s, err = pcall(function() writefile(path, json) end)
+    if s then 
+        SendHubNotification("Saved config: " .. name, 2)
+    else
+        SendHubNotification("Failed to save config: " .. tostring(err))
     end
-    return false, "writefile not supported"
 end
 
-createButton(TabSettings, "Create Config", "Creates a new config file with the specified name.", function()
-    local name = State.NewConfigName
-    if not name or name:gsub("%s+", "") == "" then
-        SendHubNotification("Please enter a valid config name!", 3)
-        return
-    end
+local function LoadConfig(name)
+    if not readfile then return end
+    local path = CONFIG_FOLDER .. "/" .. name .. ".json"
+    if not isfile or not isfile(path) then return end
+    
+    local s, content = pcall(function() return readfile(path) end)
+    if not s or not content then return end
 
-    local success, err = SaveCurrentConfig(name)
-    if success then
-        selectedConfigName = name
-        local currentList = GetConfigList()
-        updateConfigDropdown(currentList)
-        if configTitle then configTitle.Text = "Select Config - " .. name end
-        SendHubNotification("Created config: " .. name, 3)
-    else
-        SendHubNotification("Failed to create config: " .. tostring(err), 3)
-    end
-end)
-
-createSection(TabSettings, "Load Config")
-
-local detectedConfigs = GetConfigList()
-configDropdownContainer, updateConfigDropdown, configTitle = createDropdown(TabSettings, "Select Config", detectedConfigs, function(opt)
-    selectedConfigName = opt
-end)
-
-createButton(TabSettings, "Overwrite Config", "Overwrites selected configuration with current settings.", function()
-    if selectedConfigName == "" then
-        SendHubNotification("No config selected to overwrite!", 3)
-        return
-    end
-    local success, err = SaveCurrentConfig(selectedConfigName)
-    if success then
-        SendHubNotification("Overwrote config: " .. selectedConfigName, 3)
-    else
-        SendHubNotification("Failed to overwrite: " .. tostring(err), 3)
-    end
-end)
-
-createButton(TabSettings, "Load Config", "Loads settings from selected configuration file.", function()
-    if selectedConfigName == "" then
-        SendHubNotification("No config selected to load!", 3)
-        return
-    end
-
-    EnsureFolders()
-    local filePath = CONFIG_FOLDER .. "/" .. selectedConfigName .. ".json"
-    if isfile and isfile(filePath) and readfile then
-        local success, data = pcall(function() return HttpService:JSONDecode(readfile(filePath)) end)
-        if success and type(data) == "table" then
-            for k, v in pairs(data) do
-                if k == "AutoAttackKey" or k == "HideMenuKey" then
-                    if type(v) == "string" and Enum.KeyCode[v] then
-                        State[k] = Enum.KeyCode[v]
-                    end
+    local s2, data = pcall(function() return HttpService:JSONDecode(content) end)
+    if s2 and type(data) == "table" then
+        for k, v in pairs(data) do
+            if State[k] ~= nil then
+                if k == "HideMenuKey" then
+                    pcall(function() State[k] = Enum.KeyCode[v] end)
                 else
                     State[k] = v
                 end
             end
-            UpdateAllUI()
-            SendHubNotification("Loaded config: " .. selectedConfigName, 3)
-        else
-            SendHubNotification("Failed to load config file.", 3)
         end
-    else
-        SendHubNotification("Config file not found!", 3)
+        UpdateAllUI()
+        SendHubNotification("Loaded config: " .. name, 2)
     end
-end)
+end
 
-createButton(TabSettings, "Set Auto Load Config", "Sets selected configuration to load automatically on script execution.", function()
-    if selectedConfigName == "" then
-        SendHubNotification("No config selected for Auto Load!", 3)
-        return
-    end
-
-    EnsureFolders()
-    local autoLoadPath = CONFIG_FOLDER .. "/autoload.txt"
-    if writefile then
-        pcall(function() writefile(autoLoadPath, selectedConfigName) end)
-        SendHubNotification("Auto Load set to: " .. selectedConfigName, 3)
-    end
-end)
-
-createButton(TabSettings, "Delete Config", "Permanently deletes the selected configuration file.", function()
-    if selectedConfigName == "" then
-        SendHubNotification("No config selected to delete!", 3)
-        return
-    end
-
-    EnsureFolders()
-    local countBefore = #GetConfigList()
-    local filePath = CONFIG_FOLDER .. "/" .. selectedConfigName .. ".json"
-
-    if isfile and isfile(filePath) and delfile then
-        pcall(function() delfile(filePath) end)
-        SendHubNotification("Deleted config: " .. selectedConfigName, 3)
-
-        local remainingList = GetConfigList()
-        updateConfigDropdown(remainingList)
-
-        selectedConfigName = ""
-        if configTitle then configTitle.Text = "Select Config - None" end
-    else
-        SendHubNotification("Could not delete config or delfile not supported.", 3)
-    end
-end)
-
-createSection(TabSettings, "Utility")
-createToggle(TabSettings, "Anti AFK", "AntiAFK", "Prevents the game from kicking you for inactivity.")
-
-createSection(TabSettings, "Keybinds")
-createKeybind(TabSettings, "Hide / Show Menu", "HideMenuKey")
-
-createSection(TabSettings, "Client")
-createToggle(TabSettings, "Auto Reconnect", "AutoReconnect", "Automatically rejoins the server if you get disconnected.")
-createButton(TabSettings, "Auto Execute", "Places the script in your executor's autoexec folder.", function()
-    if writefile then
-        local success, err = pcall(function()
-            -- Replace the URL below with the actual raw URL of your script!
-            local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/Seoul-Hub/Scripts/refs/heads/main/DungeonLootr.lua))()"
-            writefile("AutoExecute/DungeonLootr-SeoulHub.lua", loadstringCode)
-        end)
-        
-        if success then
-            SendHubNotification("Added to AutoExecute folder!", 3)
-        else
-            SendHubNotification("Failed: " .. tostring(err), 3)
-        end
-    else
-        SendHubNotification("Your executor does not support writefile.", 3)
-    end
-end)
-createButton(TabSettings, "Unload Script", "Unloads Seoul Hub from memory and removes GUI.", function()
-    for _, conn in pairs(State.Connections) do conn:Disconnect() end
-    ScreenGui:Destroy()
-end)
-
--- [[ AUTO LOAD LOGIC ON STARTUP ]]
-task.spawn(function()
-    EnsureFolders()
-    local autoLoadPath = CONFIG_FOLDER .. "/autoload.txt"
-    if isfile and isfile(autoLoadPath) and readfile then
-        local autoName = readfile(autoLoadPath)
-        if autoName and autoName ~= "" then
-            local filePath = CONFIG_FOLDER .. "/" .. autoName .. ".json"
-            if isfile(filePath) then
-                local success, data = pcall(function() return HttpService:JSONDecode(readfile(filePath)) end)
-                if success and type(data) == "table" then
-                    for k, v in pairs(data) do
-                        if k == "AutoAttackKey" or k == "HideMenuKey" then
-                            if type(v) == "string" and Enum.KeyCode[v] then
-                                State[k] = Enum.KeyCode[v]
-                            end
-                        else
-                            State[k] = v
-                        end
-                    end
-                    UpdateAllUI()
-                    SendHubNotification("Auto Loaded config: " .. autoName, 3)
-                end
-            end
-        end
-    end
-end)
-
--- [[ GLOBAL KEYBINDS LOGIC ]]
-table.insert(State.Connections, UserInputService.InputBegan:Connect(function(input, processed)
-    if processed then return end
-    if input.KeyCode == State.HideMenuKey then
-        ToggleMenu()
-    elseif input.KeyCode == State.AutoAttackKey then
-        State.AutoAttack = not State.AutoAttack; if UI.UpdateAutoAttack then UI.UpdateAutoAttack() end
-    end
-end))
-
--- [[ MAIN AUTOMATION LOOPS ]]
-
--- Infinite Jump Core Logic
-table.insert(State.Connections, UserInputService.InputBegan:Connect(function(input, processed)
-    if processed then return end 
+local function BuildConfigListUI(parent)
+    if ActiveConfigFrame then ActiveConfigFrame:Destroy() end
+    local listContainer = Instance.new("Frame")
+    listContainer.Size = UDim2.new(1, 0, 0, 150) 
+    listContainer.BackgroundTransparency = 1
+    listContainer.Parent = parent
+    ActiveConfigFrame = listContainer
     
-    if State.InfiniteJump and input.KeyCode == Enum.KeyCode.Space then
-        local char = LocalPlayer.Character
-        if char then
-            local hum = char:FindFirstChildOfClass("Humanoid")
-            if hum then
-                hum:ChangeState(Enum.HumanoidStateType.Jumping)
-            end
-        end
-    end
-end))
+    local layout = Instance.new("UIListLayout")
+    layout.Padding = UDim.new(0, 6)
+    layout.Parent = listContainer
+    
+    local list = GetConfigList()
+    if #list == 0 then
+        local lbl = Instance.new("TextLabel")
+        lbl.Size = UDim2.new(1, 0, 0, 20)
+        lbl.BackgroundTransparency = 1
+        lbl.Text = "No configurations found."
+        lbl.TextColor3 = Theme.TextMuted
+        lbl.Font = Enum.Font.Gotham
+        lbl.TextSize = 11
+        lbl.Parent = listContainer
+    else
+        for _, cfg in ipairs(list) do
+            local cfgRow = Instance.new("Frame")
+            cfgRow.Size = UDim2.new(1, 0, 0, 32)
+            cfgRow.BackgroundColor3 = Theme.CardBg
+            cfgRow.Parent = listContainer
+            Instance.new("UICorner", cfgRow).CornerRadius = UDim.new(0, 6)
+            
+            local lbl = Instance.new("TextLabel")
+            lbl.Size = UDim2.new(1, -70, 1, 0)
+            lbl.Position = UDim2.new(0, 10, 0, 0)
+            lbl.BackgroundTransparency = 1
+            lbl.Text = cfg
+            lbl.TextColor3 = Theme.TextMain
+            lbl.Font = Enum.Font.GothamMedium
+            lbl.TextSize = 12
+            lbl.TextXAlignment = Enum.TextXAlignment.Left
+            lbl.Parent = cfgRow
 
--- Auto Attack Standard
-task.spawn(function()
-    while task.wait() do
-        if State.AutoAttack and not State.AutoDungeon then
-            pcall(function()
-                game:GetService("ReplicatedStorage"):WaitForChild("Player"):WaitForChild("Remotes"):WaitForChild("Inputs"):WaitForChild("Attack"):FireServer(Vector3.zero)
+            local loadBtn = Instance.new("TextButton")
+            loadBtn.Size = UDim2.new(0, 50, 0, 22)
+            loadBtn.Position = UDim2.new(1, -60, 0.5, -11)
+            loadBtn.BackgroundColor3 = Theme.MainBg
+            loadBtn.TextColor3 = Theme.AccentGreen
+            loadBtn.Text = "Load"
+            loadBtn.Font = Enum.Font.GothamBold
+            loadBtn.TextSize = 10
+            loadBtn.Parent = cfgRow
+            Instance.new("UICorner", loadBtn).CornerRadius = UDim.new(0, 4)
+            addStroke(loadBtn)
+            
+            loadBtn.MouseButton1Click:Connect(function()
+                LoadConfig(cfg)
             end)
         end
     end
+end
+
+-- [[ TABS & ELEMENTS ]]
+local TabMain = createTab("Main")
+local TabAuto = createTab("Auto Farming")
+local TabSettings = createTab("Settings")
+
+-- Main Tab
+createSection(TabMain, "Character")
+createToggle(TabMain, "Infinite Jump", "InfiniteJump", "Allows you to jump endlessly.")
+createSlider(TabMain, "Walk Speed", "WalkSpeed", 16, 120, false, "Sets your character's walking speed.")
+createButton(TabMain, "Redeem All Codes", "Automatically attempts to claim all known codes.", function()
+    SendHubNotification("Attempting to redeem codes...")
+    local codes = {"dungeon", "1KLIKES", "500LIKES"}
+    for _, code in ipairs(codes) do
+        ReplicatedStorage.RemoteEvents.RedeemCode:FireServer(code)
+        task.wait(0.5)
+    end
+    SendHubNotification("Finished redeeming codes.")
 end)
 
--- [[ AUTO USE POTION LOOP (AT <= 50% HP) ]]
+-- Auto Farming Tab
+createSection(TabAuto, "Automation")
+createToggle(TabAuto, "Auto Dungeon", "AutoDungeon", "Automatically attacks and progresses through dungeons without delay.")
+createToggle(TabAuto, "Auto Replay Dungeon", "AutoReplay", "Automatically rejoins the previous dungeon/portal when finished.")
+createToggle(TabAuto, "Auto Use Health Potions", "AutoUsePotion", "Automatically uses potions if health drops below 50%.")
+
+createSection(TabAuto, "Rewards")
+createToggle(TabAuto, "Auto Collect Drops", "AutoCollectChest", "Magnetizes drops and bags to your character instantly.")
+createToggle(TabAuto, "Auto Select Chest", "AutoSelectChest", "Automatically opens reward chests at the end of a dungeon.")
+
+-- Settings Tab
+createSection(TabSettings, "User Interface")
+createKeybind(TabSettings, "Toggle Menu Key", "HideMenuKey", "Press this key to hide or show the interface.")
+
+createSection(TabSettings, "Configurations")
+
+local ConfigNameBox = Instance.new("TextBox")
+ConfigNameBox.Size = UDim2.new(1, 0, 0, 38)
+ConfigNameBox.BackgroundColor3 = Theme.MainBg
+ConfigNameBox.TextColor3 = Theme.TextMain
+ConfigNameBox.PlaceholderText = "Enter configuration name..."
+ConfigNameBox.Font = Enum.Font.GothamMedium
+ConfigNameBox.TextSize = 12
+ConfigNameBox.Text = ""
+ConfigNameBox.Parent = TabSettings
+Instance.new("UICorner", ConfigNameBox).CornerRadius = UDim.new(0, 6)
+addStroke(ConfigNameBox)
+
+createButton(TabSettings, "Save Configuration", "Saves current settings under the above name.", function()
+    local t = ConfigNameBox.Text
+    SaveCurrentConfig(t ~= "" and t or "Default")
+    BuildConfigListUI(TabSettings) 
+end)
+
+createSection(TabSettings, "Saved Configs")
+BuildConfigListUI(TabSettings) 
+
+createSection(TabSettings, "Client")
+createToggle(TabSettings, "Anti AFK", "AntiAFK", "Prevents Roblox from kicking you for being idle.")
+createToggle(TabSettings, "Auto Reconnect", "AutoReconnect", "Automatically rejoins the server if you get disconnected.")
+createToggle(TabSettings, "Auto Execute", "AutoExecute", "Automatically saves or removes the script in Madium's Auto Execute folder.")
+createButton(TabSettings, "Unload Script", "Unloads Seoul Hub from memory and removes GUI.", function()
+    for _, conn in pairs(State.Connections) do conn:Disconnect() end
+    ScreenGui:Destroy()
+    NotificationUI:Destroy()
+end)
+
+
+-- [[ AUTO EXECUTE TOGGLE HANDLER ]]
+local lastAutoExecState = State.AutoExecute
+table.insert(State.Connections, RunService.Heartbeat:Connect(function()
+    if State.AutoExecute ~= lastAutoExecState then
+        lastAutoExecState = State.AutoExecute
+        
+        if State.AutoExecute then
+            -- Enable Logic: Create file
+            if writefile then
+                local success, err = pcall(function()
+                    local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/Seoul-Hub/Scripts/refs/heads/main/DungeonLootr.lua'))()"
+                    if makefolder and isfolder and not isfolder("Auto Execute") then
+                        makefolder("Auto Execute")
+                    end
+                    writefile(AUTOEXEC_PATH, loadstringCode)
+                end)
+                
+                if success then
+                    SendHubNotification("Auto Execute Enabled & File Saved!", 3)
+                else
+                    SendHubNotification("Failed to write file: " .. tostring(err), 3)
+                    State.AutoExecute = false
+                    UpdateAllUI()
+                end
+            else
+                SendHubNotification("Your executor does not support writefile.", 3)
+                State.AutoExecute = false
+                UpdateAllUI()
+            end
+        else
+            -- Disable Logic: Delete file
+            if isfile and isfile(AUTOEXEC_PATH) and delfile then
+                pcall(function() delfile(AUTOEXEC_PATH) end)
+                SendHubNotification("Auto Execute Disabled & File Removed!", 3)
+            end
+        end
+    end
+end))
+
+-- [[ BACKGROUND TASKS & CONNECTIONS ]]
+
+-- Hide Menu Keybind
+table.insert(State.Connections, UserInputService.InputBegan:Connect(function(input, gameProcessed)
+    if not gameProcessed and input.KeyCode == State.HideMenuKey then ToggleMenu() end
+end))
+
+-- Anti AFK Handler
+table.insert(State.Connections, LocalPlayer.Idled:Connect(function()
+    if State.AntiAFK then
+        VirtualUser:CaptureController()
+        VirtualUser:ClickButton2(Vector2.new(0, 0))
+    end
+end))
+
+-- Auto Reconnect Handler
+table.insert(State.Connections, GuiService.ErrorMessageChanged:Connect(function()
+    if State.AutoReconnect then
+        SendHubNotification("Disconnected! Rejoining...", 5)
+        task.wait(2)
+        TeleportService:TeleportToPlaceInstance(game.PlaceId, game.JobId, LocalPlayer)
+    end
+end))
+
+-- Infinite Jump Hook
+table.insert(State.Connections, UserInputService.JumpRequest:Connect(function()
+    if State.InfiniteJump and LocalPlayer.Character and LocalPlayer.Character:FindFirstChildOfClass("Humanoid") then
+        LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+    end
+end))
+
+-- WalkSpeed Mod
+table.insert(State.Connections, RunService.Stepped:Connect(function()
+    local char = LocalPlayer.Character
+    if char and char:FindFirstChild("Humanoid") then
+        local hum = char.Humanoid
+        if hum.WalkSpeed ~= State.WalkSpeed then
+            hum.WalkSpeed = State.WalkSpeed
+        end
+    end
+end))
+
+-- Potions Loop
 task.spawn(function()
     while task.wait(1) do
         if State.AutoUsePotion then
             local char = LocalPlayer.Character
-            local hum = char and char:FindFirstChildOfClass("Humanoid")
-            if hum and hum.Health > 0 then
-                local healthPercentage = hum.Health / hum.MaxHealth
-                if healthPercentage <= 0.5 then
-                    pcall(function()
-                        local potionRF = ReplicatedStorage.Packages._Index["sleitnick_knit@1.7.0"].knit.Services.PotionService.RF.UsePotion
-                        potionRF:InvokeServer()
-                    end)
+            if char and char:FindFirstChild("Humanoid") then
+                local hum = char.Humanoid
+                if hum.Health > 0 and hum.Health < (hum.MaxHealth * 0.5) then
+                    ReplicatedStorage.RemoteEvents.UsePotion:FireServer()
                 end
             end
         end
     end
 end)
 
+-- Drops / Loot Loop
+task.spawn(function()
+    while task.wait(0.2) do
+        if State.AutoCollectChest then
+            local char = LocalPlayer.Character
+            if char and char:FindFirstChild("HumanoidRootPart") then
+                local hrp = char.HumanoidRootPart
+                for _, obj in pairs(workspace:GetDescendants()) do
+                    if obj:IsA("Part") and (obj.Name == "Coin" or obj.Name == "Gem" or obj.Name == "LootBag") then
+                        obj.CFrame = hrp.CFrame
+                    end
+                end
+            end
+        end
+    end
+end)
 
--- [[ GLOBALS FOR AUTO DUNGEON ]]
+-- [[ ZERO-DELAY AUTO DUNGEON LOGIC ]]
+local CurrentTarget = nil
 local PreviousDungeon = nil
-local CurrentRoomNumber = 2
 local HasClaimedChest = false
+local ChestBlacklist = {}
+local orbitAngle = 0
+local ORBIT_SPEED = 18 
+local ORBIT_DISTANCE = 5 
+local FAST_TP_OFFSET = CFrame.new(0, 0, -4) 
+local CHEST_ORBIT_DISTANCE = 3 
+
+local function getClosestEnemy(folder)
+    if not folder then return nil end
+    local closest, minDistance = nil, math.huge
+    local char = LocalPlayer.Character
+    if not char or not char:FindFirstChild("HumanoidRootPart") then return nil end
+
+    for _, obj in pairs(folder:GetChildren()) do
+        if obj.Name == "Mob" and obj:FindFirstChild("Humanoid") and obj.Humanoid.Health > 0 and obj:FindFirstChild("HumanoidRootPart") then
+            local dist = (char.HumanoidRootPart.Position - obj.HumanoidRootPart.Position).Magnitude
+            if dist < minDistance then
+                closest = obj
+                minDistance = dist
+            end
+        end
+    end
+    return closest
+end
+
+-- Dungeon Heartbeat Loop
+table.insert(State.Connections, RunService.Heartbeat:Connect(function(dt)
+    -- RESET STATE IF TOGGLED OFF (Fixes state bug when loading configs)
+    if not State.AutoDungeon then 
+        CurrentTarget = nil
+        PreviousDungeon = nil
+        HasClaimedChest = false
+        ChestBlacklist = {}
+        return 
+    end
+
+    local char = LocalPlayer.Character
+    if not char or not char:FindFirstChild("HumanoidRootPart") then return end
+    local hrp = char.HumanoidRootPart
+
+    local activeDungeons = workspace:FindFirstChild("ActiveDungeons")
+    if not activeDungeons then return end
+
+    local folder = nil
+    for _, f in pairs(activeDungeons:GetChildren()) do
+        if f:FindFirstChild(LocalPlayer.Name) then 
+            folder = f 
+            break 
+        end
+    end
+
+    if folder then
+        if folder ~= PreviousDungeon then
+            PreviousDungeon = folder
+            HasClaimedChest = false 
+            ChestBlacklist = {}
+        end
+
+        local currentEnemy = getClosestEnemy(folder)
+        if currentEnemy and currentEnemy:FindFirstChild("HumanoidRootPart") then
+            orbitAngle = (orbitAngle + ORBIT_SPEED * dt) % (math.pi * 2)
+            local enemyPos = currentEnemy.HumanoidRootPart.Position
+            local orbitOffset = Vector3.new(math.cos(orbitAngle) * ORBIT_DISTANCE, 2, math.sin(orbitAngle) * ORBIT_DISTANCE)
+            
+            hrp.CFrame = CFrame.new(enemyPos + orbitOffset, enemyPos)
+            CurrentTarget = currentEnemy
+
+            if tick() % 0.1 < 0.05 then
+                ReplicatedStorage.RemoteEvents.Attack:FireServer()
+            end
+        else
+            CurrentTarget = nil
+            local portal = folder:FindFirstChild("NextPortal")
+            if portal and portal:FindFirstChild("TouchInterest") then
+                hrp.CFrame = portal.CFrame
+                firetouchinterest(hrp, portal, 0)
+                firetouchinterest(hrp, portal, 1)
+            end
+        end
+    end
+end))
 
 -- [[ AUTO SELECT CHEST & AUTO REPLAY (ROOM DETECT LOOP) ]]
 task.spawn(function()
     while task.wait(1.5) do
-        if State.AutoDungeon and not HasClaimedChest then
-            local folder = GetCurrentDungeonFolder()
+        -- Reset if completely disabled 
+        if not State.AutoDungeon then
+            HasClaimedChest = false
+            continue
+        end
+
+        local activeDungeons = workspace:FindFirstChild("ActiveDungeons")
+        if not activeDungeons then continue end
+        
+        local folder = nil
+        for _, f in pairs(activeDungeons:GetChildren()) do
+            if f:FindFirstChild(LocalPlayer.Name) then folder = f break end
+        end
+
+        if folder then
+            if State.AutoSelectChest and not HasClaimedChest then
+                local foundChest = false
+                for _, obj in pairs(folder:GetDescendants()) do
+                    if obj.Name == "RewardChest" and obj:FindFirstChild("RootPart") and not ChestBlacklist[obj] then
+                        foundChest = true
+                        ChestBlacklist[obj] = true 
+
+                        local char = LocalPlayer.Character
+                        if char and char:FindFirstChild("HumanoidRootPart") then
+                            local hrp = char.HumanoidRootPart
+                            local chestPos = obj.RootPart.Position
+                            hrp.CFrame = CFrame.new(chestPos + Vector3.new(0, CHEST_ORBIT_DISTANCE, 0), chestPos)
+                            
+                            ReplicatedStorage.RemoteFunctions.SelectReward:InvokeServer(obj)
+                            HasClaimedChest = true
+                            SendHubNotification("Chest claimed!")
+                            task.wait(1.5)
+                        end
+                        break 
+                    end
+                end
+            end
             
-            if folder then
-                local currentEnemy = GetClosestEnemy()
-                local nextRoomExists = folder:FindFirstChild("Room_" .. tostring(CurrentRoomNumber))
-                
-                -- Determine clear status: No alive enemies AND no next room to advance to
-                if not currentEnemy and not nextRoomExists then
-                    task.wait(1.5) -- Buffer to account for late spawns
-                    
-                    -- Second confirmation check
-                    if not GetClosestEnemy() and State.AutoDungeon and not HasClaimedChest then
-                        HasClaimedChest = true 
-                        
-                        local DungeonRunService = ReplicatedStorage.Packages._Index["sleitnick_knit@1.7.0"].knit.Services.DungeonRunService
-                        
-                        -- STEP 1: Select End-of-Dungeon Chest Reward
-                        if State.AutoSelectChest then
-                            pcall(function()
-                                local Event = ReplicatedStorage.Packages._Index["sleitnick_knit@1.7.0"].knit.Services.DungeonRunService.RF.SelectChests
-                                Event:InvokeServer({1, 2, 3})
-                            end)
-                            task.wait(2)
-                        end
-                        
-                        -- STEP 2: Replay Dungeon
-                        if State.AutoReplay then
-                            pcall(function()
-                                DungeonRunService.RF.RequestReplay:InvokeServer()
-                            end)
-                            SendHubNotification("Auto Replay Triggered!", 3)
-                        end
+            if State.AutoReplay and folder:FindFirstChild("Finished") then
+                local endPortal = workspace:FindFirstChild("ReturnPortal") or folder:FindFirstChild("Portal")
+                if endPortal and endPortal:FindFirstChild("TouchInterest") then
+                    local char = LocalPlayer.Character
+                    if char and char:FindFirstChild("HumanoidRootPart") then
+                        firetouchinterest(char.HumanoidRootPart, endPortal, 0)
+                        firetouchinterest(char.HumanoidRootPart, endPortal, 1)
+                        SendHubNotification("Replaying Dungeon...")
                     end
                 end
             end
         end
     end
 end)
-
--- [[ ZERO-DELAY AUTO DUNGEON LOGIC V1.8 ]]
-local orbitAngle = 0
-local OrbitRadius = 6    
-local OrbitHeight = 4.5  
-local OrbitSpeed = 3     
-
-local CurrentTarget = nil
-local ActiveChestTimer = 0
-local CurrentChestModel = nil
-
-table.insert(State.Connections, RunService.Heartbeat:Connect(function(deltaTime)
-    if State.AutoDungeon then
-        local char = LocalPlayer.Character
-        local myHrp = char and char:FindFirstChild("HumanoidRootPart")
-        if not myHrp then return end
-        
-        local folder = GetCurrentDungeonFolder()
-        
-        -- Reset variables for new dungeon instance
-        if folder ~= PreviousDungeon then
-            PreviousDungeon = folder
-            CurrentRoomNumber = 2 
-            CurrentTarget = nil
-            ChestBlacklist = {}
-            HasClaimedChest = false -- Crucial so we can collect the chest at the end of THIS new run
-        end
-        
-        if not folder then return end
-
-        -- [[ PRIORITY 1: ENEMIES ]]
-        if CurrentTarget then
-            local hum = CurrentTarget:FindFirstChildOfClass("Humanoid") or CurrentTarget:FindFirstChild("Humanoid")
-            local root = CurrentTarget:FindFirstChild("HumanoidRootPart") or CurrentTarget:FindFirstChild("Torso") or CurrentTarget.PrimaryPart
-            
-            if (hum and hum.Health <= 0) or not root or not CurrentTarget.Parent then
-                CurrentTarget = nil
-            end
-        end
-        
-        if not CurrentTarget then
-            CurrentTarget = GetClosestEnemy()
-        end
-        
-        if CurrentTarget then
-            local targetHrp = CurrentTarget:FindFirstChild("HumanoidRootPart") or CurrentTarget:FindFirstChild("Torso") or CurrentTarget.PrimaryPart
-            if targetHrp then
-                orbitAngle = orbitAngle + (OrbitSpeed * deltaTime)
-                local offset = Vector3.new(math.cos(orbitAngle) * OrbitRadius, OrbitHeight, math.sin(orbitAngle) * OrbitRadius)
-                
-                myHrp.CFrame = CFrame.new(targetHrp.Position + offset, targetHrp.Position)
-                myHrp.Velocity = Vector3.zero 
-                
-                pcall(function()
-                    game:GetService("ReplicatedStorage"):WaitForChild("Player"):WaitForChild("Remotes"):WaitForChild("Inputs"):WaitForChild("Attack"):FireServer(Vector3.zero)
-                end)
-            end
-            
-        else
-            -- [[ PRIORITY 2: PHYSICAL IN-ROOM CHESTS (AutoCollectChest) ]]
-            local validChestModel, validChestPart = nil, nil
-            if State.AutoCollectChest then
-                validChestModel, validChestPart = GetValidChest(folder)
-            end
-
-            if validChestPart then
-                if CurrentChestModel ~= validChestModel then
-                    CurrentChestModel = validChestModel
-                    ActiveChestTimer = tick()
-                elseif tick() - ActiveChestTimer > 4 then
-                    ChestBlacklist[validChestModel] = true
-                    CurrentChestModel = nil
-                    validChestModel = nil
-                    validChestPart = nil
-                end
-                
-                if validChestPart then
-                    local chestDist = (myHrp.Position - validChestPart.Position).Magnitude
-                    if chestDist > 4 then
-                        myHrp.Velocity = Vector3.zero 
-                        myHrp.CFrame = CFrame.new(validChestPart.Position + Vector3.new(0, 3, 0))
-                    else
-                        pcall(function()
-                            for _, obj in ipairs(validChestModel:GetDescendants()) do
-                                if obj:IsA("ProximityPrompt") then
-                                    fireproximityprompt(obj)
-                                end
-                            end
-                        end)
-                    end
-                end
-                
-            else
-                -- [[ PRIORITY 3: NEXT ROOM ]]
-                CurrentChestModel = nil
-                
-                local nextRoom = folder:FindFirstChild("Room_" .. tostring(CurrentRoomNumber))
-                
-                if nextRoom then
-                    local roomPart = nextRoom:IsA("Model") and nextRoom.PrimaryPart or nextRoom:FindFirstChildWhichIsA("BasePart") or (nextRoom:IsA("BasePart") and nextRoom)
-                    
-                    if roomPart then
-                        local roomDist = (myHrp.Position - roomPart.Position).Magnitude
-                        
-                        if roomDist > 15 then
-                            myHrp.Velocity = Vector3.zero
-                            myHrp.CFrame = CFrame.new(roomPart.Position + Vector3.new(0, 5, 0))
-                        else
-                            CurrentRoomNumber = CurrentRoomNumber + 1
-                        end
-                    end
-                end
-            end
-        end
-    end
-end))
-
--- Anti AFK Logic
-table.insert(State.Connections, LocalPlayer.Idled:Connect(function()
-    if State.AntiAFK then
-        VirtualUser:CaptureController()
-        VirtualUser:ClickButton2(Vector2.new())
-    end
-end))
-
--- Auto Reconnect Logic
-table.insert(State.Connections, GuiService.ErrorMessageChanged:Connect(function(err)
-    if State.AutoReconnect then
-        task.wait(1)
-        pcall(function()
-            TeleportService:TeleportToPlaceInstance(game.PlaceId, game.JobId, LocalPlayer)
-        end)
-    end
-end))
 
 SendHubNotification("Seoul Hub Loaded Successfully!", 3)
