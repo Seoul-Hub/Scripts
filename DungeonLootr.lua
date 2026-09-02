@@ -1441,8 +1441,8 @@ createButton(TabSettings, "Auto Execute", "Places the script in your executor's 
     if writefile then
         local success, err = pcall(function()
             -- Replace the URL below with the actual raw URL of your script!
-            local loadstringCode = "loadstring(game:HttpGet('YOUR_SCRIPT_URL_HERE'))()"
-            writefile("autoexec/SeoulHub.lua", loadstringCode)
+            local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/Seoul-Hub/Scripts/refs/heads/main/DungeonLootr.lua))()"
+            writefile("AutoExecute/DungeonLootr-SeoulHub.lua", loadstringCode)
         end)
         
         if success then
