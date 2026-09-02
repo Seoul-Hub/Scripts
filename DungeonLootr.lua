@@ -3,6 +3,18 @@ if not game:IsLoaded() then
     game.Loaded:Wait()
 end
 
+-- Wait for LocalPlayer and PlayerGui to fully replicate
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+while not LocalPlayer do
+    task.wait(0.1)
+    LocalPlayer = Players.LocalPlayer
+end
+
+LocalPlayer:WaitForChild("PlayerGui", 15)
+task.wait(1)
+
 local MarketplaceService = game:GetService("MarketplaceService")
 
 -- [[ GAME VERIFICATION ]]
